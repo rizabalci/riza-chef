@@ -680,6 +680,7 @@
       <button class="chip" data-filter="meze-warm">Warm meze</button>
       <button class="chip" data-filter="tapas">Tapas</button>
       <button class="chip" data-filter="salad">🥗 Salads</button>
+      <button class="chip" data-filter="pilav">🍚 Pilavs</button>
       <button class="chip" data-filter="soup">🥣 Soups</button>
       <button class="chip" data-filter="drink">🥤 Drinks</button>
       <button class="chip" data-filter="dessert">🍮 Desserts</button>
@@ -690,7 +691,7 @@
       <button class="chip" data-filter="seafood">🐟 Seafood</button>
       <button class="chip" data-filter="meat">🥩 Meat</button>
       <button class="chip" data-filter="spicy">🌶 Spicy</button>
-      <button class="chip" data-filter="no-alcohol">No alcohol</button>
+      <button class="chip" data-filter="no-alcohol">🥤 No alcohol</button>
       <button class="chip" data-filter="classic" title="The canonical, traditional foundations of the cuisine - what every cook makes from memory">★ Iconic classics</button>
       <button class="chip" data-filter="quick">⏱ Under 15 min</button>
       <button class="chip" data-filter="summer">☀ Summer</button>
@@ -10863,6 +10864,1975 @@ const BUILTIN_RECIPES = [
       { title: 'Serve', txt: 'Pour into glasses. Lemon slice in each. Sip hot.' }
     ],
     tip: 'Wild Anatolian rosehips have 20x the vitamin C of oranges. Used in old-village remedies for colds. Etsan stocks dried whole rosehips; supermarket "rosehip tea bags" are usually low quality. Refrigerate leftover - drink within 3 days.'
+  },
+
+  // ============ TOP 20 CLASSIC COCKTAILS ============
+  {
+    id: 'cocktail-hugo', name: 'Hugo Spritz', nameEn: 'Elderflower prosecco spritz', emoji: '🌿',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Classic', 'Aperitivo', 'Alcohol', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 140, protein: 0, carbs: 12, fat: 0 },
+    desc: 'South Tyrolean answer to Aperol Spritz. Invented in 2005 in Naturno, conquered the Alps within a decade. Prosecco, elderflower syrup, mint, lime. Floral, light, less bitter than Aperol. The Vienna summer terrace drink.',
+    ingredients: [
+      { id: 'prosecco', name: 'Prosecco (chilled)', amount: 240, unit: 'ml', store: 'all' },
+      { id: 'elderflower-syrup', name: 'Elderflower syrup (St-Germain or Holunderblütensirup)', amount: 80, unit: 'ml', store: 'all', note: 'Spar Premium / Wein & Co' },
+      { id: 'water-soda', name: 'Soda water', amount: 80, unit: 'ml', store: 'all' },
+      { id: 'lime', name: 'Lime', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint sprigs', amount: 8, unit: 'leaves', store: 'all' },
+      { id: 'ice', name: 'Ice cubes', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Glass setup', txt: 'Two large wine glasses. Fill with ice cubes.' },
+      { title: 'Build', txt: 'Each glass: 40ml elderflower syrup + 4 mint leaves (slap them between palms first to release oils) + 2 lime wedges squeezed in. Top with 120ml prosecco then 40ml soda.' },
+      { title: 'Stir gently', txt: 'One quick stir with a bar spoon - just to mix, not lose carbonation.' },
+      { title: 'Garnish', txt: 'Float one lime wheel and an extra mint sprig on top. Serve immediately.' }
+    ],
+    tip: 'Build in order: syrup first, then ice, then mint, then prosecco gently down the side of glass. Pouring prosecco first kills carbonation. Vienna terraces serve this April through October.'
+  },
+  {
+    id: 'cocktail-negroni', name: 'Negroni', nameEn: 'Italian bitter aperitivo classic', emoji: '🍊',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Classic', 'Aperitivo', 'Alcohol', 'Quick', 'Cold'],
+    nutrition: { kcal: 220, protein: 0, carbs: 16, fat: 0 },
+    desc: 'Florence 1919. Count Camillo Negroni asked his bartender to strengthen an Americano with gin instead of soda. A century later it is the most photographed cocktail on Earth. Three equal parts: gin, Campari, sweet vermouth.',
+    ingredients: [
+      { id: 'gin', name: 'Gin (London Dry)', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'campari', name: 'Campari', amount: 60, unit: 'ml', store: 'all', note: 'Wein & Co / Spar' },
+      { id: 'vermouth-sweet', name: 'Sweet red vermouth (Carpano Antica or Cinzano)', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'orange', name: 'Orange', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Large ice cubes', amount: 1, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Chill glasses', txt: 'Two rocks glasses. Fill with ice and water to chill while mixing.' },
+      { title: 'Mix', txt: 'In a mixing glass with ice: gin + Campari + vermouth. Stir 20 seconds with bar spoon - cold and slightly diluted.', timer: 20 },
+      { title: 'Strain', txt: 'Empty chilling glasses. Add fresh large ice cube to each. Strain cocktail over.' },
+      { title: 'Garnish', txt: 'Cut a strip of orange peel for each. Squeeze peel over the surface oil-side-down (you will see oils flash on top), rim the glass with the peel, drop it in.' }
+    ],
+    tip: 'Stir, never shake - shaking aerates and clouds the drink. The orange peel expression is non-negotiable: it provides 30% of the aroma. Carpano Antica vermouth is the upgrade move; Cinzano Rosso is the everyday default.'
+  },
+  {
+    id: 'cocktail-negroni-sbagliato', name: 'Negroni Sbagliato', nameEn: 'Negroni made with prosecco', emoji: '🥂',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Classic', 'Aperitivo', 'Alcohol', 'Quick', 'Cold'],
+    nutrition: { kcal: 160, protein: 0, carbs: 14, fat: 0 },
+    desc: 'The "mistaken" Negroni. Mid-1970s Milan, Bar Basso bartender Mirko Stocchetto grabbed the prosecco bottle instead of gin. Customer kept it. Now a separate classic - lighter, frothy, less alcoholic. Internet-viral after Emma D\'Arcy mentioned it in 2022.',
+    ingredients: [
+      { id: 'campari', name: 'Campari', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'vermouth-sweet', name: 'Sweet red vermouth', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'prosecco', name: 'Prosecco (chilled, dry)', amount: 120, unit: 'ml', store: 'all' },
+      { id: 'orange', name: 'Orange', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Large ice cubes', amount: 1, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Glasses', txt: 'Two rocks glasses. Large ice cubes (one big cube melts slower than crushed).' },
+      { title: 'Build', txt: 'Each glass: 30ml Campari + 30ml vermouth. Top with 60ml prosecco poured slowly down the side.' },
+      { title: 'Stir lightly', txt: 'Single gentle stir - prosecco loses fizz quickly.' },
+      { title: 'Garnish', txt: 'Orange slice or peel. Serve immediately.' }
+    ],
+    tip: 'Sbagliato means "mistaken" in Italian - history\'s best happy accident. Use the most basic dry prosecco; expensive ones get masked. Drink within 10 minutes before the bubbles flatten.'
+  },
+  {
+    id: 'cocktail-americano', name: 'Americano', nameEn: 'Campari vermouth soda', emoji: '🍋',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Classic', 'Aperitivo', 'Alcohol', 'Quick', 'Cold'],
+    nutrition: { kcal: 140, protein: 0, carbs: 14, fat: 0 },
+    desc: 'Mid-1800s Milan, originally called the Milano-Torino (Campari from Milan, vermouth from Turin). When American tourists in the 1920s ordered it diluted with soda, it became "Americano". James Bond drinks one in Casino Royale. Mother of the Negroni.',
+    ingredients: [
+      { id: 'campari', name: 'Campari', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'vermouth-sweet', name: 'Sweet red vermouth', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'water-soda', name: 'Soda water (chilled)', amount: 120, unit: 'ml', store: 'all' },
+      { id: 'orange', name: 'Orange', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'lemon', name: 'Lemon (for twist)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Ice cubes', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Glass', txt: 'Two highball or rocks glasses. Fill with ice.' },
+      { title: 'Build', txt: 'Each glass: 30ml Campari + 30ml vermouth. Top with 60ml soda.' },
+      { title: 'Stir', txt: 'Brief stir.' },
+      { title: 'Garnish', txt: 'Orange half-wheel + a thin lemon twist. Serve.' }
+    ],
+    tip: 'Lower-alcohol Negroni cousin. Two of these is the Italian aperitivo sweet spot before dinner - you stay sharp, you have appetite. Bond ordered his with a "large thin slice of lemon peel" - try that twist.'
+  },
+  {
+    id: 'cocktail-bellini', name: 'Bellini', nameEn: 'White peach prosecco', emoji: '🍑',
+    category: 'drink', time: 5, prep: 5, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Venetian', 'Classic', 'Aperitivo', 'Alcohol', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 160, protein: 1, carbs: 18, fat: 0 },
+    desc: 'Venice 1948. Giuseppe Cipriani at Harry\'s Bar pureed white peaches with prosecco. Named after the soft pink of a Bellini painting. Real Bellinis use ONLY ripe white peaches in season (June-August); off-season versions are just colored prosecco.',
+    ingredients: [
+      { id: 'peach-white', name: 'White peaches (ripe), peeled and pitted', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'prosecco', name: 'Prosecco (chilled)', amount: 240, unit: 'ml', store: 'all' },
+      { id: 'lemon', name: 'Lemon juice', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar (only if peaches not perfectly ripe)', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Peach puree', txt: 'Blend peaches + lemon juice (add sugar only if peaches not very sweet). Strain through fine sieve, pressing - smooth liquid only, no fibers.' },
+      { title: 'Chill puree', txt: 'Refrigerate puree 15 min. Cold puree = better integration with prosecco.', timer: 900 },
+      { title: 'Build', txt: 'Two champagne flutes. 60ml cold peach puree in each. Slowly top with prosecco, stirring gently with a bar spoon as you pour - this creates the signature foamy head.' },
+      { title: 'Serve immediately', txt: 'No garnish. Drink within 5 minutes.' }
+    ],
+    tip: 'Cipriani used white peaches because their flesh stays pale; yellow peaches turn brown. Out of peach season? Skip this - make a Bellini in June or wait. Or use frozen white peach puree from specialty shops.'
+  },
+  {
+    id: 'cocktail-bicicletta', name: 'Bicicletta', nameEn: 'Italian white wine spritz with Campari', emoji: '🚲',
+    category: 'drink', time: 2, prep: 2, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Classic', 'Aperitivo', 'Alcohol', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 120, protein: 0, carbs: 8, fat: 0 },
+    desc: 'Northern Italian lunch drink. Name comes from elderly Lombard cyclists who allegedly drank a few of these and wobbled home on their bikes. White wine, Campari, soda. Bracing, pale orange, refreshing.',
+    ingredients: [
+      { id: 'white-wine-dry', name: 'Dry white wine (Pinot Grigio or similar)', amount: 200, unit: 'ml', store: 'all' },
+      { id: 'campari', name: 'Campari', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'water-soda', name: 'Soda water', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'lemon', name: 'Lemon', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Ice cubes', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Glass', txt: 'Two wine glasses or highball glasses. Fill with ice.' },
+      { title: 'Build', txt: 'Each glass: 30ml Campari + 100ml white wine + 30ml soda.' },
+      { title: 'Stir', txt: 'Single gentle stir.' },
+      { title: 'Garnish', txt: 'Lemon half-wheel on the rim.' }
+    ],
+    tip: 'Use cheap dry white wine; expensive bottles get masked. Northern Italian villages serve this at every lunch. Lighter than Aperol Spritz, drier, more bitter.'
+  },
+  {
+    id: 'cocktail-limoncello-spritz', name: 'Limoncello Spritz', nameEn: 'Amalfi lemon liqueur spritz', emoji: '🍋',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Classic', 'Aperitivo', 'Alcohol', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 220, protein: 0, carbs: 22, fat: 0 },
+    desc: 'Amalfi coast variant. Limoncello replaces Aperol for a sweeter, sunnier spritz. Pale yellow, intensely citrus, very Capri-summer. Popular substitute when Aperol is too bitter for the drinker.',
+    ingredients: [
+      { id: 'limoncello', name: 'Limoncello (chilled)', amount: 90, unit: 'ml', store: 'all' },
+      { id: 'prosecco', name: 'Prosecco (chilled)', amount: 180, unit: 'ml', store: 'all' },
+      { id: 'water-soda', name: 'Soda water', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'lemon', name: 'Lemon', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint', amount: 6, unit: 'leaves', store: 'all' },
+      { id: 'ice', name: 'Ice cubes', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Glass', txt: 'Two large wine glasses. Fill with ice.' },
+      { title: 'Build', txt: 'Each glass: 45ml limoncello + 3 mint leaves slapped between palms. Slowly add 90ml prosecco then 30ml soda down the side.' },
+      { title: 'Stir', txt: 'Single gentle stir.' },
+      { title: 'Garnish', txt: 'Lemon wheel + mint sprig.' }
+    ],
+    tip: 'Best with a properly cold limoncello - freezer-stored is ideal (limoncello does not freeze due to alcohol content). Capri bars serve it in glasses that have been kept in the freezer.'
+  },
+  {
+    id: 'cocktail-garibaldi', name: 'Garibaldi', nameEn: 'Campari with fluffy fresh orange', emoji: '🍊',
+    category: 'drink', time: 5, prep: 5, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Classic', 'Aperitivo', 'Alcohol', 'Quick', 'Cold'],
+    nutrition: { kcal: 160, protein: 2, carbs: 18, fat: 0 },
+    desc: 'Two ingredients. Total magic. Campari and FRESH orange juice - but the juice must be high-speed centrifuged to make it foamy and "fluffy". The famous version from Dante in New York. The drink that proves simplicity wins.',
+    ingredients: [
+      { id: 'campari', name: 'Campari', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'orange', name: 'Fresh oranges (juicy)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Large ice cubes', amount: 1, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Fluffy juice', txt: 'Juice oranges. Pour juice into a blender. Blend on highest speed 30 seconds - juice transforms from flat to fluffy with thick foam top. THIS is the technique that makes Garibaldi special.', timer: 30 },
+      { title: 'Glasses', txt: 'Two highball glasses with large ice cubes.' },
+      { title: 'Build', txt: 'Each glass: 30ml Campari. Slowly pour fluffy orange juice over (about 150ml per glass).' },
+      { title: 'Serve immediately', txt: 'Do not stir - the layered effect is beautiful. Drinker stirs at table.' }
+    ],
+    tip: 'The "fluffy" technique is everything. Without blending, this is just Campari-OJ (still good, but ordinary). High-speed blender or even immersion blender for 30 seconds creates the texture that distinguishes it. Drink within 5 min before foam collapses.'
+  },
+  {
+    id: 'cocktail-sgroppino', name: 'Sgroppino', nameEn: 'Venetian lemon sorbet prosecco', emoji: '🍦',
+    category: 'drink', time: 5, prep: 5, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Venetian', 'Classic', 'Aperitivo', 'Alcohol', 'Summer', 'Quick', 'Cold', 'Dessert'],
+    nutrition: { kcal: 220, protein: 1, carbs: 26, fat: 0 },
+    desc: 'Venetian palate cleanser turned dessert drink. Lemon sorbet whipped with vodka and prosecco into a foamy slush. Served between courses at fancy Venetian dinners or as a cool finish after seafood.',
+    ingredients: [
+      { id: 'sorbet-lemon', name: 'Lemon sorbet', amount: 200, unit: 'g', store: 'all' },
+      { id: 'vodka', name: 'Vodka (chilled)', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'prosecco', name: 'Prosecco (chilled)', amount: 200, unit: 'ml', store: 'all' },
+      { id: 'lemon', name: 'Lemon (for zest)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint', amount: 4, unit: 'leaves', store: 'all' }
+    ],
+    steps: [
+      { title: 'Chill bowl', txt: 'Place a metal mixing bowl in freezer for 10 min.', timer: 600 },
+      { title: 'Whisk', txt: 'Lemon sorbet + vodka in cold bowl. Whisk vigorously with a balloon whisk until smooth and frothy, 1 min.', timer: 60 },
+      { title: 'Add prosecco', txt: 'Pour prosecco in slowly while whisking gently. Should be foamy slush consistency.' },
+      { title: 'Serve', txt: 'Pour into two chilled champagne coupes or small wine glasses. Mint leaf + lemon zest on top.' }
+    ],
+    tip: 'Best ice cream maker substitute: a quart of artisan-quality lemon sorbet. Cheap lemon sorbet makes a watery sgroppino. Eat with a spoon at first, then drink. Venetian dinners serve it with a small spoon embedded in the glass.'
+  },
+  {
+    id: 'cocktail-espresso-martini', name: 'Espresso Martini', nameEn: 'Coffee vodka shaken cocktail', emoji: '☕',
+    category: 'drink', time: 5, prep: 5, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Quick', 'Cold'],
+    nutrition: { kcal: 220, protein: 1, carbs: 14, fat: 0 },
+    desc: 'London 1983. Dick Bradsell at the Soho Brasserie invented it when a model asked for something that would "wake me up then mess me up". Now THE late-dinner cocktail in every European city. The foam on top is non-negotiable.',
+    ingredients: [
+      { id: 'espresso', name: 'Fresh hot espresso', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'vodka', name: 'Vodka', amount: 80, unit: 'ml', store: 'all' },
+      { id: 'kahlua', name: 'Coffee liqueur (Kahlua)', amount: 40, unit: 'ml', store: 'all' },
+      { id: 'sugar-syrup', name: 'Simple syrup (1:1 sugar-water)', amount: 15, unit: 'ml', store: 'all' },
+      { id: 'coffee-beans', name: 'Coffee beans (3 per glass for garnish)', amount: 6, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Ice (lots, for shaker)', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Pull espresso fresh', txt: 'Espresso must be FRESH and hot - the heat creates the foam when shaken. Cold or old espresso = no foam.' },
+      { title: 'Chill glasses', txt: 'Two martini glasses in freezer 5 min.', timer: 300 },
+      { title: 'Shake hard', txt: 'Shaker with lots of ice: espresso + vodka + coffee liqueur + syrup. Shake VIOLENTLY 15 seconds - hard shake is what creates the thick crema foam.', timer: 15 },
+      { title: 'Double strain', txt: 'Strain through cocktail strainer AND fine sieve into chilled glasses - removes ice shards, leaves smooth liquid with foam top.' },
+      { title: 'Garnish', txt: 'Three coffee beans floated on the foam of each glass. Drink immediately while foam stands.' }
+    ],
+    tip: 'Hard shake is non-negotiable - that\'s where the foam comes from. Espresso must be hot (within 60 sec of pulling). Three coffee beans = the proper garnish, representing health/wealth/happiness in Italian tradition.'
+  },
+  {
+    id: 'cocktail-old-fashioned', name: 'Old Fashioned', nameEn: 'Bourbon sugar bitters orange', emoji: '🥃',
+    category: 'drink', time: 4, prep: 4, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Quick', 'Cold'],
+    nutrition: { kcal: 200, protein: 0, carbs: 8, fat: 0 },
+    desc: 'Louisville 1880s. The original "whiskey cocktail" - bourbon, sugar, bitters, water. When 1900s bartenders started adding fruit and citrus, traditionalists asked for it "the old-fashioned way". Stir, don\'t shake. Drink slowly.',
+    ingredients: [
+      { id: 'bourbon', name: 'Bourbon whiskey (or rye)', amount: 120, unit: 'ml', store: 'all' },
+      { id: 'sugar-cube', name: 'Sugar cubes (or 1 tsp simple syrup)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'angostura-bitters', name: 'Angostura bitters', amount: 6, unit: 'dash', store: 'all', note: 'Wein & Co' },
+      { id: 'orange', name: 'Orange peel', amount: 2, unit: 'strips', store: 'all' },
+      { id: 'cherry-marasca', name: 'Maraschino or Luxardo cherry (optional)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Large ice cube (one per glass)', amount: 2, unit: 'pcs', store: 'all' }
+    ],
+    steps: [
+      { title: 'Muddle', txt: 'In each rocks glass: 1 sugar cube + 3 dashes Angostura + 1 tsp water. Muddle with back of spoon until sugar dissolves to a paste.' },
+      { title: 'Add bourbon', txt: 'Pour 60ml bourbon into each glass. Stir 5 seconds.', timer: 5 },
+      { title: 'Add ice', txt: 'One large ice cube in each (large cubes melt slowly).' },
+      { title: 'Stir to chill', txt: 'Stir 20 seconds slowly with bar spoon - cools and dilutes ideally.', timer: 20 },
+      { title: 'Garnish', txt: 'Express an orange peel over the surface (squeeze oils, rim glass, drop in). Optional Luxardo cherry.' }
+    ],
+    tip: 'No muddled fruit (that\'s the wrong version). The orange-and-cherry "old-fashioned" you see in many bars is actually a Wisconsin-style variant; traditionalists muddle only sugar+bitters. Drink it slow - this is a 30-minute sipper.'
+  },
+  {
+    id: 'cocktail-manhattan', name: 'Manhattan', nameEn: 'Rye sweet vermouth bitters', emoji: '🥃',
+    category: 'drink', time: 4, prep: 4, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Quick', 'Cold'],
+    nutrition: { kcal: 220, protein: 0, carbs: 6, fat: 0 },
+    desc: 'New York Manhattan Club, 1870s. Rye whiskey + sweet vermouth + bitters, stirred, served up with a cherry. Older sibling of the Martini. The aspirational drink in 1950s American cinema.',
+    ingredients: [
+      { id: 'rye-whiskey', name: 'Rye whiskey (or bourbon)', amount: 120, unit: 'ml', store: 'all' },
+      { id: 'vermouth-sweet', name: 'Sweet red vermouth', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'angostura-bitters', name: 'Angostura bitters', amount: 4, unit: 'dash', store: 'all' },
+      { id: 'cherry-marasca', name: 'Luxardo or Maraschino cherries', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Ice (for stirring)', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Chill glasses', txt: 'Two coupe glasses in freezer 5 min.', timer: 300 },
+      { title: 'Mix', txt: 'In mixing glass with ice: rye + vermouth + bitters. Stir 25 seconds with bar spoon.', timer: 25 },
+      { title: 'Strain', txt: 'Strain into chilled coupes - leaving ice behind.' },
+      { title: 'Garnish', txt: 'One Luxardo cherry in each. Optional: half teaspoon of cherry syrup drizzled in.' }
+    ],
+    tip: 'Rye gives spicier character than bourbon - the proper classic version uses rye. Luxardo cherries (the real Italian preserved ones in dark syrup) cost more than the cocktail but transform it - skip neon-red maraschino cherries.'
+  },
+  {
+    id: 'cocktail-margarita', name: 'Margarita', nameEn: 'Tequila lime triple sec', emoji: '🌵',
+    category: 'drink', time: 5, prep: 5, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 220, protein: 0, carbs: 14, fat: 0 },
+    desc: 'Mexican original, 1940s. Tequila, lime, orange liqueur, salt rim. The most-ordered cocktail in America. Skip the slushie blender version - the classic is shaken and served on the rocks or up.',
+    ingredients: [
+      { id: 'tequila-blanco', name: 'Tequila blanco (100% agave)', amount: 100, unit: 'ml', store: 'all' },
+      { id: 'cointreau', name: 'Cointreau or Triple Sec', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'lime', name: 'Fresh lime juice', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'salt-coarse', name: 'Flaky salt (for rim)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'ice', name: 'Ice', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Rim glasses', txt: 'Run a lime wedge around the rim of two rocks glasses. Press rims into salt on a small plate - half rim only (let drinker choose salt or not per sip).' },
+      { title: 'Build in shaker', txt: 'Shaker with ice: tequila + Cointreau + lime juice.' },
+      { title: 'Shake hard', txt: '12 seconds vigorous shake.', timer: 12 },
+      { title: 'Pour or strain', txt: 'Strain into salt-rimmed glasses over fresh ice (or up into coupes).' },
+      { title: 'Garnish', txt: 'Lime wheel on rim.' }
+    ],
+    tip: '100% agave tequila is non-negotiable - "mixto" tequilas (51% agave + 49% sugar alcohol) are why people get hangovers from Margaritas. Squeeze limes fresh - bottled juice is bitter. Cointreau over generic triple sec.'
+  },
+  {
+    id: 'cocktail-mojito', name: 'Mojito', nameEn: 'Cuban rum mint lime', emoji: '🌿',
+    category: 'drink', time: 5, prep: 5, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 200, protein: 0, carbs: 18, fat: 0 },
+    desc: 'Havana 1500s, perfected over centuries. White rum, mint, lime, sugar, soda. Hemingway\'s drink at La Bodeguita del Medio. Refreshing, herby, accessible. Done badly with bottled mint syrup; done right with fresh mint and sugar.',
+    ingredients: [
+      { id: 'rum-white', name: 'White rum', amount: 100, unit: 'ml', store: 'all' },
+      { id: 'lime', name: 'Limes (juice + wedges)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'sugar', name: 'Sugar (or 30ml syrup)', amount: 3, unit: 'tsp', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint leaves', amount: 20, unit: 'leaves', store: 'all' },
+      { id: 'water-soda', name: 'Soda water', amount: 200, unit: 'ml', store: 'all' },
+      { id: 'ice', name: 'Crushed ice', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Muddle (not bruise)', txt: 'Each highball glass: 10 mint leaves + 1.5 tsp sugar + 2 lime wedges. Press lightly with muddler 4 times - release oils, don\'t shred leaves (shredded mint tastes bitter).' },
+      { title: 'Add rum and lime juice', txt: 'Each glass: 50ml rum + juice of half a lime. Stir to dissolve sugar.' },
+      { title: 'Fill with crushed ice', txt: 'Pack crushed ice to the top of each glass.' },
+      { title: 'Top with soda', txt: '100ml soda per glass. Stir gently from bottom to lift mint up.' },
+      { title: 'Garnish', txt: 'Fresh mint sprig on top + a lime wheel. Long straw.' }
+    ],
+    tip: 'PRESS the mint, don\'t pulverize it. Mint chlorophyll tastes like grass when over-muddled. Crushed ice (not cubes) is the texture - cubes melt slow but allow the drink to separate. Fresh lime juice is half the dish.'
+  },
+  {
+    id: 'cocktail-daiquiri', name: 'Daiquiri', nameEn: 'Cuban rum lime sugar', emoji: '🍋',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 180, protein: 0, carbs: 10, fat: 0 },
+    desc: 'Cuba 1900s, named after a beach near Santiago. Three ingredients only: rum, lime, sugar. The bartender\'s litmus test - if a bar makes a great Daiquiri, they make great everything. Hemingway drank Daiquiris with double rum and no sugar (Hemingway Daiquiri).',
+    ingredients: [
+      { id: 'rum-white', name: 'White rum (Cuban-style if possible)', amount: 120, unit: 'ml', store: 'all' },
+      { id: 'lime', name: 'Fresh lime juice', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'sugar-syrup', name: 'Simple syrup (1:1)', amount: 30, unit: 'ml', store: 'all' },
+      { id: 'ice', name: 'Ice (for shaker)', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Chill glasses', txt: 'Two coupe glasses in freezer 5 min.', timer: 300 },
+      { title: 'Shake', txt: 'Shaker with ice: rum + lime + syrup. Shake hard 12 seconds.', timer: 12 },
+      { title: 'Double strain', txt: 'Strain through fine mesh into chilled coupes - smooth, no ice shards.' },
+      { title: 'Serve', txt: 'No garnish needed. Lime peel optional. Drink within 5 min - chilled is everything.' }
+    ],
+    tip: 'Three ingredients leave nowhere to hide - fresh lime juice within 30 min of squeezing, quality rum, real simple syrup. Hemingway Daiquiri = double rum, half a grapefruit, no sugar. Try one for Papa.'
+  },
+  {
+    id: 'cocktail-french-75', name: 'French 75', nameEn: 'Gin champagne lemon', emoji: '🥂',
+    category: 'drink', time: 4, prep: 4, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Aperitivo', 'Quick', 'Cold'],
+    nutrition: { kcal: 180, protein: 0, carbs: 12, fat: 0 },
+    desc: 'Paris 1915, Harry\'s New York Bar. Named after a French 75mm field gun used in WWI - the cocktail "hits with the same punch". Gin, lemon, sugar, champagne. Elegant, dry, dangerous.',
+    ingredients: [
+      { id: 'gin', name: 'Gin (London Dry)', amount: 60, unit: 'ml', store: 'all' },
+      { id: 'lemon', name: 'Fresh lemon juice', amount: 30, unit: 'ml', store: 'all' },
+      { id: 'sugar-syrup', name: 'Simple syrup', amount: 15, unit: 'ml', store: 'all' },
+      { id: 'champagne', name: 'Champagne (or dry sparkling)', amount: 200, unit: 'ml', store: 'all' },
+      { id: 'lemon', name: 'Lemon peel (for twist)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Ice', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Chill flutes', txt: 'Two champagne flutes in freezer 5 min.', timer: 300 },
+      { title: 'Shake gin', txt: 'Shaker with ice: gin + lemon juice + syrup. Shake 12 sec.', timer: 12 },
+      { title: 'Strain', txt: 'Strain into chilled flutes - fills about 1/3 of each.' },
+      { title: 'Top with champagne', txt: 'Slowly top with cold champagne. Pour down the side to preserve fizz.' },
+      { title: 'Garnish', txt: 'Long thin lemon peel twisted into a spiral over each glass. Drop in.' }
+    ],
+    tip: 'Skip cheap prosecco for this - the dry character of real champagne or Crémant is the dish. Brut nature works best. The Savoy version uses cognac instead of gin, also worth trying.'
+  },
+  {
+    id: 'cocktail-whiskey-sour', name: 'Whiskey Sour', nameEn: 'Bourbon lemon egg white', emoji: '🥃',
+    category: 'drink', time: 5, prep: 5, cook: 0, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Quick', 'Cold'],
+    nutrition: { kcal: 220, protein: 2, carbs: 14, fat: 0 },
+    desc: 'American classic from the 1860s. Bourbon, lemon, sugar, optional egg white for foam. The "Boston version" with egg white has a tall silky head and is the proper old-school move. Tart, balanced, foamy.',
+    ingredients: [
+      { id: 'bourbon', name: 'Bourbon whiskey', amount: 100, unit: 'ml', store: 'all' },
+      { id: 'lemon', name: 'Fresh lemon juice', amount: 50, unit: 'ml', store: 'all' },
+      { id: 'sugar-syrup', name: 'Simple syrup', amount: 30, unit: 'ml', store: 'all' },
+      { id: 'egg-white', name: 'Egg white (1 for foam)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'angostura-bitters', name: 'Angostura bitters (to garnish)', amount: 4, unit: 'dash', store: 'all' },
+      { id: 'cherry-marasca', name: 'Cocktail cherry', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Ice', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Dry shake', txt: 'Shaker (no ice): bourbon + lemon + syrup + egg white. Shake hard 15 seconds - emulsifies the egg white into thick foam.', timer: 15 },
+      { title: 'Wet shake', txt: 'Add ice to shaker. Shake hard another 15 seconds.', timer: 15 },
+      { title: 'Strain', txt: 'Strain into two rocks glasses (with one large ice cube each) or coupes.' },
+      { title: 'Foam garnish', txt: 'Once poured, foam sits on top. Dot 2 drops of Angostura bitters on the foam. Drag a toothpick through to make a pattern (heart, leaf, whatever).' },
+      { title: 'Cherry', txt: 'Skewer a cherry across each glass rim.' }
+    ],
+    tip: 'Dry-shake-then-wet-shake (the two-step) is what creates the tall foam. Single shake = flat. Use very fresh egg whites (pasteurized works for nervous drinkers). Without egg white version is the New York Sour with a red wine float.'
+  },
+  {
+    id: 'cocktail-gin-tonic', name: 'Gin & Tonic', nameEn: 'Spanish gintonic with botanicals', emoji: '🌲',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 180, protein: 0, carbs: 14, fat: 0 },
+    desc: 'British colonial creation, Spanish reinvention. Spanish "gintonic" style uses a balloon (copa) glass, premium tonic, and elaborate garnishes that complement the specific gin\'s botanicals. The Madrid-Barcelona standard since the 2010s.',
+    ingredients: [
+      { id: 'gin', name: 'Quality gin (Hendricks, Tanqueray, or Spanish gin)', amount: 100, unit: 'ml', store: 'all' },
+      { id: 'tonic-water', name: 'Premium tonic water (Fever-Tree, Schweppes Premium)', amount: 400, unit: 'ml', store: 'all' },
+      { id: 'lime', name: 'Lime', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (for Hendricks) or grapefruit', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'juniper-berry', name: 'Juniper berries', amount: 6, unit: 'pcs', store: 'all' },
+      { id: 'pepper-pink', name: 'Pink peppercorns', amount: 6, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Large ice cubes (lots)', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Copa glass', txt: 'Two large balloon wine glasses (copa de balon). Fill HALFWAY with large ice cubes.' },
+      { title: 'Cool the glass', txt: 'Pour a tiny splash of tonic over the ice, swirl 10 sec, drain - chills glass and removes any ice-melt taste.' },
+      { title: 'Build', txt: 'Each glass: 50ml gin + crushed juniper berries + 3 pink peppercorns + ribbon of cucumber peel + lime wedge (squeezed and dropped in).' },
+      { title: 'Tonic pour', txt: 'Pour 200ml tonic SLOWLY down the side of a bar spoon held against the rim - preserves fizz.' },
+      { title: 'Final stir', txt: 'Single bar-spoon stir from bottom up. Done.' }
+    ],
+    tip: 'The botanicals should complement the gin: Hendricks = cucumber+pink pepper, Tanqueray = lime+coriander, Bombay Sapphire = lemon+star anise. Use the largest ice cubes possible - small ones dilute fast.'
+  },
+  {
+    id: 'cocktail-moscow-mule', name: 'Moscow Mule', nameEn: 'Vodka ginger beer lime', emoji: '🐴',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 200, protein: 0, carbs: 22, fat: 0 },
+    desc: 'Hollywood 1941. Three businessmen needed to move slow-selling vodka, ginger beer, and copper mugs. They invented the Moscow Mule - vodka + ginger beer + lime in a copper mug. Copper mug is the entire personality.',
+    ingredients: [
+      { id: 'vodka', name: 'Vodka', amount: 100, unit: 'ml', store: 'all' },
+      { id: 'ginger-beer', name: 'Ginger beer (real, spicy)', amount: 300, unit: 'ml', store: 'all', note: 'Fever-Tree or Goslings; NOT ginger ale' },
+      { id: 'lime', name: 'Fresh lime', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint sprigs', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Crushed ice', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Mugs', txt: 'Two copper mugs (or highball glasses). Fill with crushed ice.' },
+      { title: 'Build', txt: 'Each mug: 50ml vodka + juice of half a lime + 150ml ginger beer.' },
+      { title: 'Stir', txt: 'One quick stir.' },
+      { title: 'Garnish', txt: 'Lime wedge + mint sprig (slapped between palms first to release aroma). Long straw.' }
+    ],
+    tip: 'Real ginger beer (Fever-Tree, Goslings, or specialty craft brands) has actual ginger heat. Ginger ale is sugar water - skip it, you get a sweet weak drink. Copper mug is not just aesthetic; cold copper keeps the drink ice-cold longer.'
+  },
+  {
+    id: 'cocktail-tom-collins', name: 'Tom Collins', nameEn: 'Gin lemon sugar soda', emoji: '🍋',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Aperitivo', 'Summer', 'Quick', 'Cold'],
+    nutrition: { kcal: 180, protein: 0, carbs: 14, fat: 0 },
+    desc: 'London 1870s. Bartender John Collins originally; "Tom" version uses sweet Old Tom gin. Fresh lemon, gin, sugar, soda in a tall glass. The cocktail you order when you want to drink slowly all afternoon on a terrace.',
+    ingredients: [
+      { id: 'gin', name: 'Gin (London Dry or Old Tom)', amount: 100, unit: 'ml', store: 'all' },
+      { id: 'lemon', name: 'Fresh lemon juice', amount: 50, unit: 'ml', store: 'all' },
+      { id: 'sugar-syrup', name: 'Simple syrup', amount: 30, unit: 'ml', store: 'all' },
+      { id: 'water-soda', name: 'Soda water (chilled)', amount: 240, unit: 'ml', store: 'all' },
+      { id: 'cherry-marasca', name: 'Cocktail cherry (garnish)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'lemon', name: 'Lemon wheel (garnish)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Ice cubes', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Tall glass', txt: 'Two highball or Collins glasses. Fill with ice.' },
+      { title: 'Build', txt: 'Each glass: 50ml gin + 25ml lemon juice + 15ml syrup. Stir to combine.' },
+      { title: 'Top with soda', txt: '120ml chilled soda per glass.' },
+      { title: 'Gentle stir', txt: 'Single gentle stir from bottom.' },
+      { title: 'Garnish', txt: 'Lemon wheel + cocktail cherry on a pick. Long straw.' }
+    ],
+    tip: 'Sister to a Gin Fizz (Tom Collins has more dilution, served tall over ice; Gin Fizz is shorter, served straight up). The Spanish-Italian terrace summer drink before everyone moved to Aperol Spritz.'
+  },
+  {
+    id: 'cocktail-pisco-sour', name: 'Pisco Sour', nameEn: 'Peruvian grape brandy egg white sour', emoji: '🥃',
+    category: 'drink', time: 5, prep: 5, cook: 0, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Alcohol', 'Quick', 'Cold'],
+    nutrition: { kcal: 200, protein: 2, carbs: 12, fat: 0 },
+    desc: 'Peru\'s national cocktail, 1920s Lima. Pisco (grape brandy) + lime + sugar + egg white + Angostura. Bright, foamy, tart. Argentina and Chile both claim parts of the origin story. Beautiful when made properly with a thick stable foam.',
+    ingredients: [
+      { id: 'pisco', name: 'Pisco (Peruvian)', amount: 120, unit: 'ml', store: 'big' },
+      { id: 'lime', name: 'Fresh lime juice', amount: 40, unit: 'ml', store: 'all' },
+      { id: 'sugar-syrup', name: 'Simple syrup', amount: 30, unit: 'ml', store: 'all' },
+      { id: 'egg-white', name: 'Egg white', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'angostura-bitters', name: 'Angostura bitters', amount: 6, unit: 'dash', store: 'all' },
+      { id: 'ice', name: 'Ice', amount: 2, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Dry shake', txt: 'Shaker (no ice): pisco + lime + syrup + egg white. Shake violently 15 sec - emulsifies foam.', timer: 15 },
+      { title: 'Wet shake', txt: 'Add ice. Shake another 15 sec hard.', timer: 15 },
+      { title: 'Strain', txt: 'Strain into two coupes - foam sits on top.' },
+      { title: 'Angostura art', txt: 'Drop 3 dashes Angostura bitters on the foam of each. Drag toothpick through to create swirls or hearts. Drink within 5 min.' }
+    ],
+    tip: 'Use Peruvian pisco for authenticity (Quebranta or Acholado varieties). Chilean pisco works but is sweeter. The two-stage shake (dry then wet) is the secret to thick foam. Without dry shake, foam collapses in 30 seconds.'
+  },
+
+  // ============ CHURCHILL DRINK + TURKISH MAINS BATCH ============
+  {
+    id: 'corcil', name: 'Çörçil', nameEn: 'Adana Churchill drink', emoji: '🍷',
+    category: 'drink', time: 3, prep: 3, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Hatay', 'Alcohol', 'Aperitivo', 'Quick', 'Cold'],
+    nutrition: { kcal: 80, protein: 1, carbs: 6, fat: 0 },
+    desc: 'Adana meyhane classic. Rakı mixed with şalgam suyu (fermented turnip juice). Named "Çörçil" after Winston Churchill, who supposedly drank it during a Turkey visit. The Adana kebab companion. Salty, sour, anise-licorice. The drink that turns kebab night into legend.',
+    ingredients: [
+      { id: 'salgam-suyu', name: 'Şalgam suyu (fermented purple turnip juice, hot version)', amount: 300, unit: 'ml', store: 'turkish', note: 'Etsan or Spar International; spicy version preferred' },
+      { id: 'raki', name: 'Rakı', amount: 80, unit: 'ml', store: 'all' },
+      { id: 'lemon', name: 'Lemon wedges', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'ice', name: 'Ice cubes', amount: 1, unit: 'cup', store: 'all' }
+    ],
+    steps: [
+      { title: 'Glasses', txt: 'Two tall thin rakı glasses or highball glasses.' },
+      { title: 'Build', txt: 'Each glass: 40ml rakı + 150ml şalgam suyu + 3 ice cubes. The rakı turns the drink cloudy when combined with the watery şalgam.' },
+      { title: 'Garnish', txt: 'Lemon wedge on the rim. Squeeze a little juice in just before drinking.' }
+    ],
+    tip: 'Adana kebab requires Çörçil - it is the dish. The spicy hot version of şalgam (acılı) is correct; non-spicy is for tourists. Drink between bites of kebab. The smoked-lamb-fat residue + sour turnip + anise creates the signature meyhane mouth feel.'
+  },
+  {
+    id: 'belen-tava', name: 'Belen Tava', nameEn: 'Hatay one-pan lamb bake', emoji: '🥘',
+    category: 'meze-warm', time: 75, prep: 20, cook: 55, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Hatay', 'Meat', 'Hot'],
+    nutrition: { kcal: 520, protein: 32, carbs: 22, fat: 32 },
+    desc: 'Hatay specialty named after the Belen district. Cubed lamb layered with tomato, pepper, garlic, potato, baked in a wide pan until the lamb is falling-tender and vegetables are jammy. One-pan, no fuss, transcendent.',
+    ingredients: [
+      { id: 'lamb-stew', name: 'Lamb shoulder, cubed 2cm', amount: 350, unit: 'g', store: 'all' },
+      { id: 'potato', name: 'Potatoes, cubed', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'onion', name: 'Onion, sliced', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, sliced', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Long green peppers (sivri biber)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 6, unit: 'clove', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Sear lamb', txt: 'Butter + olive oil in wide pan or shallow casserole. Brown lamb cubes 6 min.', timer: 360 },
+      { title: 'Aromatics', txt: 'Add sliced onion + garlic. 4 min. Tomato paste + pepper paste 2 min.', timer: 360 },
+      { title: 'Build layers', txt: 'Spread potato cubes around lamb. Lay tomato slices and pepper pieces over. Salt + pepper + pul biber + 250ml water.' },
+      { title: 'Bake', txt: 'Cover with foil. 200C oven 45 min. Uncover, 10 more min to brown.', timer: 3300 },
+      { title: 'Serve', txt: 'Straight from the pan with bread and a glass of çay or ayran.' }
+    ],
+    tip: 'Hatay grandmothers cook this in a black iron pan over wood fire. Oven works. The pepper paste is the Hatay signature - acılı (spicy) version preferred.'
+  },
+  {
+    id: 'patlican-oturtma', name: 'Patlıcan Oturtma', nameEn: 'Eggplant and spiced meat layer bake', emoji: '🍆',
+    category: 'meze-warm', time: 75, prep: 25, cook: 50, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 480, protein: 26, carbs: 24, fat: 30 },
+    desc: 'Traditional Turkish layered dish - "oturtma" means "seated". Fried eggplant slices sit on a bed of spiced meat with tomato. Different from karnıyarık (split eggplant) - here eggplant is the topping. Comforting weeknight dinner.',
+    ingredients: [
+      { id: 'eggplant', name: 'Eggplant', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'ground-lamb', name: 'Ground lamb (or beef)', amount: 250, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 3, unit: 'clove', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, grated', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-green', name: 'Green pepper', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Prep eggplant', txt: 'Slice eggplant 1cm thick. Salt lightly, sit 15 min, pat dry.', timer: 900 },
+      { title: 'Fry eggplant', txt: '3 tbsp olive oil. Fry slices golden both sides. Drain on paper.', timer: 480 },
+      { title: 'Meat', txt: 'Same pan: onion 5 min. Lamb breaking up 6 min. Garlic + tomato paste 1 min. Grated tomato + cumin + pul biber + salt. Simmer 5 min.', timer: 1020 },
+      { title: 'Assemble', txt: 'Baking dish: spread meat layer. Top with fried eggplant slices overlapping. Pepper rings + tomato slices scattered.' },
+      { title: 'Bake', txt: '180C oven 25 min until bubbly and tops are caramelized.', timer: 1500 },
+      { title: 'Serve', txt: 'Parsley shower. Rice or bread alongside.' }
+    ],
+    tip: 'Salt-rest the eggplant - removes bitterness. Frying is non-negotiable (baking the slices does not give the same flavor). Day after, this is even better.'
+  },
+  {
+    id: 'tavuklu-pilav', name: 'Tavuklu Pilav', nameEn: 'Turkish chicken and chickpea pilaf', emoji: '🍗',
+    category: 'meze-warm', time: 60, prep: 15, cook: 45, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 520, protein: 32, carbs: 56, fat: 16 },
+    desc: 'Istanbul street pilaf turned home favorite. Long-grain rice with poached shredded chicken, chickpeas, and butter. Sold from glass street carts (pilav arabası) across the city. Comfort, protein, simplicity.',
+    ingredients: [
+      { id: 'chicken-thigh', name: 'Chicken thighs, bone-in', amount: 300, unit: 'g', store: 'all' },
+      { id: 'rice-long', name: 'Long-grain rice', amount: 200, unit: 'g', store: 'all' },
+      { id: 'chickpeas', name: 'Chickpeas (canned)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, halved', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'bay-leaves', name: 'Bay leaves', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 50, unit: 'g', store: 'all' },
+      { id: 'oil-fry', name: 'Vegetable oil', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black peppercorns', amount: 8, unit: 'pcs', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Poach chicken', txt: 'Chicken + onion + bay + peppercorns + 1L water + 1 tsp salt. Simmer 30 min. Lift chicken, cool, shred. Strain broth, reserve 400ml.', timer: 1800 },
+      { title: 'Toast rice', txt: 'Rinse rice until water runs clear. Drain. Heat butter + oil in pot. Toast rice 3 min until edges turn translucent.', timer: 180 },
+      { title: 'Cook rice', txt: 'Add 400ml hot chicken broth + 0.5 tsp salt + drained chickpeas. Stir once. Cover, lowest heat 15 min.', timer: 900 },
+      { title: 'Rest', txt: 'Off heat. Place clean cloth between lid and pot. Rest 10 min - rice finishes steaming.', timer: 600 },
+      { title: 'Combine', txt: 'Fluff rice. Top with shredded warm chicken. Drizzle melted butter over.' },
+      { title: 'Serve', txt: 'Pickles and ayran alongside. The street vendor standard pairing.' }
+    ],
+    tip: 'The Istanbul vendors keep the chicken slightly warm in the broth. Don\'t microwave the chicken later - it dries out. Add a spoon of pul biber butter on top for the bonus move.'
+  },
+  {
+    id: 'patlican-meftune', name: 'Patlıcan Meftune', nameEn: 'Şanlıurfa lamb and eggplant stew', emoji: '🍆',
+    category: 'meze-warm', time: 90, prep: 25, cook: 65, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Hatay', 'Meat', 'Hot'],
+    nutrition: { kcal: 540, protein: 30, carbs: 24, fat: 36 },
+    desc: 'Şanlıurfa one-pot stew. Lamb chunks slow-braised with eggplant, peppers, tomatoes, and the signature pomegranate molasses kick that defines southeastern Turkish cooking. Tangy, rich, deeply spiced.',
+    ingredients: [
+      { id: 'lamb-stew', name: 'Lamb shoulder, cubed', amount: 300, unit: 'g', store: 'all' },
+      { id: 'eggplant', name: 'Eggplants, cubed 3cm', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'onion', name: 'Onions, sliced', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 4, unit: 'clove', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, chopped', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Green peppers', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste (acılı)', amount: 2, unit: 'tbsp', store: 'turkish' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses (nar ekşisi)', amount: 3, unit: 'tbsp', store: 'turkish' },
+      { id: 'butter', name: 'Butter', amount: 30, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'isot', name: 'Isot (urfa biber)', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Salt eggplant', txt: 'Salt eggplant cubes, sit 20 min, rinse, pat dry.', timer: 1200 },
+      { title: 'Sear lamb', txt: 'Butter + 1 tbsp olive oil in heavy pot. Brown lamb 8 min. Lift out.', timer: 480 },
+      { title: 'Soffritto', txt: 'Same pot: onions 8 min until golden. Garlic + pastes + isot 2 min.', timer: 600 },
+      { title: 'Build', txt: 'Return lamb. Add tomatoes + peppers + 300ml water + salt. Cover, low heat 40 min.', timer: 2400 },
+      { title: 'Fry eggplant', txt: 'Separate pan: 2 tbsp olive oil. Fry eggplant cubes golden 6 min. Add to stew.', timer: 360 },
+      { title: 'Finish', txt: 'Pomegranate molasses in last 10 min. Adjust salt/molasses balance - should be tangy.', timer: 600 },
+      { title: 'Serve', txt: 'With rice or bulgur pilav and yogurt.' }
+    ],
+    tip: 'Şanlıurfa pomegranate molasses is thicker and more concentrated than commercial brands - use Iranian or Turkish import. Without proper isot the stew loses its smoky-raisin depth.'
+  },
+  {
+    id: 'dana-yahni', name: 'Dana Yahni', nameEn: 'Turkish beef stew with onions', emoji: '🥩',
+    category: 'meze-warm', time: 120, prep: 20, cook: 100, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 480, protein: 36, carbs: 20, fat: 26 },
+    desc: 'Ottoman-era one-pot beef stew. Beef chunks slow-braised with lots of onions and tomato until fork-tender. Yahni is the Persian-Ottoman braising style - low and slow. The Sunday family lunch.',
+    ingredients: [
+      { id: 'beef-stew', name: 'Beef chuck, cubed 3cm', amount: 350, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onions, sliced (lots)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 4, unit: 'clove', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, chopped', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'bay-leaves', name: 'Bay leaves', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'allspice', name: 'Allspice', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Sear beef', txt: 'Butter + olive oil. Brown beef cubes 8 min. Lift out.', timer: 480 },
+      { title: 'Onion melt', txt: 'Same pot: sliced onions + pinch salt. Cook 15 min low until deeply golden and melting.', timer: 900 },
+      { title: 'Aromatics', txt: 'Garlic + tomato paste + allspice + pepper 2 min.', timer: 120 },
+      { title: 'Braise', txt: 'Return beef. Tomatoes + bay + 500ml hot water + salt. Cover. LOWEST heat 75 min.', timer: 4500 },
+      { title: 'Check', txt: 'After 75 min, beef should be fork-tender. If not, more time. Reduce liquid uncovered to thick gravy.' },
+      { title: 'Serve', txt: 'With rice or potato puree. Bread for mopping.' }
+    ],
+    tip: 'The Ottoman version uses pearl onions whole. Sliced onions melting into the gravy is the Anatolian everyday version. Day after = even better.'
+  },
+  {
+    id: 'seyh-mualla', name: 'Şeyh Mualla', nameEn: 'Vegan eggplant chickpea stew', emoji: '🍆',
+    category: 'meze-warm', time: 65, prep: 20, cook: 45, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegan', 'Vegetarian', 'Hot'],
+    nutrition: { kcal: 320, protein: 12, carbs: 36, fat: 16 },
+    desc: 'Hatay vegan classic. Fried eggplant cubes simmered with chickpeas in a rich tomato-pepper sauce. Lenten dish that holds its own against any meat stew. Eaten with bulgur pilav.',
+    ingredients: [
+      { id: 'eggplant', name: 'Eggplants, cubed 3cm', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'chickpeas', name: 'Chickpeas (canned)', amount: 400, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 4, unit: 'clove', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, grated', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'pepper-green', name: 'Long green pepper', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 5, unit: 'tbsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Salt eggplant', txt: 'Salt eggplant 15 min. Pat dry.', timer: 900 },
+      { title: 'Fry eggplant', txt: '3 tbsp olive oil. Fry cubes deep golden 8 min. Drain.', timer: 480 },
+      { title: 'Sauce', txt: 'Same pot: 2 tbsp olive oil + onion 6 min. Pepper sliced + garlic + pastes 2 min. Grated tomato + cumin + pul biber + salt + 250ml water. Simmer 5 min.', timer: 780 },
+      { title: 'Combine', txt: 'Drained chickpeas + fried eggplant. Simmer 20 min uncovered - flavors meld, sauce thickens.', timer: 1200 },
+      { title: 'Serve', txt: 'Parsley shower. With bulgur pilav or bread.' }
+    ],
+    tip: 'Name means "Sheikh\'s Highness" - elevated dish for important guests. The frying matters - skip it and eggplant turns to mush. Pomegranate molasses can be drizzled at end for extra tang.'
+  },
+  {
+    id: 'etli-nohut', name: 'Etli Nohut', nameEn: 'Lamb and chickpea stew', emoji: '🫘',
+    category: 'meze-warm', time: 110, prep: 15, cook: 95, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 540, protein: 36, carbs: 38, fat: 24 },
+    desc: 'Turkish home cooking foundational dish. Lamb cubes braised with chickpeas in a clean tomato broth. No frills, deep flavor. Always served with rice and a small bowl of pickles.',
+    ingredients: [
+      { id: 'lamb-stew', name: 'Lamb shoulder, cubed', amount: 300, unit: 'g', store: 'all' },
+      { id: 'chickpeas', name: 'Chickpeas (canned)', amount: 400, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 3, unit: 'clove', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'butter', name: 'Butter', amount: 30, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Brown lamb', txt: 'Butter + olive oil in heavy pot. Brown lamb 8 min.', timer: 480 },
+      { title: 'Aromatics', txt: 'Chopped onion 6 min. Garlic + tomato paste + pepper paste 2 min.', timer: 480 },
+      { title: 'Braise', txt: 'Add 600ml hot water + black pepper + salt. Cover, lowest heat 60 min.', timer: 3600 },
+      { title: 'Chickpeas', txt: 'Drained chickpeas in. Simmer 20 more min uncovered to thicken.', timer: 1200 },
+      { title: 'Serve', txt: 'Rice pilav and pickles. Optional yogurt-garlic sauce.' }
+    ],
+    tip: 'Old-school version starts with dried chickpeas soaked overnight - more flavor but takes longer. Canned works fine. The trick is enough braising time for lamb to release collagen into the broth.'
+  },
+  {
+    id: 'ankara-tava', name: 'Ankara Tava', nameEn: 'Ankara-style rice with lamb', emoji: '🍚',
+    category: 'meze-warm', time: 65, prep: 20, cook: 45, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 560, protein: 28, carbs: 62, fat: 22 },
+    desc: 'Ankara specialty. Lamb cubes braised, mixed with rice and tomato in a covered pot, baked until rice absorbs all flavor and forms a slightly crispy bottom. Sister of perde pilavı but simpler.',
+    ingredients: [
+      { id: 'lamb-stew', name: 'Lamb shoulder, cubed 1.5cm', amount: 250, unit: 'g', store: 'all' },
+      { id: 'rice-long', name: 'Long-grain rice', amount: 150, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato', name: 'Tomato, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 50, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Sear lamb', txt: 'Butter + olive oil. Brown lamb 6 min.', timer: 360 },
+      { title: 'Braise lamb', txt: 'Add onion 5 min. Tomato paste + grated tomato + 400ml water + salt + pepper. Cover, simmer 30 min until lamb tender.', timer: 1800 },
+      { title: 'Rinse rice', txt: 'Rinse rice 3 times until water runs clear. Drain.' },
+      { title: 'Combine', txt: 'Stir rice into lamb pot. Adjust liquid - should just cover rice. Bring to simmer.' },
+      { title: 'Cook covered', txt: 'Lowest heat covered 15 min. Off heat, rest covered 10 min.', timer: 1500 },
+      { title: 'Serve', txt: 'Flip onto plate or scoop from pot. Pickles alongside.' }
+    ],
+    tip: 'Ankara version uses tail fat (kuyrukyağı) for richness - rare outside Turkey. Butter substitutes well. The rest at the end is crucial - rice continues cooking on residual heat.'
+  },
+  {
+    id: 'sihil-mahsi', name: 'Sihil Mahsi', nameEn: 'Hatay stuffed zucchini with spicy lamb', emoji: '🥒',
+    category: 'meze-warm', time: 85, prep: 30, cook: 55, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Hatay', 'Meat', 'Hot'],
+    nutrition: { kcal: 460, protein: 28, carbs: 28, fat: 26 },
+    desc: 'Hatay/Antakya specialty - "mahsi" means stuffed in Levantine Arabic. Hollowed zucchini filled with spicy lamb-and-rice, simmered in tomato broth with pomegranate molasses. Levantine cousin to kabak dolması.',
+    ingredients: [
+      { id: 'courgette', name: 'Small zucchinis (15cm)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'ground-lamb', name: 'Ground lamb', amount: 200, unit: 'g', store: 'all' },
+      { id: 'rice-long', name: 'Long-grain rice (soaked 30 min)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, very finely chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'cinnamon', name: 'Cinnamon', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'allspice', name: 'Allspice', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Hollow zucchini', txt: 'Cut tops off zucchinis (keep as lids). Hollow out the inside with apple corer or thin spoon - leave 5mm wall. Discard pulp or save for soup.' },
+      { title: 'Filling', txt: 'Mix lamb + drained rice + onion + parsley + mint + 1 tbsp tomato paste + spices + 1 tsp salt. Knead 3 min.', timer: 180 },
+      { title: 'Stuff', txt: 'Fill each zucchini 3/4 full with filling (rice expands). Replace tops as lids.' },
+      { title: 'Sauce pot', txt: '2 tbsp olive oil in pot. Remaining tomato paste + pepper paste + 500ml water + pomegranate molasses + 0.5 tsp salt. Bring to simmer.' },
+      { title: 'Cook', txt: 'Stand zucchinis in pot. Cover. Lowest heat 45 min - rice cooks, zucchini turns tender.', timer: 2700 },
+      { title: 'Serve', txt: 'Spoon some braising liquid over each zucchini. Yogurt alongside.' }
+    ],
+    tip: 'Get the smallest zucchinis at Brunnenmarkt - the long thin Aleppo-style ones are perfect. Hollowing without breaking takes practice. The pomegranate molasses is what distinguishes this from a Turkish kabak dolması.'
+  },
+  {
+    id: 'kuru-dolma', name: 'Kuru Dolma', nameEn: 'Dried eggplant and pepper dolma', emoji: '🌶',
+    category: 'meze-warm', time: 90, prep: 30, cook: 60, difficulty: 'Hard', servings: 2,
+    tags: ['Classic', 'Hatay', 'Meat', 'Hot'],
+    nutrition: { kcal: 480, protein: 24, carbs: 38, fat: 24 },
+    desc: 'Southeastern Turkish specialty. Sun-dried hollowed eggplants and peppers (sold strung on string at Turkish markets) rehydrated and stuffed with spiced lamb-rice. The flavor of dried-then-rehydrated vegetable is sweeter and more intense than fresh.',
+    ingredients: [
+      { id: 'eggplant-dried', name: 'Dried eggplants (kurutulmuş patlıcan)', amount: 6, unit: 'pcs', store: 'turkish', note: 'Etsan - strung dried vegetables' },
+      { id: 'pepper-dried', name: 'Dried peppers', amount: 6, unit: 'pcs', store: 'turkish' },
+      { id: 'ground-lamb', name: 'Ground lamb', amount: 250, unit: 'g', store: 'all' },
+      { id: 'rice-long', name: 'Long-grain rice', amount: 80, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cinnamon', name: 'Cinnamon', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'allspice', name: 'Allspice', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Rehydrate', txt: 'Soak dried vegetables in warm salted water 30 min. They become soft and flexible.', timer: 1800 },
+      { title: 'Filling', txt: 'Mix lamb + rinsed rice + chopped onion + parsley + 1 tbsp tomato paste + cinnamon + allspice + isot + 1 tsp salt. Knead 3 min.', timer: 180 },
+      { title: 'Stuff', txt: 'Drain vegetables. Carefully stuff each with filling 3/4 full.' },
+      { title: 'Sauce', txt: 'Heavy pot: 2 tbsp olive oil. Remaining tomato paste + pepper paste + pomegranate molasses + 500ml hot water + 0.5 tsp salt.' },
+      { title: 'Braise', txt: 'Pack dolmalar tightly in pot. Cover with plate to keep submerged. Lowest heat 45 min.', timer: 2700 },
+      { title: 'Serve', txt: 'On platter with yogurt-garlic sauce.' }
+    ],
+    tip: 'Strung dried vegetables (kuru sebze) are an Anatolian winter staple - vegetables harvested in summer, hollowed, sun-dried, strung. Etsan stocks them year-round. Better than fresh for this dish.'
+  },
+  {
+    id: 'sac-tava', name: 'Saç Tava', nameEn: 'Iron-pan lamb and pepper stir-fry', emoji: '🔥',
+    category: 'meze-warm', time: 30, prep: 15, cook: 15, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Hatay', 'Meat', 'Hot', 'Quick'],
+    nutrition: { kcal: 480, protein: 32, carbs: 12, fat: 32 },
+    desc: 'Anatolian street and home dish. Lamb cubes stir-fried over high heat in a convex iron pan (saç) with onion, pepper, tomato. Fast, smoky, deeply browned. Eaten with flatbread - tear, scoop, eat.',
+    ingredients: [
+      { id: 'lamb-stew', name: 'Lamb shoulder, cubed small (1.5cm)', amount: 350, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, sliced', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Long green peppers, sliced', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'tomato', name: 'Tomato, chopped', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 4, unit: 'clove', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'butter', name: 'Butter', amount: 30, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'High heat', txt: 'Heavy iron or carbon steel pan over highest heat 3 min until smoking.', timer: 180 },
+      { title: 'Sear lamb', txt: 'Butter + oil + lamb. Spread out, do not stir. 90 sec to develop crust. Toss, 90 sec more.', timer: 180 },
+      { title: 'Add aromatics', txt: 'Onion + peppers + garlic + pastes + spices + salt. Stir 4 min - vegetables soften, fond loosens.', timer: 240 },
+      { title: 'Tomato', txt: 'Chopped tomato. 4 more min - tomato breaks down, sauce thickens.', timer: 240 },
+      { title: 'Serve', txt: 'Straight from pan to table. Parsley shower. Lavash or flatbread, ayran.' }
+    ],
+    tip: 'High heat is everything - low heat steams the lamb instead of searing. Cast iron pan or wok works. The pepper paste browning slightly on the pan bottom is the dish.'
+  },
+  {
+    id: 'islim-kebab', name: 'İslim Kebab', nameEn: 'Eggplant-wrapped meatball kebab', emoji: '🍆',
+    category: 'meze-warm', time: 85, prep: 35, cook: 50, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 520, protein: 28, carbs: 22, fat: 36 },
+    desc: 'Ottoman court dish ("islim" means steam). Fried eggplant strips wrapped around meatballs, secured with toothpicks, baked in tomato sauce. The dramatic dolma. Each bite is meat + eggplant + sauce in perfect ratio.',
+    ingredients: [
+      { id: 'eggplant', name: 'Long thin eggplants', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'ground-lamb', name: 'Ground lamb', amount: 250, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 2, unit: 'clove', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'breadcrumbs', name: 'Breadcrumbs', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'tomato', name: 'Tomato, sliced (for top)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Green pepper rings', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Slice eggplant', txt: 'Slice eggplant lengthwise into 5mm strips. Salt, sit 15 min, pat dry.', timer: 900 },
+      { title: 'Fry strips', txt: '3 tbsp olive oil. Fry eggplant strips golden both sides. Drain.', timer: 480 },
+      { title: 'Meatballs', txt: 'Mix lamb + grated onion + minced garlic + parsley + breadcrumbs + cumin + 1 tsp salt. Form into 10 small football-shaped meatballs.' },
+      { title: 'Wrap', txt: 'Lay 1 eggplant strip on board. Place a meatball on one end. Roll up. Secure with toothpick. Repeat.' },
+      { title: 'Sauce', txt: 'Wide baking dish. Mix tomato paste + 200ml water + 0.5 tsp salt + 1 tbsp olive oil. Pour into dish.' },
+      { title: 'Bake', txt: 'Arrange wrapped meatballs seam-down in sauce. Top each with tomato slice + pepper ring. 200C oven 30 min.', timer: 1800 },
+      { title: 'Serve', txt: 'Remove toothpicks. Plate with rice. Spoon sauce over.' }
+    ],
+    tip: 'Long thin Aleppo eggplants are ideal - they wrap cleanly. Standard eggplants work but the strips are wider. Frying makes the eggplant pliable; baked strips break when wrapping.'
+  },
+  {
+    id: 'lor-dolmasi', name: 'Lor Dolması', nameEn: 'Cheese-stuffed sorrel rolls', emoji: '🌿',
+    category: 'meze-cold', time: 60, prep: 40, cook: 20, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Karadeniz', 'Vegetarian', 'Cold'],
+    nutrition: { kcal: 280, protein: 14, carbs: 14, fat: 18 },
+    desc: 'Black Sea vegetarian dolma. Sorrel leaves (or chard) wrapped around a lor cheese, herb, and bulgur filling. Sourer than yaprak sarma - sorrel provides a built-in lemon tang. Served cool with yogurt.',
+    ingredients: [
+      { id: 'chard-leaves', name: 'Sorrel or chard leaves (large)', amount: 16, unit: 'leaves', store: 'all' },
+      { id: 'lor-cheese', name: 'Lor (curd cheese) or ricotta', amount: 200, unit: 'g', store: 'turkish' },
+      { id: 'bulgur-fine', name: 'Fine bulgur', amount: 60, unit: 'g', store: 'turkish' },
+      { id: 'onion', name: 'Onion, finely chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'spring-onion', name: 'Spring onions, chopped', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'dill', name: 'Dill', amount: 0.5, unit: 'bunch', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 0.5, unit: 'bunch', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'lemon', name: 'Lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt (to serve)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Hydrate bulgur', txt: 'Pour 80ml boiling water over bulgur. Sit 15 min. Drain excess.', timer: 900 },
+      { title: 'Blanch leaves', txt: 'Boil large pot of salted water. Dip leaves 30 sec each just to wilt. Drain, cool, trim thick stems.' },
+      { title: 'Filling', txt: 'In big bowl: hydrated bulgur + crumbled lor + chopped onion + spring onions + dill + parsley + mint + 2 tbsp olive oil + salt. Mix.' },
+      { title: 'Roll', txt: 'Each leaf: 1 tbsp filling at base, fold sides in, roll up tight cigar. Lay seam-down on plate.' },
+      { title: 'Steam', txt: 'Arrange in shallow pan. Add 100ml water + remaining olive oil + lemon juice. Cover, simmer 15 min.', timer: 900 },
+      { title: 'Cool and serve', txt: 'Cool to room temp. Plate with yogurt.' }
+    ],
+    tip: 'Sorrel (kuzukulağı) is rare in Vienna - chard works as substitute and gives bigger leaves. Boğaziçi or Karadeniz women add walnut pieces inside. The cheese-bulgur ratio matters: too much bulgur = dry, too much cheese = collapses.'
+  },
+
+  // ============ SOUPS + KOFTE VARIANTS ============
+  {
+    id: 'tutmac-corbasi', name: 'Tutmaç Çorbası', nameEn: 'Lentil and noodle yogurt soup', emoji: '🍜',
+    category: 'soup', time: 50, prep: 15, cook: 35, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegetarian', 'Hot'],
+    nutrition: { kcal: 280, protein: 14, carbs: 38, fat: 8 },
+    desc: 'Ancient Anatolian soup mentioned in 11th-century Dīvān Lughāt al-Turk. Lentils, hand-cut noodles, yogurt. Topped with mint butter. Eaten in Central Anatolia winters since Seljuk times.',
+    ingredients: [
+      { id: 'lentil-red', name: 'Red lentils', amount: 80, unit: 'g', store: 'all' },
+      { id: 'noodles-tutmac', name: 'Erişte or wide egg noodles', amount: 80, unit: 'g', store: 'turkish' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 200, unit: 'g', store: 'all' },
+      { id: 'egg', name: 'Egg yolk', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 2, unit: 'clove', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Cook lentils', txt: 'Rinse lentils. 1L water + lentils + onion + salt. Simmer 20 min until soft.', timer: 1200 },
+      { title: 'Noodles', txt: 'Add erişte. Simmer 8 min until tender.', timer: 480 },
+      { title: 'Temper yogurt', txt: 'Whisk yogurt + egg yolk + 1 ladle hot soup. Slowly stir mixture back into pot off heat.' },
+      { title: 'Mint butter', txt: 'Small pan: melt butter + dried mint + pul biber + crushed garlic 30 sec.', timer: 30 },
+      { title: 'Serve', txt: 'Ladle soup. Drizzle mint butter on top. Eat immediately - yogurt does not reheat well.' }
+    ],
+    tip: 'Tempering yogurt with egg yolk prevents curdling. Off-heat is mandatory - boiling after adding yogurt splits the soup. The mint butter on top is the signature.'
+  },
+  {
+    id: 'oz-corbasi', name: 'Öz Çorbası', nameEn: 'Gaziantep wheat and yogurt soup', emoji: '🌾',
+    category: 'soup', time: 60, prep: 10, cook: 50, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Hatay', 'Vegetarian', 'Hot'],
+    nutrition: { kcal: 240, protein: 12, carbs: 32, fat: 8 },
+    desc: 'Gaziantep specialty. Pearled wheat (aşurelik buğday) simmered with chickpeas in yogurt broth, finished with paprika butter. Hearty, sour, deeply traditional southeastern breakfast or weekend lunch.',
+    ingredients: [
+      { id: 'wheat-pearled', name: 'Pearled wheat (aşurelik buğday)', amount: 80, unit: 'g', store: 'turkish' },
+      { id: 'chickpeas', name: 'Chickpeas (canned)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 250, unit: 'g', store: 'all' },
+      { id: 'egg', name: 'Egg yolk', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'flour-allpurpose', name: 'Flour', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Cook wheat', txt: 'Soak wheat 2 hours if dry. 800ml water + wheat. Simmer 35 min until soft.', timer: 2100 },
+      { title: 'Add chickpeas', txt: 'Drained chickpeas + salt. 5 min.', timer: 300 },
+      { title: 'Yogurt mix', txt: 'Whisk yogurt + flour + egg yolk + 1 ladle hot broth until smooth.' },
+      { title: 'Combine', txt: 'Off heat. Slowly pour yogurt mix into pot, stirring constantly. Return to lowest heat, warm 3 min without boiling.', timer: 180 },
+      { title: 'Mint butter', txt: 'Butter + mint + pul biber 30 sec.', timer: 30 },
+      { title: 'Serve', txt: 'Drizzle mint butter on each bowl.' }
+    ],
+    tip: 'Aşurelik buğday is pre-cracked wheat sold for the aşure dessert - same ingredient. Substitute pearl barley. Yogurt-flour mix keeps yogurt from splitting at higher temps.'
+  },
+  {
+    id: 'bamya-corbasi', name: 'Bamya Çorbası', nameEn: 'Lamb and okra soup', emoji: '🥣',
+    category: 'soup', time: 90, prep: 20, cook: 70, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 320, protein: 24, carbs: 14, fat: 18 },
+    desc: 'Traditional Turkish dried-okra soup. Small dried okras (sold strung at Turkish markets) rehydrated and simmered with lamb in tomato broth. Sour, brothy, the wedding soup of inland Anatolia.',
+    ingredients: [
+      { id: 'lamb-stew', name: 'Lamb shoulder, cubed small', amount: 200, unit: 'g', store: 'all' },
+      { id: 'okra-dried', name: 'Dried baby okra', amount: 60, unit: 'g', store: 'turkish' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 3, unit: 'clove', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 30, unit: 'g', store: 'all' },
+      { id: 'lemon', name: 'Lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Rehydrate okra', txt: 'Soak dried okra in warm water 30 min. Drain.', timer: 1800 },
+      { title: 'Brown lamb', txt: 'Butter in pot. Brown lamb 6 min. Add onion 5 min.', timer: 660 },
+      { title: 'Build broth', txt: 'Garlic + tomato paste 1 min. 800ml hot water + salt. Cover, simmer 45 min until lamb tender.', timer: 2700 },
+      { title: 'Okra and lemon', txt: 'Add okra + lemon juice + pul biber. Simmer 15 min - okra rehydrates fully.', timer: 900 },
+      { title: 'Serve', txt: 'Adjust lemon - should be distinctly tart. Bread alongside.' }
+    ],
+    tip: 'Dried okra (kuru bamya) is sold on strings at every Turkish market. Fresh okra works but the dried version has concentrated sweet-tart flavor that defines this soup. Etsan stocks both.'
+  },
+  {
+    id: 'eksili-mahluta', name: 'Ekşili Mahluta', nameEn: 'Sour red lentil soup', emoji: '🍋',
+    category: 'soup', time: 45, prep: 10, cook: 35, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Hatay', 'Vegetarian', 'Vegan', 'Hot'],
+    nutrition: { kcal: 240, protein: 12, carbs: 36, fat: 6 },
+    desc: 'Mardin/Antep variant of red lentil soup. Sour from pomegranate molasses + lemon, spicy from isot. Mahluta = "mixed" because it combines red lentils with bulgur. Sharper and more complex than the standard mercimek.',
+    ingredients: [
+      { id: 'lentil-red', name: 'Red lentils', amount: 100, unit: 'g', store: 'all' },
+      { id: 'bulgur-fine', name: 'Fine bulgur', amount: 40, unit: 'g', store: 'turkish' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 3, unit: 'clove', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses', amount: 2, unit: 'tbsp', store: 'turkish' },
+      { id: 'lemon', name: 'Lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Soffritto', txt: 'Olive oil in pot. Onion 5 min. Garlic + pastes 1 min.', timer: 360 },
+      { title: 'Simmer', txt: 'Rinsed lentils + bulgur + 1L hot water + salt. 25 min until everything is soft.', timer: 1500 },
+      { title: 'Acid', txt: 'Add pomegranate molasses + lemon juice + isot. 3 more min.', timer: 180 },
+      { title: 'Serve', txt: 'Dried mint sprinkle on top. Lemon wedges alongside.' }
+    ],
+    tip: 'The point is sour. Taste and adjust pomegranate molasses up - some brands are mild. Mardin home cooks blend half the soup smooth and leave half textured.'
+  },
+  {
+    id: 'iskembe-corbasi', name: 'İşkembe Çorbası', nameEn: 'Turkish tripe soup hangover cure', emoji: '🥣',
+    category: 'soup', time: 180, prep: 30, cook: 150, difficulty: 'Hard', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 280, protein: 22, carbs: 14, fat: 14 },
+    desc: 'Istanbul late-night legend. Beef tripe simmered for hours into a creamy, garlicky white soup. Served at iskembeci shops that open after midnight. The hangover cure. Vinegar and chili oil at table.',
+    ingredients: [
+      { id: 'tripe-beef', name: 'Beef tripe (pre-cleaned)', amount: 300, unit: 'g', store: 'turkish' },
+      { id: 'flour-allpurpose', name: 'Flour', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'egg', name: 'Egg yolks', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'lemon', name: 'Lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 50, unit: 'g', store: 'all' },
+      { id: 'garlic-water', name: 'Garlic-vinegar sauce: 4 garlic cloves crushed + 4 tbsp white vinegar', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber + 2 tbsp melted butter (chili oil)', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tbsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Boil tripe', txt: 'Tripe + 2L water + 1 tbsp salt. Boil 2 hours until very tender. Discard first water if foamy. Reserve 1L cooking liquid.', timer: 7200 },
+      { title: 'Chop tripe', txt: 'Drain tripe. Cool slightly. Chop into 1cm pieces.' },
+      { title: 'Roux', txt: 'Same pot: butter + flour. Whisk 2 min - no color.', timer: 120 },
+      { title: 'Build', txt: 'Pour in 800ml reserved cooking liquid slowly while whisking. Smooth. Simmer 5 min.', timer: 300 },
+      { title: 'Temper', txt: 'Whisk egg yolks + lemon juice + 1 ladle hot soup. Slowly stir back into pot off heat.' },
+      { title: 'Combine', txt: 'Add chopped tripe back. Adjust salt. Warm gently.' },
+      { title: 'Serve', txt: 'Each bowl: drizzle chili butter + garlic-vinegar sauce at table to taste.' }
+    ],
+    tip: 'Pre-cleaned tripe from Etsan saves 2 hours of cleaning. Garlic-vinegar at table is essential - it cuts the richness. Real iskembeci shops keep this on the stove all night.'
+  },
+  {
+    id: 'kereviz-yogurt-corbasi', name: 'Kereviz Yoğurt Çorbası', nameEn: 'Celeriac yogurt soup', emoji: '🥣',
+    category: 'soup', time: 45, prep: 15, cook: 30, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegetarian', 'Hot'],
+    nutrition: { kcal: 220, protein: 10, carbs: 22, fat: 12 },
+    desc: 'Winter Anatolian comfort soup. Celeriac slow-simmered then blended into a creamy yogurt-thickened base. Pale, fragrant, lightly sweet. Topped with mint butter. Healing food.',
+    ingredients: [
+      { id: 'celeriac', name: 'Celeriac, peeled and cubed', amount: 300, unit: 'g', store: 'all' },
+      { id: 'potato', name: 'Potato, cubed', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 2, unit: 'clove', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 200, unit: 'g', store: 'all' },
+      { id: 'flour-allpurpose', name: 'Flour', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Soffritto', txt: '1 tbsp butter. Onion 5 min. Garlic 30 sec.', timer: 330 },
+      { title: 'Cook vegetables', txt: 'Celeriac + potato + 700ml hot water + salt. Simmer 20 min until soft.', timer: 1200 },
+      { title: 'Blend', txt: 'Immersion blender until smooth and creamy.' },
+      { title: 'Temper yogurt', txt: 'Whisk yogurt + flour + 1 ladle hot soup. Pour back in stirring. Lowest heat 3 min.', timer: 180 },
+      { title: 'Mint butter', txt: 'Remaining butter + mint + pul biber 30 sec.', timer: 30 },
+      { title: 'Serve', txt: 'Drizzle on top. Bread alongside.' }
+    ],
+    tip: 'Celeriac (kereviz) is winter star vegetable in Turkish kitchens. Roast a bay leaf with the simmer for extra aroma. Soup keeps 3 days.'
+  },
+  {
+    id: 'dul-corbasi', name: 'Dul Çorbası', nameEn: 'Widow soup with lentils and chickpeas', emoji: '🌶',
+    category: 'soup', time: 60, prep: 15, cook: 45, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegetarian', 'Vegan', 'Spicy', 'Hot'],
+    nutrition: { kcal: 280, protein: 14, carbs: 38, fat: 8 },
+    desc: 'Southeastern Turkish soup. "Widow" because it has no meat - traditionally what poor widows could afford. Three pulses (lentils, chickpeas, white beans) + noodles + heavy chili. Filling and warming.',
+    ingredients: [
+      { id: 'lentil-green', name: 'Green lentils', amount: 50, unit: 'g', store: 'all' },
+      { id: 'chickpeas', name: 'Chickpeas (canned)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'white-beans', name: 'White beans (canned)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'noodles-tutmac', name: 'Erişte or wide noodles', amount: 50, unit: 'g', store: 'turkish' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 3, unit: 'clove', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 2, unit: 'tbsp', store: 'turkish' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 2, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Soffritto', txt: 'Olive oil in pot. Onion 5 min. Garlic + pastes + isot 2 min.', timer: 420 },
+      { title: 'Lentils', txt: 'Rinsed green lentils + 1L hot water + salt. Simmer 25 min until just tender.', timer: 1500 },
+      { title: 'Beans and noodles', txt: 'Drained chickpeas + white beans + erişte. Simmer 10 min.', timer: 600 },
+      { title: 'Finish', txt: 'Pomegranate molasses in last 2 min. Taste - adjust salt and chili.', timer: 120 },
+      { title: 'Serve', txt: 'Extra isot on top. Lemon wedges. Bread.' }
+    ],
+    tip: 'Each pulse contributes different texture - lentils break down to thicken, chickpeas hold shape, white beans give creaminess. The pomegranate molasses brightens the brown stew into something alive.'
+  },
+  {
+    id: 'dalyan-kofte', name: 'Dalyan Köfte', nameEn: 'Stuffed meatloaf Turkish way', emoji: '🥩',
+    category: 'meze-warm', time: 80, prep: 30, cook: 50, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 540, protein: 38, carbs: 14, fat: 36 },
+    desc: 'Turkish stuffed meatloaf from Marmara region. Spiced beef-lamb wrapped around boiled egg, carrot, and peas, baked in tomato sauce. Old-school dinner party dish - dramatic slice reveal.',
+    ingredients: [
+      { id: 'ground-beef-lamb', name: 'Ground beef + lamb (50/50)', amount: 400, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'breadcrumbs', name: 'Breadcrumbs', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'egg', name: 'Eggs (1 in mix, 2 boiled for stuffing)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'carrot', name: 'Carrot, boiled and quartered lengthwise', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'peas-green', name: 'Frozen peas', amount: 80, unit: 'g', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Boil egg and carrot', txt: 'Boil 2 eggs 9 min. Boil carrot 8 min until tender. Cool. Peel eggs. Quarter carrot lengthwise.', timer: 540 },
+      { title: 'Meat mix', txt: 'Knead beef-lamb + grated onion + 1 raw egg + breadcrumbs + cumin + pepper + 1 tsp salt 5 min until paste-like.', timer: 300 },
+      { title: 'Shape', txt: 'Spread meat in 25x15cm rectangle on parchment. Lay carrot strips + boiled eggs + peas down center. Roll up using parchment, sealing seams. Shape into loaf.' },
+      { title: 'Sear', txt: 'Heavy pan: olive oil. Brown loaf on all sides 6 min.', timer: 360 },
+      { title: 'Sauce', txt: 'Mix tomato paste + 200ml water + 0.5 tsp salt. Pour over loaf in pan.' },
+      { title: 'Bake', txt: '180C oven 40 min. Baste once at halfway.', timer: 2400 },
+      { title: 'Rest and slice', txt: 'Rest 10 min. Slice thick. Spoon sauce over.', timer: 600 }
+    ],
+    tip: 'Resting before slicing keeps the egg-carrot stuffing intact. Cold leftovers slice cleaner than warm. Mashed potato is the traditional side.'
+  },
+  {
+    id: 'antep-arab-kofta', name: 'Antep Arab Köftesi', nameEn: 'Spiced bulgur balls with garlic yogurt', emoji: '🟤',
+    category: 'meze-warm', time: 60, prep: 30, cook: 30, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Hatay', 'Vegetarian', 'Hot'],
+    nutrition: { kcal: 380, protein: 16, carbs: 52, fat: 12 },
+    desc: 'Gaziantep vegetarian köfte. Fine bulgur, tomato paste, and heavy spices kneaded into small dumplings, boiled, then bathed in spicy tomato butter sauce. Topped with garlic yogurt. The Antep version of içli köfte\'s lighter cousin.',
+    ingredients: [
+      { id: 'bulgur-fine', name: 'Fine bulgur', amount: 200, unit: 'g', store: 'turkish' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 2, unit: 'tbsp', store: 'turkish' },
+      { id: 'onion', name: 'Onion, very finely chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 200, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic clove (in yogurt)', amount: 1, unit: 'clove', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 50, unit: 'g', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Hydrate bulgur', txt: 'Bulgur + 250ml hot water. Sit 15 min covered.', timer: 900 },
+      { title: 'Knead', txt: 'Add tomato paste + pepper paste + onion + parsley + cumin + isot + salt to bulgur. Knead 8 min with wet hands until cohesive.', timer: 480 },
+      { title: 'Shape', txt: 'Pinch off cherry-sized pieces. Roll into smooth balls between palms. Should yield ~30 balls.' },
+      { title: 'Boil', txt: 'Salted water boiling. Drop in balls 8 min - they float when done.', timer: 480 },
+      { title: 'Garlic yogurt', txt: 'Mix yogurt + crushed garlic + pinch salt.' },
+      { title: 'Butter sauce', txt: 'Melt butter + pul biber + 1 tbsp drained tomato paste + 3 tbsp boiling water from pot.' },
+      { title: 'Serve', txt: 'Drain köftes. Plate. Spoon garlic yogurt over. Drizzle butter sauce.' }
+    ],
+    tip: 'Knead until the dough holds together when squeezed - if it crumbles, add water; if too wet, more bulgur. Fine bulgur only (köftelik bulgur) - coarse will not bind.'
+  },
+  {
+    id: 'sasakaldim-kofte', name: 'Şaşakaldım Köfte', nameEn: 'Layered köfte and bread casserole', emoji: '🥖',
+    category: 'meze-warm', time: 70, prep: 30, cook: 40, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 580, protein: 32, carbs: 38, fat: 32 },
+    desc: 'Erzurum specialty. Name means "I am stunned" - allegedly the reaction of the first person who ate it. Stale bread layered with grilled köfte, tomato sauce, garlic yogurt, and chili butter. Turkish version of fattet.',
+    ingredients: [
+      { id: 'ground-lamb', name: 'Ground lamb', amount: 250, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'bread-stale', name: 'Stale Turkish bread or pide, cubed', amount: 150, unit: 'g', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, grated', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 250, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic clove', amount: 2, unit: 'clove', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 50, unit: 'g', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Make köfte', txt: 'Knead lamb + grated onion + cumin + pepper + 1 tsp salt 4 min. Form 12 small flat patties.', timer: 240 },
+      { title: 'Toast bread', txt: 'Olive oil drizzle on bread cubes. 200C oven 10 min until crisp.', timer: 600 },
+      { title: 'Cook köfte', txt: 'Hot pan, no extra oil (lamb gives fat). Brown patties 2 min each side.', timer: 240 },
+      { title: 'Tomato sauce', txt: 'Same pan: tomato paste 30 sec. Grated tomato + 100ml water + 0.5 tsp salt. Simmer 5 min.', timer: 300 },
+      { title: 'Garlic yogurt', txt: 'Yogurt + crushed garlic + pinch salt.' },
+      { title: 'Assemble', txt: 'Wide platter: toasted bread cubes spread out. Spoon tomato sauce over. Lay köftes on top. Drizzle garlic yogurt.' },
+      { title: 'Chili butter finish', txt: 'Melt butter + 1 tbsp pul biber 30 sec. Drizzle hot butter over the whole dish. Parsley shower.', timer: 30 }
+    ],
+    tip: 'The bread must be properly stale or it turns to mush. Day-old pide is the move. Eat within 5 minutes of assembly - the bread softens with the sauce and yogurt.'
+  },
+  {
+    id: 'fellah-kofte', name: 'Fellah Köftesi', nameEn: 'Spicy bulgur dumplings in garlic tomato', emoji: '🌶',
+    category: 'meze-warm', time: 60, prep: 30, cook: 30, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Hatay', 'Vegan', 'Vegetarian', 'Spicy', 'Hot'],
+    nutrition: { kcal: 340, protein: 12, carbs: 56, fat: 8 },
+    desc: 'Hatay/Antakya vegan dumplings. Tiny bulgur balls boiled then simmered in spicy garlicky tomato sauce. "Fellah" means peasant - poor people\'s food that became prized. Spicier and smaller than Antep Arab kofta.',
+    ingredients: [
+      { id: 'bulgur-fine', name: 'Fine bulgur', amount: 200, unit: 'g', store: 'turkish' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste (acılı)', amount: 2, unit: 'tbsp', store: 'turkish' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 5, unit: 'clove', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, grated', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Hydrate', txt: 'Bulgur + 200ml hot water + 1 tbsp tomato paste + 1 tbsp pepper paste + cumin + isot + salt. Sit 15 min.', timer: 900 },
+      { title: 'Knead and shape', txt: 'Knead 5 min until cohesive. Pinch pea-sized pieces. Roll into tiny balls between palms. ~50 balls.', timer: 300 },
+      { title: 'Boil', txt: 'Salted boiling water. Drop balls 6 min. Lift with slotted spoon.', timer: 360 },
+      { title: 'Sauce', txt: 'Same pot, drained: olive oil + crushed garlic 30 sec. Grated tomato + remaining pastes + pomegranate molasses + 200ml water. Simmer 5 min.', timer: 330 },
+      { title: 'Combine', txt: 'Return boiled balls to sauce. Simmer 5 more min - sauce thickens.', timer: 300 },
+      { title: 'Serve', txt: 'Parsley shower. Garlic yogurt alongside if you want a milder version.' }
+    ],
+    tip: 'The smaller the balls the better - peasant women in Antakya pride themselves on pea-sized fellah köfte. Pinky-nail size is the standard. Patience pays off.'
+  },
+  {
+    id: 'inegol-kofte', name: 'İnegöl Köfte', nameEn: 'Bursa-style beef-lamb köfte', emoji: '🥩',
+    category: 'meze-warm', time: 40, prep: 25, cook: 15, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot', 'Quick'],
+    nutrition: { kcal: 460, protein: 32, carbs: 8, fat: 32 },
+    desc: 'İnegöl town in Bursa province specialty. No onion. No spice beyond salt + pepper + cumin. The meat does the talking. Hand-kneaded for proper texture, grilled or pan-fried, oblong shaped. Restaurant chains across Turkey serve this.',
+    ingredients: [
+      { id: 'ground-beef-lamb', name: 'Ground beef + lamb (60/40)', amount: 400, unit: 'g', store: 'all' },
+      { id: 'breadcrumbs', name: 'Stale bread, soaked in water and squeezed', amount: 1, unit: 'slice', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oil-fry', name: 'Vegetable oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Knead', txt: 'Soak bread, squeeze dry. Mix meat + bread + cumin + pepper + salt. Knead 8 min until paste-like and bouncy when poked.', timer: 480 },
+      { title: 'Rest', txt: 'Refrigerate 30 min covered - tightens texture.', timer: 1800 },
+      { title: 'Shape', txt: 'Wet hands. Form into 8 oval patties, finger-thick.' },
+      { title: 'Cook', txt: 'Heavy pan over medium-high. Light oil. Brown patties 3 min each side.', timer: 360 },
+      { title: 'Serve', txt: 'On platter. Pickled hot peppers + raw onion sliced thin + sumac on side. Bread.' }
+    ],
+    tip: 'The defining İnegöl rule: no onion, no parsley. Just meat, bread, salt, pepper, cumin. Kneading time is what creates the bouncy texture. Hand-mince the meat at home if you can find quality beef and lamb.'
+  },
+  {
+    id: 'haveydi-kofte', name: 'Haveydi Köfte', nameEn: 'Vegan bulgur and tomato köfte', emoji: '🍅',
+    category: 'meze-cold', time: 35, prep: 30, cook: 5, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Hatay', 'Vegan', 'Vegetarian', 'Cold'],
+    nutrition: { kcal: 280, protein: 8, carbs: 48, fat: 6 },
+    desc: 'Antakya street snack. Fine bulgur kneaded with tomato, herbs, and walnut, shaped by hand. Lemony-fresh, eaten as quick meze with lettuce leaves to wrap. No cooking - just hydrate, knead, eat.',
+    ingredients: [
+      { id: 'bulgur-fine', name: 'Fine bulgur', amount: 150, unit: 'g', store: 'turkish' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'walnut', name: 'Walnut, finely chopped', amount: 50, unit: 'g', store: 'all' },
+      { id: 'parsley', name: 'Parsley, finely chopped', amount: 0.5, unit: 'bunch', store: 'all' },
+      { id: 'spring-onion', name: 'Spring onions, chopped', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses', amount: 2, unit: 'tbsp', store: 'turkish' },
+      { id: 'lemon', name: 'Lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'lettuce', name: 'Lettuce leaves (to serve)', amount: 8, unit: 'leaves', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Hydrate', txt: 'Bulgur + 150ml hot water + tomato paste + pepper paste + salt + cumin + pul biber. Stir, sit 15 min covered.', timer: 900 },
+      { title: 'Knead', txt: 'Add walnut + parsley + spring onions + pomegranate molasses + lemon + olive oil. Knead 5 min with wet hands.', timer: 300 },
+      { title: 'Shape', txt: 'Wet hands. Squeeze ovals between fingers (so they show finger imprints). Plate on lettuce leaves.' },
+      { title: 'Serve', txt: 'Lemon wedges. Eat each piece wrapped in a lettuce leaf.' }
+    ],
+    tip: 'The finger-imprint shape is traditional - shows it was made by hand. Tastes better after 30 min as flavors meld. Often confused with çiğ köfte but Haveydi has no meat ever (even historically).'
+  },
+
+  // ============ KEBABS + PILAVS + OTTOMAN BATCH ============
+  {
+    id: 'geleli-kebab', name: 'Geleli Kebab', nameEn: 'Malatya tahini-lamb kebab', emoji: '🥩',
+    category: 'meze-warm', time: 70, prep: 30, cook: 40, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 560, protein: 32, carbs: 18, fat: 38 },
+    desc: 'Malatya regional kebab. Ground lamb mixed with tahini and spices, baked on flat metal tray with tomato and pepper. Tahini gives signature sesame depth. Almost extinct outside Malatya - one of those dishes preserved by aging grandmothers.',
+    ingredients: [
+      { id: 'ground-lamb', name: 'Ground lamb (with fat)', amount: 350, unit: 'g', store: 'all' },
+      { id: 'tahini', name: 'Tahini', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'onion', name: 'Onion, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'parsley', name: 'Parsley, finely chopped', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, sliced', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Long green peppers', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Mix', txt: 'Knead lamb + tahini + grated onion + parsley + cumin + isot + pepper + salt 5 min. Tahini binds the meat into a paste-like consistency.', timer: 300 },
+      { title: 'Spread', txt: 'Press meat mixture flat onto an oiled baking tray, 1.5cm thick. Score the top in diamond pattern.' },
+      { title: 'Top', txt: 'Lay tomato slices and pepper pieces across the surface, pressing them in slightly.' },
+      { title: 'Bake', txt: '200C oven 35 min. Last 5 min: switch to broil for top caramelization.', timer: 2100 },
+      { title: 'Serve', txt: 'Cut into squares. Lavash, pickled peppers, ayran.' }
+    ],
+    tip: 'The tahini makes this distinctive - do not skip it. Quality tahini (Şırlar or Çotanak) makes a huge difference. Some Malatya cooks add walnut paste in addition to tahini.'
+  },
+  {
+    id: 'kayseri-yaglamasi', name: 'Kayseri Yağlaması', nameEn: 'Kayseri layered flatbread meat pie', emoji: '🥧',
+    category: 'meze-warm', time: 70, prep: 35, cook: 35, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 580, protein: 28, carbs: 56, fat: 28 },
+    desc: 'Kayseri specialty. Thin flatbread sheets (yufka) layered with spiced meat, tomato sauce, and garlic yogurt, baked into a savory pie. Cut into squares. The Anatolian lasagna - heavy, rich, communal.',
+    ingredients: [
+      { id: 'yufka', name: 'Yufka or thin flatbread (4 sheets)', amount: 4, unit: 'pcs', store: 'turkish' },
+      { id: 'ground-lamb', name: 'Ground lamb', amount: 250, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, finely chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 3, unit: 'clove', store: 'all' },
+      { id: 'tomato', name: 'Tomato, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 250, unit: 'g', store: 'all' },
+      { id: 'butter', name: 'Butter (melted)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Meat layer', txt: '1 tbsp butter. Onion 5 min. Lamb breaking up 6 min. Tomato paste + grated tomato + 1 tsp salt + parsley 3 min.', timer: 840 },
+      { title: 'Garlic yogurt', txt: 'Mix yogurt + crushed garlic + 0.5 tsp salt.' },
+      { title: 'Yufka prep', txt: 'Brush each yufka sheet lightly on both sides with melted butter.' },
+      { title: 'Layer', txt: 'Greased oven dish. Yufka sheet (folded to fit). Half the meat. Drizzle yogurt. Yufka. Remaining meat. Yufka. Yogurt drizzle. Top yufka. Brush top with butter.' },
+      { title: 'Bake', txt: '180C oven 25 min until golden and crisp.', timer: 1500 },
+      { title: 'Chili butter finish', txt: 'Melt 2 tbsp butter + pul biber. Drizzle over top.' },
+      { title: 'Serve', txt: 'Cut into squares. Extra garlic yogurt on side.' }
+    ],
+    tip: 'Yufka from Etsan or Turkish bakery in Brunnenmarkt - it is paper-thin and pliable. Filo dough is too thin and shatters; tortillas are too thick. Yufka is the only correct option.'
+  },
+  {
+    id: 'kilis-tava', name: 'Kilis Tava', nameEn: 'Kilis-style oven baked lamb kebab', emoji: '🔥',
+    category: 'meze-warm', time: 70, prep: 25, cook: 45, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Hatay', 'Meat', 'Hot'],
+    nutrition: { kcal: 520, protein: 32, carbs: 14, fat: 36 },
+    desc: 'Kilis (border town with Syria) specialty. Ground lamb pressed onto skewers, lined in a tray with tomato and pepper, oven-roasted. Looks like kebab, eats like comfort food. No grill needed - the oven version of Adana.',
+    ingredients: [
+      { id: 'ground-lamb', name: 'Ground lamb (fatty)', amount: 350, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, grated and drained', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 2, unit: 'clove', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste (acılı)', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'tomato', name: 'Tomatoes, sliced', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Long green peppers', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Meat mix', txt: 'Knead lamb + grated onion (well drained) + minced garlic + pepper paste + isot + cumin + salt 6 min until paste-like.', timer: 360 },
+      { title: 'Shape', txt: 'Wet hands. Press meat into oval logs 12cm long, 2cm thick. Should yield 6 logs. Lay in oiled baking dish.' },
+      { title: 'Add vegetables', txt: 'Lay tomato slices and pepper pieces between and around the meat. Dot top with butter chunks.' },
+      { title: 'Bake', txt: '200C oven 35 min. Pan fills with smoky lamb juices.', timer: 2100 },
+      { title: 'Finish', txt: 'Last 5 min: broil for top color.', timer: 300 },
+      { title: 'Serve', txt: 'Lavash, sumac onion, parsley salad.' }
+    ],
+    tip: 'Grated onion must be drained - excess water turns meat to mush. Squeeze grated onion in cheesecloth. The smoky pan juices are the best part - sop them with bread.'
+  },
+  {
+    id: 'doner-kebab-home', name: 'Doner Kebab (Home)', nameEn: 'Stovetop homemade doner', emoji: '🥙',
+    category: 'meze-warm', time: 60, prep: 30, cook: 30, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Street Food', 'Hot'],
+    nutrition: { kcal: 540, protein: 38, carbs: 32, fat: 28 },
+    desc: 'Stovetop doner that actually works without a vertical spit. Thin-sliced lamb marinated overnight in yogurt and spices, packed into a loaf, sliced cold, then grilled in a hot pan. Crispy edges, juicy inside. Vienna doner culture but you made it.',
+    ingredients: [
+      { id: 'lamb-shoulder', name: 'Lamb shoulder, thinly sliced', amount: 400, unit: 'g', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'onion', name: 'Onion, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 4, unit: 'clove', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'paprika', name: 'Paprika', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'thyme-dried', name: 'Dried thyme', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Marinate', txt: 'Mix lamb slices + yogurt + grated onion + crushed garlic + tomato paste + olive oil + all spices + salt. Cover, refrigerate min 4 hours (overnight better).', timer: 14400 },
+      { title: 'Pack', txt: 'Line a small bread tin with cling film. Pack marinated lamb tightly, layering and pressing to remove all air pockets. Wrap film over top.' },
+      { title: 'Freeze partially', txt: 'Freezer 1 hour - makes slicing easy.', timer: 3600 },
+      { title: 'Slice cold', txt: 'Remove. Slice into thin strips against the grain - 3mm thick.' },
+      { title: 'Sear', txt: 'Heavy pan SCREAMING hot, no extra oil (lamb releases fat). Spread slices in single layer 90 sec without moving. Toss, another 90 sec.', timer: 180 },
+      { title: 'Serve', txt: 'Pile onto warm lavash with sumac onion + tomato + parsley. Yogurt and chili sauce on side.' }
+    ],
+    tip: 'High heat sear is what creates the doner-shop char. Crowded pan steams instead of crisping - cook in batches if needed. Save the rendered fat - mix with bread for the next day\'s breakfast.'
+  },
+  {
+    id: 'patlican-kebap', name: 'Patlıcan Kebap', nameEn: 'Eggplant and lamb meatball skewers', emoji: '🍆',
+    category: 'meze-warm', time: 65, prep: 30, cook: 35, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 480, protein: 28, carbs: 18, fat: 32 },
+    desc: 'Antep specialty. Lamb meatballs alternated with eggplant cubes on long skewers, oven-roasted. The eggplant absorbs lamb fat as it cooks - silky, smoky, deeply integrated. Looks rustic, tastes like fine dining.',
+    ingredients: [
+      { id: 'ground-lamb', name: 'Ground lamb', amount: 300, unit: 'g', store: 'all' },
+      { id: 'eggplant', name: 'Eggplants, cubed 3cm', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'onion', name: 'Onion, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 2, unit: 'clove', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'tomato', name: 'Tomatoes, halved', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Long green peppers, halved', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Salt eggplant', txt: 'Salt cubed eggplant 15 min. Pat dry.', timer: 900 },
+      { title: 'Meatballs', txt: 'Knead lamb + grated onion + garlic + pepper paste + cumin + isot + 1 tsp salt 5 min. Form into 12 walnut-sized meatballs.', timer: 300 },
+      { title: 'Skewer', txt: 'Thread alternating eggplant cube + meatball + eggplant cube along 4 skewers.' },
+      { title: 'Tray', txt: 'Lay skewers in oiled roasting tray. Add halved tomatoes and pepper pieces. Drizzle olive oil over all.' },
+      { title: 'Roast', txt: '220C oven 30 min. Eggplant turns dark gold and meatballs char on top.', timer: 1800 },
+      { title: 'Serve', txt: 'Slide off skewers onto lavash. Yogurt sauce on side.' }
+    ],
+    tip: 'Salted-rest eggplant is non-negotiable - removes bitterness AND helps it absorb meat juices instead of releasing water. Long thin Aleppo eggplants are ideal, smaller cubes for them.'
+  },
+  {
+    id: 'cokertme-kebab', name: 'Çökertme Kebabı', nameEn: 'Bodrum kebab with crispy fries and yogurt', emoji: '🥔',
+    category: 'meze-warm', time: 50, prep: 25, cook: 25, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 640, protein: 32, carbs: 48, fat: 36 },
+    desc: 'Bodrum (Aegean coast) signature. Thinly sliced beef over a bed of crispy matchstick fries, topped with garlic yogurt and chili butter. "Çökertme" means "to collapse" - the dish looks like a collapsed structure when served. Built for summer evenings.',
+    ingredients: [
+      { id: 'beef-tenderloin', name: 'Beef tenderloin or sirloin, thinly sliced', amount: 250, unit: 'g', store: 'all' },
+      { id: 'potato', name: 'Potatoes (waxy), julienned matchsticks', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'tomato', name: 'Tomato, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 200, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic clove', amount: 1, unit: 'clove', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'oil-fry', name: 'Vegetable oil (for frying potatoes)', amount: 500, unit: 'ml', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'parsley', name: 'Parsley', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Fry potatoes', txt: 'Rinse julienned potatoes, pat very dry. Deep fry at 170C in batches 4 min until golden crisp. Drain on paper, salt immediately.', timer: 240 },
+      { title: 'Garlic yogurt', txt: 'Mix yogurt + crushed garlic + pinch salt.' },
+      { title: 'Beef', txt: 'Hot pan: olive oil. Beef slices in single layer 1 min. Flip, 30 sec. Add tomato paste + grated tomato + 0.5 tsp salt. Cook down 2 min.', timer: 210 },
+      { title: 'Chili butter', txt: 'Small pan: butter + pul biber 30 sec.', timer: 30 },
+      { title: 'Assemble', txt: 'Wide plate. Layer fries thick. Pile beef-tomato sauce over fries. Big spoon of garlic yogurt on top. Drizzle chili butter all over.' },
+      { title: 'Garnish', txt: 'Parsley shower. Eat immediately - fries lose crisp fast.' }
+    ],
+    tip: 'Matchstick potatoes (not regular fries) - the thinner the better. Two-stage frying is the move: 140C 4 min, drain, then 180C 1 min for shatter-crisp. Bodrum chefs are religious about this.'
+  },
+  {
+    id: 'sarimsakli-pilav', name: 'Sarımsaklı Pilav', nameEn: 'Ottoman garlic rice pilaf', emoji: '🧄',
+    category: 'meze-warm', time: 40, prep: 10, cook: 30, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegetarian', 'Hot'],
+    nutrition: { kcal: 380, protein: 7, carbs: 64, fat: 11 },
+    desc: 'Ottoman court pilaf. Whole garlic cloves caramelize with butter and rice. Cinnamon and allspice hint of Topkapı kitchens. Pale gold, fragrant, suitable for serving with anything braised.',
+    ingredients: [
+      { id: 'rice-long', name: 'Long-grain rice (basmati or baldo)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves, whole peeled', amount: 12, unit: 'clove', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 50, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'cinnamon', name: 'Cinnamon stick', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'allspice', name: 'Allspice', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'bay-leaves', name: 'Bay leaf', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Rinse rice', txt: 'Rinse rice in cold water 3 times until water runs clear. Drain.' },
+      { title: 'Caramelize garlic', txt: 'Butter + oil in pot. Garlic cloves whole 4 min until lightly golden, not brown.', timer: 240 },
+      { title: 'Toast rice', txt: 'Add rice + cinnamon stick + bay leaf + allspice. Stir 2 min - rice edges turn translucent.', timer: 120 },
+      { title: 'Cook', txt: '400ml hot water + salt. Stir once. Cover, lowest heat 15 min.', timer: 900 },
+      { title: 'Rest', txt: 'Off heat. Cloth between pot and lid. Rest 10 min.', timer: 600 },
+      { title: 'Serve', txt: 'Fluff with fork. Remove cinnamon stick and bay. Garlic stays in.' }
+    ],
+    tip: 'Whole garlic cloves cooked this way are sweet and creamy, not pungent. Squash them with your fork as you eat. Pairs with anything lamb-tomato.'
+  },
+  {
+    id: 'lamb-freekeh-pilaf', name: 'Lamb Freekeh Pilaf', nameEn: 'Smoky green wheat with lamb', emoji: '🌾',
+    category: 'meze-warm', time: 75, prep: 15, cook: 60, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Hatay', 'Meat', 'Hot'],
+    nutrition: { kcal: 540, protein: 32, carbs: 48, fat: 24 },
+    desc: 'Levantine-Turkish one-pot dish. Freekeh (firik) is green wheat smoked over open fire then dried - distinctive smoky-nutty flavor. Cooked with lamb, butter, cinnamon, almonds. Eastern Mediterranean comfort.',
+    ingredients: [
+      { id: 'lamb-stew', name: 'Lamb shoulder, cubed 2cm', amount: 250, unit: 'g', store: 'all' },
+      { id: 'freekeh', name: 'Freekeh (firik)', amount: 180, unit: 'g', store: 'turkish' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 3, unit: 'clove', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 50, unit: 'g', store: 'all' },
+      { id: 'almonds', name: 'Almonds, sliced and toasted', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cinnamon', name: 'Cinnamon', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'allspice', name: 'Allspice', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Brown lamb', txt: '1 tbsp butter in heavy pot. Brown lamb 6 min.', timer: 360 },
+      { title: 'Aromatics', txt: 'Onion 6 min. Garlic + cinnamon + allspice + pepper 1 min.', timer: 420 },
+      { title: 'Braise', txt: '600ml hot water + salt. Cover, simmer 40 min until lamb tender.', timer: 2400 },
+      { title: 'Add freekeh', txt: 'Rinse freekeh, drain. Add to pot. Check liquid - should be 2cm above grain. Add water if needed. Cover, lowest heat 20 min.', timer: 1200 },
+      { title: 'Rest', txt: 'Off heat 10 min covered.', timer: 600 },
+      { title: 'Finish', txt: 'Stir in remaining butter. Top with toasted almonds + parsley.' }
+    ],
+    tip: 'Freekeh comes whole or cracked - cracked cooks faster (~20 min), whole takes 35 min. Etsan stocks both. The smoky flavor is built-in from the harvest method.'
+  },
+  {
+    id: 'mutancana', name: 'Mutancana', nameEn: 'Sweet and savory Ottoman lamb stew', emoji: '🍇',
+    category: 'meze-warm', time: 110, prep: 20, cook: 90, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 560, protein: 30, carbs: 38, fat: 30 },
+    desc: 'Ottoman palace stew - one of the few authentic Topkapı recipes. Lamb slow-braised with dried apricots, prunes, almonds, pine nuts, and aromatic spices. Sweet, savory, deeply layered. Originally a winter celebration dish for ramadan iftars.',
+    ingredients: [
+      { id: 'lamb-stew', name: 'Lamb shoulder, cubed', amount: 300, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onions, sliced', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'apricot-dried', name: 'Dried apricots', amount: 8, unit: 'pcs', store: 'all' },
+      { id: 'prunes', name: 'Dried prunes', amount: 6, unit: 'pcs', store: 'all' },
+      { id: 'raisins', name: 'Raisins or sultanas', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'almonds', name: 'Almonds (whole, blanched)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pine-nuts', name: 'Pine nuts', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'cinnamon', name: 'Cinnamon stick', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'allspice', name: 'Allspice', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'honey', name: 'Honey', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-red', name: 'Red wine vinegar', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Brown lamb', txt: 'Butter + olive oil. Brown lamb 8 min.', timer: 480 },
+      { title: 'Onion melt', txt: 'Sliced onions + pinch salt. Cook 12 min until deeply golden.', timer: 720 },
+      { title: 'Spices', txt: 'Cinnamon stick + allspice 1 min.', timer: 60 },
+      { title: 'Braise', txt: '500ml hot water + salt. Cover, lowest heat 60 min.', timer: 3600 },
+      { title: 'Add fruit', txt: 'Apricots + prunes + raisins + honey + vinegar. 20 more min uncovered.', timer: 1200 },
+      { title: 'Toast nuts', txt: 'Small dry pan: almonds + pine nuts 2 min until lightly toasted.', timer: 120 },
+      { title: 'Serve', txt: 'Stir nuts in. Plate with rice or bulgur pilav. Remove cinnamon stick.' }
+    ],
+    tip: 'The sweet-sour balance is everything. Taste at the end - add more honey or vinegar to tune. Ottomans served this on a bed of saffron rice. The fruit should be plump and intact, not melted.'
+  },
+  {
+    id: 'kavun-dolma', name: 'Kavun Dolması', nameEn: 'Ottoman stuffed melon with lamb', emoji: '🍈',
+    category: 'meze-warm', time: 90, prep: 30, cook: 60, difficulty: 'Hard', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 480, protein: 24, carbs: 56, fat: 18 },
+    desc: 'Ottoman court oddity that became regional Anatolian classic. Whole cantaloupe melon hollowed and stuffed with spiced lamb-rice, baked until tender. Sweet melon + savory meat. Looks insane, tastes incredible. Show-off summer dinner.',
+    ingredients: [
+      { id: 'melon-cantaloupe', name: 'Cantaloupe melons (small)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'ground-lamb', name: 'Ground lamb', amount: 250, unit: 'g', store: 'all' },
+      { id: 'rice-long', name: 'Long-grain rice (rinsed)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, finely chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pine-nuts', name: 'Pine nuts', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'raisins', name: 'Raisins', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'dill', name: 'Dill', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'cinnamon', name: 'Cinnamon', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'allspice', name: 'Allspice', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Prep melons', txt: 'Cut top off each melon. Scoop seeds. Scoop out half the flesh, leaving 1.5cm wall. Chop scooped flesh.' },
+      { title: 'Toast nuts', txt: '1 tbsp butter. Pine nuts 2 min until golden.', timer: 120 },
+      { title: 'Filling', txt: 'Add onion 5 min. Lamb breaking up 5 min. Rice + raisins + spices + salt + 200ml water + chopped melon flesh. Simmer 8 min until rice partly cooked. Stir in herbs.', timer: 1080 },
+      { title: 'Stuff', txt: 'Fill each melon with filling. Replace tops. Stand in deep baking dish. Add 2cm water to dish.' },
+      { title: 'Bake', txt: '180C oven 45 min. Melons turn translucent and tender.', timer: 2700 },
+      { title: 'Serve', txt: 'Carefully transfer to plates. Each person scoops melon + filling together.' }
+    ],
+    tip: 'Pick firm-ripe melons - not too soft or they collapse. The Ottoman version uses fresh quince in fall when melons end. Sweet + savory works because the melon\'s sweetness mellows under heat.'
+  },
+  {
+    id: 'antep-yagli-kofte', name: 'Antep Yağlı Köfte', nameEn: 'Buttery Gaziantep bulgur patties', emoji: '🌰',
+    category: 'meze-warm', time: 60, prep: 35, cook: 25, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Hatay', 'Meat', 'Hot'],
+    nutrition: { kcal: 540, protein: 26, carbs: 42, fat: 28 },
+    desc: 'Gaziantep specialty. Fine bulgur kneaded with butter and meat, formed into thick discs, pan-fried until golden, then briefly simmered in spiced butter sauce. Richer cousin to içli köfte without the stuffing. Nutty, buttery, addictive.',
+    ingredients: [
+      { id: 'bulgur-fine', name: 'Fine bulgur', amount: 150, unit: 'g', store: 'turkish' },
+      { id: 'ground-lamb', name: 'Ground lamb (lean)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 80, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, finely chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'parsley', name: 'Parsley', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Hydrate bulgur', txt: 'Bulgur + 180ml hot water + 0.5 tsp salt. Sit 15 min covered.', timer: 900 },
+      { title: 'Cook meat', txt: '1 tbsp butter in pan. Onion 5 min. Lamb 5 min breaking up. Tomato paste + pepper paste + cumin + isot 1 min. Cool slightly.', timer: 660 },
+      { title: 'Knead', txt: 'Combine bulgur + cooled meat + 30g softened butter + mint + parsley + remaining salt. Knead 5 min until cohesive.', timer: 300 },
+      { title: 'Shape', txt: 'Form into 8 thick flat discs, 5cm wide, 1.5cm thick.' },
+      { title: 'Pan-fry', txt: '30g butter in pan. Discs over medium heat 3 min each side until golden.', timer: 360 },
+      { title: 'Finish', txt: 'Add 50ml water to pan. Cover briefly 2 min - patties absorb butter sauce.', timer: 120 },
+      { title: 'Serve', txt: 'Plate with the buttery pan juices over. Garlic yogurt on side.' }
+    ],
+    tip: 'Gaziantep women say the test of yağlı köfte is the slap test - the dough should hold together when slapped between palms. Too dry = crumbles, too wet = sticks. Adjust water during kneading.'
+  },
+  {
+    id: 'bursa-cantik-pide', name: 'Bursa Cantık Pide', nameEn: 'Crusty flatbread with spicy beef', emoji: '🫓',
+    category: 'meze-warm', time: 120, prep: 60, cook: 60, difficulty: 'Hard', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 580, protein: 28, carbs: 64, fat: 24 },
+    desc: 'Bursa regional pide. Yeast dough rolled thin, brushed with spiced beef-tomato mixture, baked at high heat. Crusty bottom, soft top, generous topping spread edge-to-edge. Smaller and thinner than Black Sea pide. Bursa breakfast tradition.',
+    ingredients: [
+      { id: 'flour-bread', name: 'Bread flour', amount: 300, unit: 'g', store: 'all' },
+      { id: 'yeast-dry', name: 'Active dry yeast', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'ground-beef', name: 'Ground beef (or lamb)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, very finely chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato', name: 'Tomato, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Activate yeast', txt: '180ml warm water + yeast + sugar. Sit 8 min until foamy.', timer: 480 },
+      { title: 'Dough', txt: 'Flour + 1 tsp salt + olive oil + yeast water. Knead 8 min until smooth and elastic. Cover, rise 60 min in warm spot.', timer: 3600 },
+      { title: 'Topping', txt: 'Mix raw beef + onion + tomato paste + pepper paste + grated tomato + parsley + cumin + isot + 0.5 tsp salt. Should be spreadable paste.' },
+      { title: 'Shape', txt: 'Divide dough in 2. Roll each into thin oval 25x15cm. Lay on parchment.' },
+      { title: 'Top', txt: 'Spread meat mixture thinly all over each oval, leaving 5mm border. Pinch border slightly.' },
+      { title: 'Bake', txt: '250C oven (hottest) 12 min until edges crisp dark gold and meat bubbles.', timer: 720 },
+      { title: 'Serve', txt: 'Brush hot edges with butter. Lemon wedges + chili flakes.' }
+    ],
+    tip: 'Hottest oven you have - Bursa ovens reach 350C+. Without heat the dough goes soft instead of crispy. Pizza stone preheated 45 min in oven gives the closest result. Eat within 5 min of baking.'
+  },
+
+  // ============ MEZES + STREET FOOD + BREADS ============
+  {
+    id: 'ispanak-borani', name: 'Ispanak Borani', nameEn: 'Spinach and chickpeas with garlic yogurt', emoji: '🥬',
+    category: 'meze-warm', time: 35, prep: 15, cook: 20, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegetarian', 'Hot', 'Quick'],
+    nutrition: { kcal: 280, protein: 14, carbs: 26, fat: 14 },
+    desc: 'Persian-Anatolian dish that crossed into Turkish kitchens centuries ago. Wilted spinach and chickpeas under a blanket of garlic yogurt, finished with sizzling chili butter. Bright green, white, red. Eat with bread for lunch.',
+    ingredients: [
+      { id: 'spinach-fresh', name: 'Fresh spinach', amount: 400, unit: 'g', store: 'all' },
+      { id: 'chickpeas', name: 'Chickpeas (canned)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves (2 in dish, 1 in yogurt)', amount: 3, unit: 'clove', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 200, unit: 'g', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 40, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Soffritto', txt: 'Olive oil in wide pan. Onion 5 min. 2 cloves chopped garlic 30 sec.', timer: 330 },
+      { title: 'Wilt spinach', txt: 'Spinach in batches as it wilts. 4 min total.', timer: 240 },
+      { title: 'Chickpeas', txt: 'Drained chickpeas + salt. Toss 3 min - flavors integrate.', timer: 180 },
+      { title: 'Garlic yogurt', txt: 'Yogurt + crushed garlic + pinch salt.' },
+      { title: 'Plate', txt: 'Spread spinach-chickpeas on platter. Pour garlic yogurt over center.' },
+      { title: 'Chili butter', txt: 'Butter + pul biber 30 sec until red. Drizzle hot over yogurt.', timer: 30 },
+      { title: 'Serve', txt: 'Bread alongside. Eat warm.' }
+    ],
+    tip: 'Frozen spinach works - thaw, squeeze dry first. The chili butter must be poured hot - it creates the signature red-on-white pattern and is part of why the dish works.'
+  },
+  {
+    id: 'kabak-yogurtlu', name: 'Kabak Yoğurtlu', nameEn: 'Zucchini mezze with garlic yogurt', emoji: '🥒',
+    category: 'meze-cold', time: 30, prep: 15, cook: 15, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegetarian', 'Cold', 'Quick'],
+    nutrition: { kcal: 240, protein: 8, carbs: 16, fat: 16 },
+    desc: 'Simple Turkish meze. Sautéed zucchini cubes laid on a bed of garlic yogurt, topped with chili butter and mint. Cool, creamy, refreshing for hot weather. Makes a zucchini glut interesting.',
+    ingredients: [
+      { id: 'courgette', name: 'Zucchinis, cubed 2cm', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 250, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic clove', amount: 1, unit: 'clove', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 30, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'walnut', name: 'Walnut pieces (optional)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Sauté zucchini', txt: 'Olive oil + zucchini cubes + pinch salt. Medium-high heat 10 min, tossing every 2 min - cubes turn golden on edges and tender inside.', timer: 600 },
+      { title: 'Cool slightly', txt: 'Off heat. Let sit 5 min - takes the edge off the heat.', timer: 300 },
+      { title: 'Garlic yogurt', txt: 'Yogurt + crushed garlic + 0.5 tsp salt.' },
+      { title: 'Plate', txt: 'Spread yogurt on a shallow platter. Pile zucchini in the middle.' },
+      { title: 'Finish', txt: 'Melt butter + mint + pul biber 30 sec. Drizzle over zucchini. Sprinkle walnuts if using.', timer: 30 }
+    ],
+    tip: 'Zucchini must be golden, not pale - color = flavor. Salt the zucchini cubes 15 min beforehand to drain water if you have time, but skipping works fine if your zucchinis are firm.'
+  },
+  {
+    id: 'mercimek-ezmesi', name: 'Mercimek Ezmesi', nameEn: 'Red lentil dip', emoji: '🥄',
+    category: 'meze-cold', time: 30, prep: 10, cook: 20, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegan', 'Vegetarian', 'Cold', 'Quick'],
+    nutrition: { kcal: 220, protein: 10, carbs: 32, fat: 6 },
+    desc: 'Smooth red lentil dip - Turkish answer to hummus. Cooked lentils blended with onion, tomato paste, cumin, lemon. Eaten cold with lavash or vegetables for dipping. Often appears on Anatolian breakfast spreads.',
+    ingredients: [
+      { id: 'lentil-red', name: 'Red lentils', amount: 150, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'lemon', name: 'Lemon juice', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'parsley', name: 'Parsley (to garnish)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber (to garnish)', amount: 0.5, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Cook lentils', txt: 'Rinse lentils. 400ml water + lentils. Simmer 15 min until completely soft and water mostly absorbed.', timer: 900 },
+      { title: 'Soffritto', txt: 'Separate pan: 1 tbsp olive oil + onion 5 min. Tomato paste + pepper paste + cumin 1 min.', timer: 360 },
+      { title: 'Blend', txt: 'Combine lentils + soffritto + lemon + 1 tbsp olive oil + salt. Blend smooth (immersion blender or food processor).' },
+      { title: 'Chill', txt: 'Spread on plate. Refrigerate 15 min - texture firms up.', timer: 900 },
+      { title: 'Garnish', txt: 'Drizzle remaining olive oil over. Sprinkle pul biber + parsley.' }
+    ],
+    tip: 'Looks similar to hummus but tastes completely different - lentils have natural earthiness. Eat with lavash, romaine leaves, cucumber sticks. Tahini swirl on top is the upgrade.'
+  },
+  {
+    id: 'patlican-mezze', name: 'Patlıcan Mezze', nameEn: 'Ultimate eggplant meze with yogurt and tomato', emoji: '🍆',
+    category: 'meze-cold', time: 60, prep: 25, cook: 35, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegetarian', 'Cold'],
+    nutrition: { kcal: 340, protein: 10, carbs: 22, fat: 24 },
+    desc: 'Layered eggplant meze. Roasted eggplant pulp + garlic yogurt + spicy tomato sauce + chili butter, layered in glass bowls or plated for sharing. Three textures in one dish - the Turkish eggplant magnum opus.',
+    ingredients: [
+      { id: 'eggplant', name: 'Eggplants', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 200, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves (1 in yogurt, 2 in sauce)', amount: 3, unit: 'clove', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, grated', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'butter', name: 'Butter', amount: 30, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'parsley', name: 'Parsley', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Roast eggplant', txt: 'Pierce eggplants. Direct gas flame or broiler 20 min, turning until charred and collapsed. Cool 10 min. Peel skin off, chop pulp roughly.', timer: 1800 },
+      { title: 'Garlic yogurt', txt: 'Yogurt + 1 crushed garlic + 0.5 tsp salt.' },
+      { title: 'Tomato sauce', txt: 'Olive oil + 2 crushed garlic 30 sec. Tomato paste + pepper paste 1 min. Grated tomato + 0.5 tsp salt. Simmer 8 min until thick.', timer: 540 },
+      { title: 'Layer', txt: 'Wide platter or 2 glass bowls. Bottom: chopped eggplant pulp drizzled with olive oil. Middle: garlic yogurt blanket. Top: tomato sauce.' },
+      { title: 'Chili butter finish', txt: 'Butter + pul biber + mint 30 sec. Drizzle over tomato. Parsley shower.', timer: 30 }
+    ],
+    tip: 'Direct flame char is what makes the eggplant taste smoky. Oven roasting works but loses the signature smoke. If you have only induction, blowtorch the peeled pulp briefly for smokiness.'
+  },
+  {
+    id: 'domates-ezmesi', name: 'Domates Ezmesi', nameEn: 'Spicy Turkish tomato dip', emoji: '🍅',
+    category: 'meze-cold', time: 25, prep: 25, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegan', 'Vegetarian', 'Spicy', 'Cold', 'Quick'],
+    nutrition: { kcal: 100, protein: 2, carbs: 12, fat: 6 },
+    desc: 'Bright spicy tomato dip - the Turkish answer to salsa. Fresh tomato, onion, parsley, walnut, pomegranate molasses, lots of pul biber. No cooking. Served on the side of grilled meats or with bread. Adana kebab partner.',
+    ingredients: [
+      { id: 'tomato', name: 'Tomatoes, very finely chopped', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'onion', name: 'Onion, very finely chopped', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Long green pepper, finely chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic clove, grated', amount: 1, unit: 'clove', store: 'all' },
+      { id: 'parsley', name: 'Parsley, finely chopped', amount: 0.5, unit: 'bunch', store: 'all' },
+      { id: 'walnut', name: 'Walnut, finely chopped', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses', amount: 2, unit: 'tbsp', store: 'turkish' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'lemon', name: 'Lemon juice', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Chop fine', txt: 'EVERYTHING must be chopped very fine - almost minced. Tomato, onion, pepper, parsley, walnut.' },
+      { title: 'Mix', txt: 'Combine all chopped vegetables + walnut in bowl.' },
+      { title: 'Dress', txt: 'Add pomegranate molasses + olive oil + lemon + crushed garlic + pul biber + isot + cumin + salt. Mix thoroughly.' },
+      { title: 'Rest', txt: '15 min minimum - flavors meld and tomatoes release juice. Adjust seasoning.', timer: 900 },
+      { title: 'Serve', txt: 'In small bowl beside grilled meat or with bread.' }
+    ],
+    tip: 'The chopping fineness is everything - lazy chopping = lazy dip. Knife only, no food processor (it turns it to pulp). Goes with everything: kebabs, eggs, bread, cheese.'
+  },
+  {
+    id: 'gorele-pidesi', name: 'Görele Pidesi', nameEn: 'Black Sea cheese-egg pide', emoji: '🍳',
+    category: 'meze-warm', time: 90, prep: 60, cook: 30, difficulty: 'Hard', servings: 2,
+    tags: ['Classic', 'Karadeniz', 'Vegetarian', 'Hot'],
+    nutrition: { kcal: 560, protein: 24, carbs: 56, fat: 24 },
+    desc: 'Black Sea (Görele district near Giresun) pide. Boat-shaped flatbread with oozy cheese filling and a cracked egg in center, baked until cheese bubbles. Karadeniz answer to Roman carbonara - eggs, cheese, bread.',
+    ingredients: [
+      { id: 'flour-bread', name: 'Bread flour', amount: 250, unit: 'g', store: 'all' },
+      { id: 'yeast-dry', name: 'Active dry yeast', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'cheese-kasar', name: 'Kaşar cheese (or Gruyère), grated', amount: 200, unit: 'g', store: 'turkish' },
+      { id: 'cheese-feta', name: 'Beyaz peynir or feta, crumbled', amount: 80, unit: 'g', store: 'all' },
+      { id: 'egg', name: 'Eggs', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'butter', name: 'Butter (melted, to finish)', amount: 30, unit: 'g', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Activate yeast', txt: '150ml warm water + yeast + sugar. Sit 8 min.', timer: 480 },
+      { title: 'Dough', txt: 'Flour + salt + olive oil + yeast water. Knead 8 min. Cover, rise 60 min.', timer: 3600 },
+      { title: 'Shape', txt: 'Divide in 2. Roll each into oval 20cm long, 12cm wide. Pinch edges to create raised borders (boat shape). Crimp ends to point.' },
+      { title: 'Fill', txt: 'Mix kaşar + beyaz peynir. Spread half on each pide, staying within borders.' },
+      { title: 'Bake first', txt: '230C oven 12 min until edges turn golden.', timer: 720 },
+      { title: 'Add egg', txt: 'Remove. Crack egg into center of each pide. Pul biber sprinkle.' },
+      { title: 'Bake again', txt: '5-7 more min - egg white sets but yolk stays runny.', timer: 420 },
+      { title: 'Serve', txt: 'Brush borders with melted butter. Eat immediately - egg yolk should break onto cheese when sliced.' }
+    ],
+    tip: 'The egg timing is everything - 5 min for very runny, 7 min for soft-set. Görele bakeries use wood ovens that cook in 4 min total. Highest oven heat is the trick.'
+  },
+  {
+    id: 'biberli-ekmek', name: 'Biberli Ekmek', nameEn: 'Spicy pepper paste flatbread', emoji: '🌶',
+    category: 'meze-warm', time: 90, prep: 60, cook: 30, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Hatay', 'Vegan', 'Vegetarian', 'Spicy', 'Hot'],
+    nutrition: { kcal: 440, protein: 12, carbs: 64, fat: 16 },
+    desc: 'Antakya (Hatay) street snack. Yeast flatbread brushed with spiced pepper paste paste mixed with olive oil and herbs. Looks like lahmacun but vegetarian and oilier. The poor person\'s lahmacun - cheap, addictive, ubiquitous.',
+    ingredients: [
+      { id: 'flour-bread', name: 'Bread flour', amount: 250, unit: 'g', store: 'all' },
+      { id: 'yeast-dry', name: 'Active dry yeast', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste (acılı)', amount: 4, unit: 'tbsp', store: 'turkish' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 5, unit: 'tbsp', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves, grated', amount: 2, unit: 'clove', store: 'all' },
+      { id: 'parsley', name: 'Parsley, finely chopped', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'isot', name: 'Isot', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses (optional)', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Yeast', txt: '150ml warm water + yeast + sugar. Sit 8 min.', timer: 480 },
+      { title: 'Dough', txt: 'Flour + salt + 1 tbsp olive oil + yeast water. Knead 8 min. Cover, rise 60 min.', timer: 3600 },
+      { title: 'Paste', txt: 'Mix pepper paste + tomato paste + 4 tbsp olive oil + crushed garlic + parsley + mint + cumin + isot + pomegranate molasses. Should be spreadable.' },
+      { title: 'Shape', txt: 'Divide dough in 2. Roll each thin (3mm) into round 25cm wide. Place on parchment.' },
+      { title: 'Top', txt: 'Spread paste evenly on each disc, going to the edges.' },
+      { title: 'Bake', txt: '240C oven 8-10 min - edges crisp, paste sets.', timer: 540 },
+      { title: 'Serve', txt: 'Cut into wedges or roll up. Hot or room temp - both work.' }
+    ],
+    tip: 'Real Hatay version uses just pepper paste + olive oil + parsley - no fancy add-ins. Spicy pepper paste from Etsan or any Turkish grocer is essential. Without it, you have a sad pizza.'
+  },
+  {
+    id: 'nohut-durum', name: 'Nohut Dürüm', nameEn: 'Spicy chickpea wraps', emoji: '🥙',
+    category: 'meze-warm', time: 40, prep: 20, cook: 20, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Vegan', 'Vegetarian', 'Hot', 'Quick'],
+    nutrition: { kcal: 460, protein: 18, carbs: 64, fat: 16 },
+    desc: 'Turkish vegetarian street wrap. Spiced chickpea filling with pickled vegetables, pomegranate molasses, garlic yogurt, all rolled in warm lavash. Cheap, filling, lunch-perfect. Vegan if you skip the yogurt.',
+    ingredients: [
+      { id: 'chickpeas', name: 'Chickpeas (canned)', amount: 400, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, sliced', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 2, unit: 'clove', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'pepper-paste', name: 'Pepper paste', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses', amount: 1, unit: 'tbsp', store: 'turkish' },
+      { id: 'lavash-bread', name: 'Lavash or large flatbread', amount: 2, unit: 'pcs', store: 'turkish' },
+      { id: 'parsley', name: 'Parsley, chopped', amount: 0.5, unit: 'bunch', store: 'all' },
+      { id: 'tomato', name: 'Tomato, sliced', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pickled-pepper', name: 'Pickled hot peppers (turşu)', amount: 4, unit: 'pcs', store: 'turkish' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'pulbiber', name: 'Pul biber', amount: 1, unit: 'tsp', store: 'turkish' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Soffritto', txt: 'Olive oil + onion 6 min. Garlic + pastes + cumin + pul biber + salt 1 min.', timer: 420 },
+      { title: 'Chickpeas', txt: 'Drained chickpeas + 80ml water. Simmer 8 min. Smash half with fork - creates texture mix.', timer: 480 },
+      { title: 'Finish', txt: 'Pomegranate molasses + most of the parsley. Off heat.' },
+      { title: 'Warm bread', txt: 'Heat each lavash 30 sec each side in dry pan.', timer: 60 },
+      { title: 'Wrap', txt: 'Each lavash: spread chickpea mix in a line. Top with tomato slices, pickled peppers, remaining parsley. Roll up tight.' },
+      { title: 'Serve', txt: 'Halve each wrap diagonally. Pickled peppers on side.' }
+    ],
+    tip: 'Mash half the chickpeas for body, leave half whole for texture. Pickled peppers at the table are the move - lavash + chickpea + pickled pepper bite is the right ratio.'
+  },
+  {
+    id: 'kumpir', name: 'Kumpir', nameEn: 'Turkish loaded jacket potato', emoji: '🥔',
+    category: 'meze-warm', time: 80, prep: 20, cook: 60, difficulty: 'Easy', servings: 2,
+    tags: ['Classic', 'Street Food', 'Vegetarian', 'Hot'],
+    nutrition: { kcal: 580, protein: 18, carbs: 72, fat: 24 },
+    desc: 'Istanbul Ortaköy street food. Huge baked potato split open, flesh whipped with butter and cheese, then topped with everything: sweetcorn, olives, sausage, pickles, yogurt, ketchup, mayo. Build-your-own dinner. The Turkish loaded baked potato.',
+    ingredients: [
+      { id: 'potato', name: 'Huge potatoes (300g each)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 60, unit: 'g', store: 'all' },
+      { id: 'cheese-kasar', name: 'Kaşar or cheddar, grated', amount: 100, unit: 'g', store: 'turkish' },
+      { id: 'corn-sweet', name: 'Sweetcorn (canned)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'olives-black', name: 'Black olives, sliced', amount: 50, unit: 'g', store: 'all' },
+      { id: 'sucuk', name: 'Sucuk (Turkish sausage), diced', amount: 80, unit: 'g', store: 'turkish' },
+      { id: 'pickled-pepper', name: 'Pickled vegetables (chopped)', amount: 50, unit: 'g', store: 'turkish' },
+      { id: 'yogurt-thick', name: 'Yogurt', amount: 50, unit: 'g', store: 'all' },
+      { id: 'ketchup', name: 'Ketchup', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'mayonnaise', name: 'Mayonnaise', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Bake potatoes', txt: 'Pierce potatoes all over with fork. Wrap each in foil. 200C oven 60 min - flesh completely tender.', timer: 3600 },
+      { title: 'Whip flesh', txt: 'Unwrap. Cut deep cross in top. Squeeze sides to open. Mash flesh inside the skin with butter + grated cheese + salt - keep it fluffy and let butter melt.' },
+      { title: 'Toppings', txt: 'Layer on top in stripes: sweetcorn, olives, diced sucuk (pan-toasted if you want), pickles.' },
+      { title: 'Sauces', txt: 'Final drizzle: yogurt, ketchup, mayonnaise in stripes across top.' },
+      { title: 'Serve', txt: 'Parsley shower. Eat with fork going deep into the loaded potato.' }
+    ],
+    tip: 'The potato MUST be very large (300g+) and properly tender - undercooked center ruins it. Ortaköy vendors set up the toppings buffet-style and you choose your own. Sucuk pan-toasted gives a fragrance kick.'
+  },
+  {
+    id: 'islak-burger', name: 'Islak Burger', nameEn: 'Istanbul wet burger', emoji: '🍔',
+    category: 'meze-warm', time: 45, prep: 20, cook: 25, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Street Food', 'Meat', 'Hot'],
+    nutrition: { kcal: 520, protein: 28, carbs: 38, fat: 28 },
+    desc: 'Taksim square late-night legend. Garlicky steamed burgers swimming in tomato-butter sauce. Sold from glass-fronted carts where buns and patties steam together. Soft, garlicky, drunk-food perfection.',
+    ingredients: [
+      { id: 'ground-beef', name: 'Ground beef', amount: 300, unit: 'g', store: 'all' },
+      { id: 'burger-buns', name: 'Soft burger buns', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'onion', name: 'Onion, grated', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves', amount: 4, unit: 'clove', store: 'all' },
+      { id: 'tomato', name: 'Tomato, grated', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'butter', name: 'Butter', amount: 50, unit: 'g', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'oregano-dried', name: 'Dried oregano', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Patties', txt: 'Mix beef + grated onion + cumin + pepper + 0.5 tsp salt. Knead 3 min. Form 4 thin small patties (bun-sized).', timer: 180 },
+      { title: 'Cook patties', txt: 'Hot pan: olive oil. Brown patties 2 min each side. Lift out.', timer: 240 },
+      { title: 'Sauce', txt: 'Same pan: butter + crushed garlic 30 sec. Tomato paste 30 sec. Grated tomato + 300ml water + oregano + 0.5 tsp salt. Simmer 5 min.', timer: 360 },
+      { title: 'Assemble burgers', txt: 'Open each bun. Slide patty inside. Close bun.' },
+      { title: 'Steam in sauce', txt: 'Return burgers to pan with sauce. Cover with lid or foil. Lowest heat 10 min - buns absorb sauce, turn soft and saturated.', timer: 600 },
+      { title: 'Serve', txt: 'Carefully lift each burger - they will be dripping wet. Plate. Drizzle extra sauce on top. Eat while hot.' }
+    ],
+    tip: 'The "wet" is the entire identity - buns must be soaked. Don\'t use sturdy artisan buns; standard squishy supermarket ones work best. Eat with both hands and napkins ready.'
+  },
+  {
+    id: 'lavash-bread', name: 'Lavaş', nameEn: 'Soft Turkish flatbread', emoji: '🫓',
+    category: 'breakfast', time: 90, prep: 60, cook: 30, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Vegetarian', 'Vegan', 'Hot'],
+    nutrition: { kcal: 320, protein: 10, carbs: 60, fat: 4 },
+    desc: 'Thin soft flatbread used for wrapping kebabs and scooping mezes. Three ingredients: flour, water, salt. Cooked on hot dry pan for 60 seconds each. The bread that goes with everything Anatolian.',
+    ingredients: [
+      { id: 'flour-bread', name: 'Bread flour', amount: 250, unit: 'g', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'water', name: 'Warm water', amount: 150, unit: 'ml', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil (optional, for softness)', amount: 1, unit: 'tbsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Mix dough', txt: 'Flour + salt + olive oil + warm water. Knead 8 min until smooth and elastic.', timer: 480 },
+      { title: 'Rest', txt: 'Cover with damp cloth. Rest 45 min.', timer: 2700 },
+      { title: 'Divide', txt: 'Divide dough into 6 equal balls. Cover.' },
+      { title: 'Roll', txt: 'Each ball: roll out very thin (2mm), as large as possible (about 25cm diameter). Use plenty of flour to prevent sticking.' },
+      { title: 'Cook', txt: 'Heavy dry pan SCREAMING hot. Lay lavash flat. 30 sec - bubbles form. Flip. 30 sec. Should have golden spots, not be brittle.', timer: 60 },
+      { title: 'Keep soft', txt: 'Stack cooked lavash inside a clean kitchen towel - the steam keeps them soft and pliable.' }
+    ],
+    tip: 'Pan must be screaming hot. Cool pan = leathery lavash. The towel-wrap trick keeps them flexible for hours - without it, they harden in 10 minutes. Re-heat by sprinkling water and warming briefly.'
+  },
+  {
+    id: 'ciborek', name: 'Çiborek', nameEn: 'Tatar fried beef dumplings', emoji: '🥟',
+    category: 'meze-warm', time: 75, prep: 50, cook: 25, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Meat', 'Hot'],
+    nutrition: { kcal: 520, protein: 24, carbs: 48, fat: 26 },
+    desc: 'Crimean Tatar fried dumpling - now Turkish street food, especially in Eskişehir. Half-moon dough pockets filled with spiced raw beef, deep-fried until they puff and turn golden. Crispy shell, juicy steam-cooked filling.',
+    ingredients: [
+      { id: 'flour-allpurpose', name: 'All-purpose flour', amount: 250, unit: 'g', store: 'all' },
+      { id: 'water', name: 'Warm water', amount: 130, unit: 'ml', store: 'all' },
+      { id: 'salt', name: 'Salt (in dough + filling)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil (in dough)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'ground-beef', name: 'Ground beef (or lamb)', amount: 250, unit: 'g', store: 'all' },
+      { id: 'onion', name: 'Onion, very finely chopped', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'parsley', name: 'Parsley', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cumin', name: 'Cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'black-pepper', name: 'Black pepper', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oil-fry', name: 'Vegetable oil (for deep frying)', amount: 500, unit: 'ml', store: 'all' }
+    ],
+    steps: [
+      { title: 'Dough', txt: 'Flour + 0.5 tsp salt + olive oil + water. Knead 6 min. Cover, rest 30 min.', timer: 1800 },
+      { title: 'Filling', txt: 'Mix raw beef + onion + parsley + cumin + pepper + 0.5 tsp salt + 2 tbsp water. Knead briefly. Should be wet, slightly sloppy paste.' },
+      { title: 'Roll', txt: 'Divide dough in 8. Roll each into thin 15cm circle.' },
+      { title: 'Fill and seal', txt: 'Each circle: 1.5 tbsp filling on one half. Fold over into half-moon. Press edges firmly to seal. Crimp with fork or fingers.' },
+      { title: 'Fry', txt: 'Oil to 175C. Fry 2-3 dumplings at a time, 3 min total, flipping once. They puff and turn golden bubbled.', timer: 180 },
+      { title: 'Drain', txt: 'Onto paper towels.' },
+      { title: 'Serve', txt: 'Pierce one with fork before eating - hot steam escapes (CAREFUL with the first bite). Yogurt or ayran alongside.' }
+    ],
+    tip: 'Filling stays raw until frying - the steam inside the pocket cooks it. Seal edges PERFECTLY or oil leaks in and the filling oozes out. Eskişehir çiborekçi shops fry these to order in 90 sec.'
+  },
+  {
+    id: 'zucchini-imambayildi', name: 'Zucchini İmam Bayıldı', nameEn: 'Stuffed zucchini in olive oil', emoji: '🥒',
+    category: 'meze-cold', time: 70, prep: 30, cook: 40, difficulty: 'Medium', servings: 2,
+    tags: ['Classic', 'Vegetarian', 'Vegan', 'Cold'],
+    nutrition: { kcal: 280, protein: 6, carbs: 22, fat: 20 },
+    desc: 'Zucchini variation of the classic eggplant imam bayıldı. Hollowed zucchinis stuffed with sweet onion-tomato-garlic-parsley filling, slow-braised in olive oil. Sweet, soft, eaten cool at room temperature. Summer meze.',
+    ingredients: [
+      { id: 'courgette', name: 'Medium zucchinis (15cm)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'onion', name: 'Onions, sliced thin', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves, sliced', amount: 6, unit: 'clove', store: 'all' },
+      { id: 'tomato', name: 'Tomatoes, chopped (2 in filling, 1 sliced on top)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'tomato-paste', name: 'Tomato paste', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'parsley', name: 'Parsley, chopped', amount: 0.5, unit: 'bunch', store: 'all' },
+      { id: 'olive-oil', name: 'Olive oil (generous)', amount: 8, unit: 'tbsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'lemon', name: 'Lemon juice', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+      { title: 'Hollow zucchini', txt: 'Cut tops off zucchinis (save). Hollow inside with corer or spoon - leave 5mm wall. Salt inside slightly.' },
+      { title: 'Filling', txt: 'In pan: 4 tbsp olive oil. Onions + sugar 12 min until deeply golden and sweet. Garlic 30 sec. Chopped tomato + tomato paste + parsley + salt. Simmer 5 min.', timer: 1080 },
+      { title: 'Stuff', txt: 'Pack filling into each hollowed zucchini.' },
+      { title: 'Braise', txt: 'Heavy pot: 4 tbsp olive oil + 200ml water + lemon. Stand zucchinis upright. Place tomato slices on top of each. Cover.' },
+      { title: 'Cook', txt: 'Lowest heat 35 min. Zucchinis turn translucent and tender.', timer: 2100 },
+      { title: 'Cool and serve', txt: 'Cool to room temperature in the pot - they continue absorbing. Plate. Drizzle braising oil over. Best after 2 hours at room temp.' }
+    ],
+    tip: 'Cooked-down sweet onions are the entire flavor profile - rush them and the dish is bland. Olive oil amount looks excessive - it is the dish, do not reduce. Lasts 3 days refrigerated, eaten cold.'
   }
 ];
 const UNITS = ['g', 'kg', 'ml', 'l', 'tsp', 'tbsp', 'cup', 'pcs', 'clove', 'bunch', 'pinch', 'leaves', 'jar'];
@@ -11111,11 +13081,6 @@ function pluralUnit(unit, amount) {
   return unit;
 }
 function recipeServings(r) { return state.recipeServings[r.id] || r.servings; }
-function youtubeURL(r) {
-  // Turkish search bias — short-form Turkish recipe content on YouTube is largely visual / no-narration
-  const q = encodeURIComponent(r.name + ' tarifi kısa video');
-  return `https://www.youtube.com/results?search_query=${q}`;
-}
 function storeLabel(s) {
   if (s === 'all') return 'Everywhere';
   if (s === 'big') return 'Bigger store';
@@ -11256,6 +13221,22 @@ function matchesFilter(r) {
   if (f === 'soup') return r.category === 'soup';
   if (f === 'drink') return r.category === 'drink';
   if (f === 'dessert') return r.category === 'dessert' || r.tags.includes('Dessert');
+  if (f === 'pilav') {
+    // Curated list of pilav/rice main dishes (excludes piyaz/pilaki salads)
+    const PILAV_IDS = new Set([
+      // Turkish pilavs
+      'sade-pilav','sehriyeli-pilav','ic-pilav','domatesli-pilav',
+      'bulgur-pilavi','etli-bulgur-pilavi','sebzeli-pilav','perde-pilavi',
+      'hamsi-pilav','mucendere',
+      // New Turkish pilavs (Option B batch)
+      'tavuklu-pilav','ankara-tava','sarimsakli-pilav','lamb-freekeh-pilaf',
+      // Italian risottos
+      'ita-risotto-milanese','ita-risotto-funghi',
+      // Persian polo
+      'per-zereshk-polo'
+    ]);
+    return PILAV_IDS.has(r.id);
+  }
   if (f === 'salad') {
     // Strict curated list - no name pattern matching to avoid false positives
     // (e.g. Turkish "salatalık" = cucumber, Greek "taramasalata" is a dip not salad)
@@ -11288,7 +13269,7 @@ function matchesFilter(r) {
   if (f === 'seafood') return r.tags.includes('Seafood');
   if (f === 'meat') return r.tags.includes('Meat');
   if (f === 'spicy') return r.tags.includes('Spicy');
-  if (f === 'no-alcohol') return !r.tags.includes('Alcohol');
+  if (f === 'no-alcohol') return r.category === 'drink' && !r.tags.includes('Alcohol');
   if (f === 'easy') return r.difficulty === 'Easy';
   if (f === 'medium') return r.difficulty === 'Medium';
   if (f === 'hard') return r.difficulty === 'Hard';
@@ -11533,9 +13514,14 @@ function renderRecipeDetail(r) {
         <h2>${escapeHtml(r.name)} ${spicy ? '<span style="color:#c8332a;font-size:.6em;">🌶</span>' : ''} ${alcohol ? '<span style="color:var(--gold);font-size:.6em;">🍷</span>' : ''}</h2>
         <div class="h2-en">${escapeHtml(r.nameEn)}</div>
         <p>${escapeHtml(r.desc)}</p>
-        <a href="${youtubeURL(r)}" target="_blank" rel="noopener noreferrer" class="yt-link">
-          <span class="yt-play">▶</span> Watch short video on YouTube
-        </a>
+        ${(() => {
+          const hmk = findHMKVideoMatch(r);
+          return hmk
+            ? `<a href="https://www.youtube.com/watch?v=${hmk.id}" target="_blank" rel="noopener noreferrer" class="yt-link">
+                 <span class="yt-play">▶</span> Watch Hungry Man Kitchen video
+               </a>`
+            : '';
+        })()}
       </div>
     </div>
 
@@ -11652,6 +13638,110 @@ function saveImageCache() {
 // Manual overrides — for recipes where Wikipedia gets the wrong page or has no article
 // Maps recipe.id → Wikipedia article title (use exact title, with capitalization)
 const IMAGE_OVERRIDES = {
+  // === Churchill + Option B Turkish batch ===
+  'corcil': 'Şalgam',
+  'belen-tava': 'Tava (cooking)',
+  'patlican-oturtma': 'Eggplant',
+  'tavuklu-pilav': 'Pilaf',
+  'patlican-meftune': 'Eggplant',
+  'dana-yahni': 'Beef stew',
+  'seyh-mualla': 'Eggplant',
+  'etli-nohut': 'Chickpea stew',
+  'ankara-tava': 'Pilaf',
+  'sihil-mahsi': 'Dolma',
+  'kuru-dolma': 'Dolma',
+  'sac-tava': 'Saç (cookware)',
+  'islim-kebab': 'Kebab',
+  'lor-dolmasi': 'Dolma',
+  'tutmac-corbasi': 'Tutmaç',
+  'oz-corbasi': 'Turkish soup',
+  'bamya-corbasi': 'Okra',
+  'eksili-mahluta': 'Lentil soup',
+  'iskembe-corbasi': 'İşkembe çorbası',
+  'kereviz-yogurt-corbasi': 'Celeriac',
+  'dul-corbasi': 'Lentil soup',
+  'dalyan-kofte': 'Köfte',
+  'antep-arab-kofta': 'Köfte',
+  'sasakaldim-kofte': 'Köfte',
+  'fellah-kofte': 'Köfte',
+  'inegol-kofte': 'İnegöl köftesi',
+  'haveydi-kofte': 'Çiğ köfte',
+  'geleli-kebab': 'Kebab',
+  'kayseri-yaglamasi': 'Yufka',
+  'kilis-tava': 'Kebab',
+  'doner-kebab-home': 'Döner kebab',
+  'patlican-kebap': 'Kebab',
+  'cokertme-kebab': 'Kebab',
+  'sarimsakli-pilav': 'Pilaf',
+  'lamb-freekeh-pilaf': 'Freekeh',
+  'mutancana': 'Stew',
+  'kavun-dolma': 'Cantaloupe',
+  'antep-yagli-kofte': 'Köfte',
+  'bursa-cantik-pide': 'Pide',
+  'ispanak-borani': 'Spinach',
+  'kabak-yogurtlu': 'Zucchini',
+  'mercimek-ezmesi': 'Lentil',
+  'patlican-mezze': 'Eggplant',
+  'domates-ezmesi': 'Salsa',
+  'gorele-pidesi': 'Pide',
+  'biberli-ekmek': 'Lahmacun',
+  'nohut-durum': 'Dürüm',
+  'kumpir': 'Kumpir',
+  'islak-burger': 'Islak burger',
+  'lavash-bread': 'Lavash',
+  'ciborek': 'Çiğ börek',
+  'zucchini-imambayildi': 'İmam bayıldı',
+  // === Top 20 cocktails batch ===
+  'cocktail-hugo': 'Hugo (cocktail)',
+  'cocktail-negroni': 'Negroni',
+  'cocktail-negroni-sbagliato': 'Negroni',
+  'cocktail-americano': 'Americano',
+  'cocktail-bellini': 'Bellini (cocktail)',
+  'cocktail-bicicletta': 'Bicicletta (cocktail)',
+  'cocktail-limoncello-spritz': 'Limoncello',
+  'cocktail-garibaldi': 'Garibaldi (cocktail)',
+  'cocktail-sgroppino': 'Sgroppino',
+  'cocktail-espresso-martini': 'Espresso martini',
+  'cocktail-old-fashioned': 'Old fashioned',
+  'cocktail-manhattan': 'Manhattan (cocktail)',
+  'cocktail-margarita': 'Margarita',
+  'cocktail-mojito': 'Mojito',
+  'cocktail-daiquiri': 'Daiquiri',
+  'cocktail-french-75': 'French 75 (cocktail)',
+  'cocktail-whiskey-sour': 'Whiskey sour',
+  'cocktail-gin-tonic': 'Gin and tonic',
+  'cocktail-moscow-mule': 'Moscow mule',
+  'cocktail-tom-collins': 'Tom Collins',
+  'cocktail-pisco-sour': 'Pisco sour',
+  // === Final cleanup batch - 28 remaining ===
+  'lor-salatasi': 'Curd',
+  'taze-fava': 'Vicia faba',
+  'tarama': 'Taramasalata',
+  'lakerda': 'Lakerda',
+  'deniz-borulcesi': 'Salicornia',
+  'radika': 'Cichorium intybus',
+  'bakla-pilakisi': 'Vicia faba',
+  'zahter-salatasi': 'Zaatar',
+  'hatay-surk': 'Sürk',
+  'hamuti': 'Muhammara',
+  'greek-kolokithokeftedes': 'Kolokithokeftedes',
+  'per-borani-bademjan': 'Borani',
+  'per-borani-laboo': 'Borani',
+  'isr-beetroot-tehina': 'Tahini',
+  'isr-msabbaha': 'Hummus',
+  'bal-mish-mash': 'Mish-mash (food)',
+  'mor-taktouka': 'Taktouka',
+  'mor-khizou-mchermel': 'Carrot salad',
+  'mor-mechouia': 'Salade mechouia',
+  'mor-olives-citron': 'Preserved lemon',
+  'mor-loubia': 'Loubia',
+  'greek-maroulosalata': 'Maroulosalata',
+  'leb-salatet-jarjir': 'Arugula',
+  'ita-olive-ascolane': 'Olive ascolane',
+  'egy-beid-hamine': 'Beid hamine',
+  'kofte-ekmek': 'Köfte',
+  'egy-roz-bel-laban': 'Rice pudding',
+  'ita-amatriciana': "Bucatini all'amatriciana",
   // === Turkish breakfast/meat/seafood/drinks batch ===
   'simit': 'Simit',
   'pogaca': 'Poğaça',
@@ -12207,143 +14297,175 @@ async function loadDetailImage(recipe) {
 
 // Manual high-confidence HMK matches by recipe id → YouTube video ID (verified)
 const HMK_MANUAL_MATCHES = {
-  // === Turkish breakfast/meat batch verified matches ===
-  'simit': 'EwYCliHji9A',
-  'pogaca': 'oj4d1j5t-Uc',
-  'bazlama': 'jeZUlWJ4Vg4',
-  'kadinbudu-kofte': 'jYHNhlIJ0_8',
-  'izmir-kofte': 'eBVBA_TaMnU',
-  'terbiyeli-kofte': 'y268sYAr15E',
-  'cig-kofte-etli': 'gp9ZS4AwKwQ',
-  'lahana-sarmasi': 'qQS0DXYls50',
-  // === Final batch additions ===
-  'sekerpare': 'CCjSqyskCAc',
-  'mor-harira': 'p5Lnbn2IqX8',
-  'leb-mhammara': 'Qy4sQq4P7uo',
-  // === Mega-batch additions ===
-  'kuru-fasulye': 'TJ1cui36fyA',
-  'lahmacun': 'qlByR6LYf5M',
-  'hunkar-begendi': 'Eda-SMcoEnc',
-  'cig-kofte-vegan': 'gp9ZS4AwKwQ',
-  'ita-carbonara': 'y5xYFKDVMx8',
-  'greek-moussaka': 'yleYPnIJnKE',
-  'ita-ragu-bolognese': 'RHHfHL5tBxA',
-  'ita-cacio-pepe': 'XqI0hRVzE7o',
-  // Kebabs & grilled
-  'adana-kebabi': 'Ej3B4g_PxsQ',
-  'adana-durum': 'Ej3B4g_PxsQ',
-  'urfa-kebabi': 'xJFzzjfjF7o',
-  'beyti-kebab': 'kQodNflJALQ',
-  'iskender-kebab': 'MTdbzz7_hTU',
-  'cag-kebabi': 'YLHU1QufGgE',
-  'tas-kebabi': 'YLHU1QufGgE',
-  'cop-sis': 'N2hrX_4FVow',
-  'tavuk-sis': 'kikisQMhRcA',
-  'sis-kofte': 'vJI4I-3iwVM',
-  'ali-nazik': 'lda09lmvk2Q',
-  // Breakfast & eggs
-  'menemen': 'iCjFn3cVhm8',
-  'sucuklu-yumurta': 'iCjFn3cVhm8',
-  'sahanda-yumurta': 'iCjFn3cVhm8',
-  'sac-kahvaltisi': 'ws2W2pSFOPo',
-  'isr-shakshuka': 'PLypSDyimdU',
-  'bal-mish-mash': 'PLypSDyimdU',
-  // Eggplant classics
-  'karniyarik': 'jAuHHy3mZ6o',
-  'imam-bayildi': 'JicVDvolG_I',
-  'patlican-salatasi': 'SfoA_V9UAek',
-  'saksuka': 'PLypSDyimdU',
-  'kopoglu': 'PLypSDyimdU',
-  'babaganus': 'QJiThZlgeWU',
-  'leb-mutabbal': 'QJiThZlgeWU',
-  // Salads
-  'kisir': 'v5Z73UPFaFs',
-  'gavurdagi-salatasi': 'FThJaMnnIZY',
-  'kasik-salatasi': 'zh4uLgAWUfE',
-  'nohut-piyazi': 'EtpwOvjCNEI',
-  'mas-piyazi': 'xeoiPbg55Ec',
-  'borulce-salatasi': 'eFR3On91WPM',
-  'zeytin-piyazi': 'GfDdEKfFClk',
-  'tahinli-piyaz': 'oM6EgDTQ3K0',
-  'piyaz': 'oM6EgDTQ3K0',
-  'leb-tabbouleh': 'd5GN_4yJW8c',
-  'cerkez-tavugu': 'wQDjqsDGZIs',
-  // Dips & cold meze
+  // Curated matches: each HMK video is verified to be the actual recipe
   'acili-ezme': 'RWb0D008UnY',
-  'muhammara': 'Qy4sQq4P7uo',
-  'cevizli-biber': 'Qy4sQq4P7uo',
-  'mercimek-kofte': '6mntXALH3Go',
-  'humus': 'MGLacO2Mn0U',
-  'leb-hummus-beiruti': 'gda-9s8NnsI',
-  'isr-msabbaha': 'ABshACJ9CYA',
-  'leb-foul': 'euFti6JsfHk',
-  'fava': 'j5VuIyxJVBo',
-  'taze-fava': 'j5VuIyxJVBo',
-  'atom': 'QJepoCzTZ_0',
-  'havuc-tarator': '0Cmag_FOMpg',
-  'isr-beetroot-tehina': '0Cmag_FOMpg',
-  // Drinks
-  'ayran': 'i3LQNEGPXk8',
-  // Zeytinyağlı
-  'zeytinyagli-enginar': 'g0Lud0dAi5E',
-  'zeytinyagli-fasulye': 'rYnpTXb9okc',
-  'zeytinyagli-pirasa': 'uNS8XLfra6U',
-  'zeytinyagli-kereviz': 'x3GeNAPMhfc',
-  // Vine leaves & rolls
-  'yaprak-sarma': 'mab-eFJmrhA',
-  'etli-yaprak-sarma': 'mab-eFJmrhA',
-  'greek-dolmadakia': 'mab-eFJmrhA',
-  // Soups
-  'mercimek-corbasi': 'aGxZbtWoxGk',
-  'yesil-mercimek': 'aGxZbtWoxGk',
-  'yayla-corbasi': 'LdRXGPynU4Q',
-  'ezogelin-corbasi': 'xNdXAd6tWUk',
-  // Stuffed bulgur & kofte
-  'icli-kofte': '3j1eLKDBHW0',
-  'oruk': '3j1eLKDBHW0',
-  'kuru-kofte': 'vsipxRjfkoM',
-  'arnavut-cigeri': 'z4yAUe1wRj8',
-  // Seafood
-  'kalamar-tava': 'pm275t5GUNU',
-  'sauce-tarator-walnut': 'pm275t5GUNU',
+  'acma': '3ltXEbaYv1Y',
+  'adana-durum': 'Ej3B4g_PxsQ',
+  'adana-kebabi': 'Ej3B4g_PxsQ',
   'ahtapot-salatasi': '5dTQTcDJdsQ',
-  // Pilavlar
-  'sade-pilav': '9YYtIkHNFjA',
-  'sehriyeli-pilav': '9YYtIkHNFjA',
-  'ic-pilav': '9YYtIkHNFjA',
-  'domatesli-pilav': 'KHZXd-7WzW0',
-  'bulgur-pilavi': 'v5Z73UPFaFs',
-  'etli-bulgur-pilavi': '9YYtIkHNFjA',
-  'sebzeli-pilav': 'qM-6dBHtmIw',
-  // Sandwiches
-  'tantuni': 'hFbKAYCItYk',
-  // Stuffed vegetables
-  'midye-dolma': 'J9q65qauCK0',
-  // Pickles
-  'lahana-tursusu': 'qQS0DXYls50',
-  // Desserts
-  'sutlac': 'bnFYj7N54B4',
-  'egy-roz-bel-laban': 'bnFYj7N54B4',
-  'sekerpare': 'CCjSqyskCAc',
-  'kunefe': 'IOsc1jEEZFA',
-  'isr-knafeh': 'IOsc1jEEZFA',
-  // Bread/börek
-  'sigara-boregi': '-NElAfIPX0g',
-  'gozleme': 'B0GcA6MOhpo',
-  'mucver': 'O3LsrA5vam0',
-  'greek-kolokithokeftedes': 'O3LsrA5vam0',
-  // International — Levantine & Maghreb
-  'falafel': '0tFDM9ACVs0',
-  'egy-taameya': '0tFDM9ACVs0',
+  'ali-nazik': 'lda09lmvk2Q',
+  'ankara-tava': 'IHFY94jDB0k',
+  'antep-arab-kofta': 'ix_Mn_pTJMQ',
+  'antep-yagli-kofte': 'Ise0l9A84tM',
+  'arnavut-cigeri': 'z4yAUe1wRj8',
+  'atom': 'QJepoCzTZ_0',
+  'ayran': 'i3LQNEGPXk8',
+  'babaganus': 'QJiThZlgeWU',
   'bal-ajvar': 'gAofLgHbuP0',
+  'bamya-corbasi': 'h5Yyy_N27Vs',
+  'bazlama': 'jeZUlWJ4Vg4',
+  'belen-tava': 'CuAhvoqeGzA',
+  'beyti-kebab': 'kQodNflJALQ',
+  'biber-dolma-etli': 'Jm-6yH1L4e8',
+  'biberli-ekmek': 'qiPDzGqQZTM',
+  'borulce-salatasi': 'eFR3On91WPM',
+  'bulgur-pilavi': 'WU9rUBN2cKY',
+  'bursa-cantik-pide': 'wEqfCWxd7N4',
+  'cag-kebabi': 'YLHU1QufGgE',
+  'cerkez-tavugu': 'wQDjqsDGZIs',
+  'cevizli-biber': 'Qy4sQq4P7uo',
+  'ciborek': 'Ph8PkBCHkPk',
+  'cig-kofte-etli': 'gp9ZS4AwKwQ',
+  'cig-kofte-vegan': 'gp9ZS4AwKwQ',
+  'cokertme-kebab': 'v6uwX_heoFg',
+  'cop-sis': 'N2hrX_4FVow',
+  'dalyan-kofte': '4PG0B2rao4w',
+  'dana-yahni': 'xAKUxHlrMqg',
+  'deniz-borulcesi': 'wUFte1OcQYg',
+  'domates-corbasi': 'hLO5I3lphXg',
+  'domates-ezmesi': '0jw_v3WtFSg',
+  'domatesli-pilav': 'KHZXd-7WzW0',
+  'doner-kebab-home': 'UagI1EKlTAA',
+  'dul-corbasi': 'fKaYmLC1tX0',
+  'egy-roz-bel-laban': 'bnFYj7N54B4',
+  'egy-taameya': '0tFDM9ACVs0',
+  'eksili-mahluta': '6Im4D4RW7gQ',
+  'etli-bulgur-pilavi': '9YYtIkHNFjA',
+  'etli-nohut': '6oWVR8vMsUE',
+  'etli-yaprak-sarma': 'mab-eFJmrhA',
+  'ezogelin-corbasi': 'xNdXAd6tWUk',
+  'falafel': '0tFDM9ACVs0',
+  'fava': 'j5VuIyxJVBo',
+  'fellah-kofte': '1xVmxDfhrY8',
+  'gavurdagi-salatasi': 'FThJaMnnIZY',
+  'geleli-kebab': 'bjh2HyFmncQ',
+  'gorele-pidesi': 'rx3OW-vrj-E',
+  'gozleme': 'B0GcA6MOhpo',
+  'greek-dolmadakia': 'mab-eFJmrhA',
+  'greek-gigantes': 'TJ1cui36fyA',
+  'greek-kolokithokeftedes': 'O3LsrA5vam0',
+  'greek-moussaka': 'yleYPnIJnKE',
+  'haveydi-kofte': 'sdn05jWf7wE',
+  'havuc-tarator': 'U_qkdp9skp4',
+  'humus': 'MGLacO2Mn0U',
+  'hunkar-begendi': 'Eda-SMcoEnc',
+  'ic-pilav': '9YYtIkHNFjA',
+  'icli-kofte': '3j1eLKDBHW0',
+  'imam-bayildi': 'JicVDvolG_I',
+  'inegol-kofte': '4A0s9X3OrgU',
+  'iskembe-corbasi': '4sZqpE5hcJU',
+  'iskender-kebab': 'MTdbzz7_hTU',
+  'islak-burger': 'LmrC6aTL5d4',
+  'islim-kebab': 'fjIIYlaeewI',
+  'ispanak-borani': 'Dqx1jfY_9Uk',
+  'isr-beetroot-tehina': '0Cmag_FOMpg',
+  'isr-knafeh': 'IOsc1jEEZFA',
+  'isr-msabbaha': 'ABshACJ9CYA',
+  'isr-shakshuka': 'PLypSDyimdU',
+  'ita-cacio-pepe': 'XqI0hRVzE7o',
+  'ita-carbonara': 'y5xYFKDVMx8',
+  'ita-cotoletta-milanese': '0cqx3WWXJGs',
+  'ita-ragu-bolognese': 'RHHfHL5tBxA',
+  'izmir-kofte': 'eBVBA_TaMnU',
+  'kabak-yogurtlu': '2nKMS-835vU',
+  'kadinbudu-kofte': 'jYHNhlIJ0_8',
+  'kalamar-tava': 'pm275t5GUNU',
+  'karniyarik': 'jAuHHy3mZ6o',
+  'kasik-salatasi': 'zh4uLgAWUfE',
+  'kavun-dolma': '0qxAi1JO-K4',
+  'kayseri-yaglamasi': 'U5kSZMBMVg4',
+  'kereviz-yogurt-corbasi': '8wzo-d8S6Kw',
+  'kilis-tava': 'sBU3FFgo9As',
+  'kisir': 'v5Z73UPFaFs',
+  'kumpir': 'QPswo9cx4Io',
+  'kunefe': 'IOsc1jEEZFA',
+  'kuru-dolma': '2YXAIZmSCxE',
+  'kuru-fasulye': 'TJ1cui36fyA',
+  'kuru-kofte': 'vsipxRjfkoM',
+  'lahana-sarmasi': 'qQS0DXYls50',
+  'lahana-tursusu': 'qQS0DXYls50',
+  'lahmacun': 'qlByR6LYf5M',
+  'lamb-freekeh-pilaf': '4YSm8MSFJcM',
+  'lavash-bread': 'KRiHMsuQazc',
+  'leb-foul': 'euFti6JsfHk',
+  'leb-hummus-beiruti': 'gda-9s8NnsI',
+  'leb-mhammara': 'Qy4sQq4P7uo',
+  'leb-mutabbal': 'QJiThZlgeWU',
+  'leb-tabbouleh': 'd5GN_4yJW8c',
+  'lebeniye': 'vBPZW_Mxkww',
+  'lor-dolmasi': 'GGKqoYvvvx4',
+  'mas-piyazi': 'xeoiPbg55Ec',
+  'menemen': 'iCjFn3cVhm8',
+  'mercimek-corbasi': 'aGxZbtWoxGk',
+  'mercimek-ezmesi': 'Rk4HayQFr_U',
+  'mercimek-kofte': '6mntXALH3Go',
+  'midye-dolma': 'J9q65qauCK0',
   'mor-harira': 'p5Lnbn2IqX8',
-  'mor-bissara': 'p5Lnbn2IqX8',
+  'mucver': 'O3LsrA5vam0',
+  'muhammara': 'Qy4sQq4P7uo',
+  'mutancana': 'tTJivnrwk34',
+  'nohut-durum': '3Z3qvE-ydQ0',
+  'nohut-piyazi': 'EtpwOvjCNEI',
+  'oruk': '3j1eLKDBHW0',
+  'oz-corbasi': '9gxPFke9QJc',
+  'patates-kavurma': 'NwrpkrzjQ50',
+  'patlican-kebap': 'PyBS76CxHmw',
+  'patlican-meftune': 'r-OfLGPhS6k',
+  'patlican-mezze': 'Z6xpaACE3yg',
+  'patlican-oturtma': 'TwcgMlFcTS4',
+  'patlican-salatasi': 'SfoA_V9UAek',
+  'pide-bread': 'WjqtoEkAO4k',
+  'piyaz': 'oM6EgDTQ3K0',
+  'pogaca': 'oj4d1j5t-Uc',
+  'sac-kahvaltisi': 'ws2W2pSFOPo',
+  'sac-tava': '9U0Zxrwzvc0',
+  'sade-pilav': '9YYtIkHNFjA',
+  'sahanda-yumurta': 'iCjFn3cVhm8',
+  'saksuka': 'PLypSDyimdU',
+  'sarimsakli-pilav': 'VrJ81fkYDkk',
+  'sasakaldim-kofte': 'KvavIETximA',
   'sauce-harissa': 'ZJIbJfWUzek',
   'sauce-tahini': 'gda-9s8NnsI',
-  // Beans
-  'greek-gigantes': 'TJ1cui36fyA',
-  // Sumak onion + kebab side
-  'sauce-sumak-onion': 'N2hrX_4FVow',
+  'sauce-tarator-walnut': 'pm275t5GUNU',
+  'sebzeli-pilav': 'qM-6dBHtmIw',
+  'sehriyeli-pilav': '9YYtIkHNFjA',
+  'sekerpare': 'CCjSqyskCAc',
+  'seyh-mualla': 'AVEMmAahey8',
+  'sihil-mahsi': 'aDNuOCpkKlw',
+  'simit': 'EwYCliHji9A',
+  'sis-kofte': 'vJI4I-3iwVM',
+  'sucuklu-yumurta': 'iCjFn3cVhm8',
+  'sulu-kofte': '_hnWYCmaxJQ',
+  'sutlac': 'bnFYj7N54B4',
+  'tahinli-piyaz': 'oM6EgDTQ3K0',
+  'tantuni': 'hFbKAYCItYk',
+  'tas-kebabi': 'YLHU1QufGgE',
+  'tavuk-sis': 'kikisQMhRcA',
+  'tavuklu-pilav': 'WgLVf5ykACY',
+  'taze-fava': 'j5VuIyxJVBo',
+  'terbiyeli-kofte': 'y268sYAr15E',
+  'tutmac-corbasi': 'gPcsMq8RfBo',
+  'urfa-kebabi': 'xJFzzjfjF7o',
+  'yaprak-sarma': 'mab-eFJmrhA',
+  'yayla-corbasi': 'LdRXGPynU4Q',
+  'yesil-mercimek': 'aGxZbtWoxGk',
+  'zeytin-piyazi': 'GfDdEKfFClk',
+  'zeytinyagli-barbunya': 'fdTKs--yev8',
+  'zeytinyagli-enginar': 'g0Lud0dAi5E',
+  'zeytinyagli-fasulye': 'rYnpTXb9okc',
+  'zeytinyagli-kereviz': 'x3GeNAPMhfc',
+  'zeytinyagli-pirasa': 'uNS8XLfra6U',
+  'zucchini-imambayildi': '6gt0gD_fhy0',
 };
 
 function findHMKVideoMatch(recipe) {
