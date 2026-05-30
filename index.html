@@ -223,6 +223,77 @@
     .journal-entry { grid-template-columns: 80px 1fr; gap: 12px; padding: 12px; }
     .journal-entry .photo { width: 80px; height: 80px; font-size: 30px; }
     .journal-entry .recipe-name { font-size: 16px; }
+
+    /* ===== Mobile title fixes ===== */
+    /* Header: stack vertically with title on top, meta below-left */
+    header.top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+    }
+    .meta { text-align: left; font-size: 12px; }
+    .api-budget-badge { margin-left: 6px; font-size: 10px; padding: 2px 6px; }
+
+    /* Shopping group headers: stack title and Map link vertically */
+    .shop-group h3 {
+      font-size: 17px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .shop-group h3 .badge {
+      font-size: 10px;
+      padding: 2px 7px;
+    }
+    .shop-maps {
+      align-self: flex-start;
+      font-size: 10px;
+      padding: 3px 8px;
+    }
+
+    /* Filter rows: label on own line, chips wrap below */
+    .filters {
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .filters .lbl {
+      width: 100%;
+      margin-bottom: 4px;
+      font-size: 11px;
+    }
+    .chip {
+      font-size: 13px;
+      padding: 6px 10px;
+    }
+
+    /* Section h2 titles: tighten */
+    h2 { font-size: 18px; }
+
+    /* Recipe detail title: don't overflow */
+    .recipe-hero h1 {
+      font-size: clamp(26px, 7vw, 36px) !important;
+      line-height: 1.1;
+    }
+
+    /* Tabs: smaller, tighter */
+    .tabs {
+      gap: 4px;
+      margin-bottom: 16px;
+    }
+    .tab-btn {
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+  }
+
+  /* Very narrow phones (older iPhones, narrow Androids) */
+  @media (max-width: 380px) {
+    .brand h1 { font-size: 30px; }
+    h2 { font-size: 17px; }
+    .chip { font-size: 12px; padding: 5px 9px; }
+    .filters .lbl { font-size: 10px; }
   }
   /* Rating stars */
   .rating { display: inline-flex; gap: 2px; font-size: 14px; line-height: 1; }
