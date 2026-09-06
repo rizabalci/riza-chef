@@ -779,7 +779,7 @@
       <h1>Riza <span class="accent">Chef</span></h1>
     </div>
     <div class="meta">
-      <div><strong id="totalCount">476</strong> recipes <span id="apiBudgetBadge" class="api-budget-badge ok" title="Free Wikipedia image lookups today (no cost, just rate-limit friendly)">0/800</span></div>
+      <div><strong id="totalCount">539</strong> recipes <span id="apiBudgetBadge" class="api-budget-badge ok" title="Free Wikipedia image lookups today (no cost, just rate-limit friendly)">0/800</span></div>
     </div>
   </header>
 
@@ -14988,6 +14988,2016 @@ const BUILTIN_RECIPES = [
     tip: 'Many ingredients but each matters. Cherry Heering is essential (cherry liqueur from Denmark). Bénédictine is a French monastic herbal liqueur. Vienna: Cherry Heering and Bénédictine at Wein und Co.'
   }
 
+
+,
+  // === BATCH 14: 39 salads (classic Med + modern mixed with fruit + Santos-inspired) ===
+  {
+    id: 'greek-horiatiki', name: 'Horiatiki', nameEn: 'Classic Greek village salad', emoji: '🥗',
+    category: 'salad', time: 12, prep: 12, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Greek', 'Classic', 'Summer', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 320, protein: 6, carbs: 20, fat: 12 },
+    desc: 'The salad on every Greek island menu - big chunks of ripe tomato, cucumber, red onion, green pepper, and a huge slab of feta on top, dressed with just olive oil, oregano, and a splash of red wine vinegar. Never contains lettuce. The Greek village salad. When tomatoes are in season, this is unbeatable.',
+    ingredients: [
+
+      { id: 'tomato-vine', name: 'Ripe tomatoes (in season, chunky cut)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (thick half-moons)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Green pepper (thin rings)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin half-moons)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'feta-block', name: 'Feta cheese (thick slab on top, not crumbled)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'olives-kalamata', name: 'Kalamata olives (with pits, traditional)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'capers-optional', name: 'Capers (Santorini touch, optional)', amount: 1, unit: 'tbsp', store: 'big' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Greek or Cretan)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-red-wine', name: 'Red wine vinegar (small splash)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oregano-dried', name: 'Dried oregano (Greek, heavy)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Chunky cut', txt: 'Cut tomatoes into big wedges (6-8 per tomato). Cucumber halved lengthwise then thick half-moons. Pepper thin rings. Red onion thin half-moons.' },
+      { title: 'Bowl assembly', txt: 'Big bowl or wide plate: tomatoes + cucumber + peppers + onion. Toss with salt gently.' },
+      { title: 'Add olives', txt: 'Scatter olives on top.' },
+      { title: 'Slab of feta', txt: 'Place a THICK slab of feta on top - do not crumble. This is the Greek way.' },
+      { title: 'Dress', txt: 'Drizzle olive oil generously over everything. Small splash of red wine vinegar. Optional capers.' },
+      { title: 'Oregano heavy', txt: 'Sprinkle dried oregano heavily over the feta slab.' },
+      { title: 'Serve', txt: 'Immediately with fresh bread to soak the juices. Greek island summer classic - never with lettuce, never chopped small.' }
+    ],
+    tip: 'The two secrets: ripe in-season tomatoes and a THICK SLAB of feta on top (not crumbled and mixed). Real Greek feta (PDO, sheep-goat milk) makes a huge difference. Vienna: Greek delis or Naschmarkt for real Greek feta; Interspar carries Dodoni brand.'
+  },
+  {
+    id: 'turkish-coban-salatasi', name: 'Çoban Salatası', nameEn: 'Turkish shepherds chopped salad', emoji: '🥗',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Turkish', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 140, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Turkey everyday salad - literally shepherds salad. Finely chopped tomato, cucumber, green pepper, and onion dressed with lemon and olive oil. Found at every Turkish table for every meal in summer. Simpler than horiatiki (no cheese, no olives), lighter, more everyday. The chopping is finer than Greek - everything in small even cubes.',
+    ingredients: [
+
+      { id: 'tomato-vine', name: 'Ripe tomatoes (small dice)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (small dice)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green-sivri', name: 'Sivri or green pepper (small dice)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'onion-small', name: 'Onion (very small dice)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (heavy, chopped)', amount: 20, unit: 'g', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'sumac', name: 'Sumac (Turkish signature)', amount: 1, unit: 'tsp', store: 'big' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Small dice', txt: 'Cut everything into small even 5-6mm cubes - tomato, cucumber, pepper, onion. Uniformity matters.' },
+      { title: 'Salt onion (optional)', txt: 'If onion tastes sharp, rub with a pinch of salt, rinse, drain - takes the harshness out.' },
+      { title: 'Combine', txt: 'Big bowl: all vegetables + heaps of chopped parsley.' },
+      { title: 'Dress', txt: 'Squeeze lemon + olive oil + salt + sumac. Toss well.' },
+      { title: 'Rest 5 min', txt: 'Let sit 5 min so flavors meld and vegetables release some juice.', timer: 300 },
+      { title: 'Serve', txt: 'Immediately after resting, at room temp. With every Turkish meal - grilled meats, meze plates, kebabs, or as a light lunch with bread.' }
+    ],
+    tip: 'Sumac is the Turkish signature - a citrusy red spice that lifts everything. Chop small and even. Vienna: sumac at Etsan, Bambi Markt, or Naschmarkt spice stalls.'
+  },
+  {
+    id: 'leb-fattoush', name: 'Fattoush', nameEn: 'Lebanese toasted pita bread salad with sumac', emoji: '🥗',
+    category: 'salad', time: 20, prep: 15, cook: 5, difficulty: 'Easy', servings: 2,
+    tags: ['Lebanese', 'Levantine', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 240, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Lebanese summer classic - a big bright chopped vegetable salad tossed with toasted pita chips and heavy sumac. Uses stale pita bread that was traditionally too old to eat. The sumac dressing (with molasses of pomegranate) is what makes it Lebanese. Found at every Levantine mezze table alongside tabbouleh, hummus, moutabal.',
+    ingredients: [
+
+      { id: 'pita-bread', name: 'Pita bread (stale is better)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil (for toasting pita + dressing)', amount: 5, unit: 'tbsp', store: 'all' },
+      { id: 'tomato-vine', name: 'Tomatoes (medium chunks)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (chunks)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'lettuce-romaine', name: 'Romaine lettuce (torn)', amount: 1, unit: 'head', store: 'all' },
+      { id: 'radish', name: 'Radishes (thin sliced)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin sliced)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (heavy)', amount: 30, unit: 'g', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'purslane', name: 'Purslane if available (traditional)', amount: 30, unit: 'g', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'pomegranate-molasses', name: 'Pomegranate molasses (Lebanese signature)', amount: 1, unit: 'tbsp', store: 'big' },
+      { id: 'sumac', name: 'Sumac (heavy - signature)', amount: 2, unit: 'tsp', store: 'big' },
+      { id: 'garlic', name: 'Garlic clove (crushed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Toast pita', txt: 'Cut pita into 2cm squares. Toss with 2 tbsp olive oil + pinch of salt + 1 tsp sumac. Toast in a dry pan or 200°C oven 4-5 min until golden and crisp.', timer: 300 },
+      { title: 'Chop vegetables', txt: 'Tomato and cucumber in medium chunks (not small). Romaine torn by hand. Radishes thin sliced. Red onion thin.' },
+      { title: 'Heavy herbs', txt: 'Chop parsley and mint heavily. Add purslane if you can find it.' },
+      { title: 'Make dressing', txt: 'Small bowl: lemon juice + pomegranate molasses + crushed garlic + remaining olive oil + salt. Whisk.' },
+      { title: 'Combine', txt: 'Big bowl: vegetables + herbs. Dress. Toss well.' },
+      { title: 'Add pita last', txt: 'Sprinkle pita chips on top just before serving. Extra sumac. Do not mix them in early or they get soggy.' },
+      { title: 'Serve', txt: 'Immediately. Lebanese mezze table classic - crunchy, tart, herby, deeply satisfying.' }
+    ],
+    tip: 'Pomegranate molasses is the Lebanese secret - do not skip. Sumac is heavy. Pita chips go on LAST so they stay crisp. Vienna: pomegranate molasses at Etsan, Bambi Markt; sumac same shops.'
+  },
+  {
+    id: 'per-salad-shirazi', name: 'Salad Shirazi', nameEn: 'Persian tomato cucumber onion salad', emoji: '🥗',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Persian', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 100, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Persian everyday salad from Shiraz - tomato, cucumber, and red onion cut into tiny cubes with lime juice and dried mint. Simpler even than Turkish çoban salatası - the smaller cut is the Persian signature. Found on every Iranian table beside kebabs, rice, and stews. Cool, fresh, and cuts through rich meats beautifully.',
+    ingredients: [
+
+      { id: 'cucumber', name: 'Persian cucumbers (tiny 3-4mm dice)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'tomato-vine', name: 'Tomatoes (tiny 3-4mm dice)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (very tiny dice)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'lime-juice', name: 'Fresh lime juice (or lemon)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'mint-dried', name: 'Dried mint (Persian signature - not fresh)', amount: 1, unit: 'tsp', store: 'big' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'TINY dice', txt: 'Cut everything into very small 3-4mm cubes - smaller than Turkish çoban. Persian signature is the tiny uniform cut. Use small Persian cucumbers if you can find them.' },
+      { title: 'Combine', txt: 'Bowl: cucumber + tomato + red onion.' },
+      { title: 'Dress', txt: 'Add lime juice + olive oil + salt + pepper + dried mint (rub the mint between your palms to release aroma as you sprinkle).' },
+      { title: 'Rest 10 min', txt: 'Let sit 10 min in fridge - salt and lime pull juices out and everything melds.', timer: 600 },
+      { title: 'Serve', txt: 'Cold from fridge. Beside Persian kebabs, chicken, koresh, chelow rice. Cools and cuts fat.' }
+    ],
+    tip: 'DRIED mint (not fresh) is the Persian signature - completely different from Turkish or Arab uses. Small even cut matters. Vienna: dried mint at any Turkish/Persian shop; Persian cucumbers hard to find, use small English cucumbers.'
+  },
+  {
+    id: 'greek-dakos', name: 'Dakos', nameEn: 'Cretan barley rusk salad', emoji: '🥗',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Greek', 'Cretan', 'Classic', 'Summer', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 320, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Cretan peasant salad turned modern classic - dry barley rusks (paximadi) soaked briefly, topped with grated ripe tomato, crumbled mizithra or feta, olives, and olive oil. Called the Cretan bruschetta. The rusks stay slightly crunchy under the wet tomato. Found at every Cretan taverna in summer. Peak simplicity, peak flavor.',
+    ingredients: [
+
+      { id: 'barley-rusks', name: 'Barley rusks (paximadi) or use crusty bread', amount: 4, unit: 'pcs', store: 'big' },
+      { id: 'tomato-vine', name: 'Ripe tomatoes (very ripe)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'mizithra', name: 'Mizithra cheese, crumbled (or feta)', amount: 120, unit: 'g', store: 'big' },
+      { id: 'olives-kalamata', name: 'Kalamata olives (pitted)', amount: 12, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Cretan if possible)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'oregano-dried', name: 'Dried oregano', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'capers-optional', name: 'Capers (optional)', amount: 1, unit: 'tbsp', store: 'big' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'vinegar-red-wine', name: 'Red wine vinegar (tiny splash for the rusks)', amount: 1, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Soften rusks', txt: 'Sprinkle rusks with a few drops of water + tiny splash of vinegar. Let sit 2 min - softens slightly but stays crunchy. Do NOT soak fully.', timer: 120 },
+      { title: 'Grate tomato', txt: 'Cut tomatoes in half. Grate the cut side over a bowl using the large holes of a box grater - the flesh comes off in a pulp, skin stays in your hand. Salt the tomato pulp.' },
+      { title: 'Assemble', txt: 'Place rusks on plates. Spoon grated tomato generously over each - juice soaks in.' },
+      { title: 'Top', txt: 'Crumble mizithra or feta over each. Scatter olives + optional capers.' },
+      { title: 'Finish', txt: 'Drizzle olive oil generously. Sprinkle dried oregano.' },
+      { title: 'Serve', txt: 'Immediately - eat with a knife and fork, the rusk should still crunch under the wet tomato. Cretan taverna simplicity.' }
+    ],
+    tip: 'Real barley paximadi (Cretan) makes this special - much drier and denser than regular rusks. Substitute good crusty bread if unavailable, but the texture is not the same. Mizithra is sweet-tangy Cretan cheese; feta works as substitute. Vienna: Greek delis or Cretan import shops for paximadi.'
+  },
+  {
+    id: 'greek-melitzanosalata', name: 'Melitzanosalata', nameEn: 'Greek smoky eggplant salad', emoji: '🍆',
+    category: 'salad', time: 60, prep: 15, cook: 45, difficulty: 'Easy', servings: 2,
+    tags: ['Greek', 'Classic', 'Vegan', 'Vegetarian', 'Meze', 'Salad'],
+    nutrition: { kcal: 180, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Greek smoky eggplant salad - roasted or grilled eggplants mashed with olive oil, lemon, garlic, and often a little vinegar and parsley. Different from Turkish baba ghanoush by having no tahini (usually). The smokiness from grilling directly over flame is the key. Found on every Greek meze table.',
+    ingredients: [
+
+      { id: 'eggplant', name: 'Eggplants (medium large)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 5, unit: 'tbsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-red-wine', name: 'Red wine vinegar', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves (crushed)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (very fine dice)', amount: 0.25, unit: 'pcs', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'olives-kalamata', name: 'Kalamata olives (garnish)', amount: 6, unit: 'pcs', store: 'all' },
+      { id: 'tomato-cherry', name: 'Cherry tomatoes (garnish)', amount: 6, unit: 'pcs', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Char eggplants', txt: 'Best over open flame (gas hob directly): char eggplants turning until skin is completely blackened and inside is soft, 15-20 min. Or roast in 220°C oven 45 min. The smokiness is the whole point.', timer: 2700 },
+      { title: 'Cool and drain', txt: 'Put charred eggplants in a colander over a bowl. Cool 15 min - excess bitter juices drain out. Peel off the black skin. Discard.', timer: 900 },
+      { title: 'Chop', txt: 'Chop the flesh finely with a knife (do NOT use a food processor - Greek grandmothers say it kills the texture).' },
+      { title: 'Mix', txt: 'Bowl: chopped eggplant + crushed garlic + tiny onion dice + salt + pepper. Mix.' },
+      { title: 'Dress', txt: 'Add lemon juice + vinegar. Then drizzle olive oil while stirring - emulsifies slightly. Stir in parsley.' },
+      { title: 'Serve', txt: 'Rest 30 min for flavors to meld. Serve at room temp with olives and cherry tomatoes on top. Warm pita or bread for scooping.', timer: 1800 }
+    ],
+    tip: 'Charring over open flame gives the authentic smoky depth. Chop by hand - food processor makes it gummy. No tahini (that is Turkish/Arab baba ghanoush). Vienna: eggplants everywhere; a gas hob or a good grill is what you need.'
+  },
+  {
+    id: 'mor-taktouka', name: 'Taktouka', nameEn: 'Moroccan tomato pepper salad', emoji: '🌶',
+    category: 'salad', time: 35, prep: 10, cook: 25, difficulty: 'Easy', servings: 2,
+    tags: ['Moroccan', 'Classic', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 160, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Moroccan cooked salad - roasted or grilled green peppers, chopped and simmered with tomatoes, garlic, olive oil, cumin, and paprika. Served warm or at room temp with bread as a starter or side. Similar to Tunisian mechouia but chunkier. Popular across Morocco, especially in the Souss region.',
+    ingredients: [
+
+      { id: 'pepper-green', name: 'Green bell peppers', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'tomato-vine', name: 'Ripe tomatoes', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves (crushed)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'cumin-ground', name: 'Ground cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'paprika-sweet', name: 'Sweet paprika', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'paprika-hot', name: 'Hot paprika (optional)', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'cilantro-fresh', name: 'Fresh cilantro (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Lemon juice', amount: 1, unit: 'tbsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Char peppers', txt: 'Char green peppers over open flame or under broiler 8-10 min turning, until skin blackens. Put in a bowl, cover with plate 5 min - steam loosens skin.', timer: 600 },
+      { title: 'Peel + chop peppers', txt: 'Peel off blackened skin. Remove seeds and stems. Chop pepper flesh roughly.' },
+      { title: 'Prep tomatoes', txt: 'Score bottom of tomatoes, dip in boiling water 30 sec, cold water, peel. Chop.' },
+      { title: 'Cook', txt: 'Big pan: olive oil + crushed garlic 1 min. Add chopped tomatoes + salt. Simmer 10 min uncovered until reduced.', timer: 600 },
+      { title: 'Add peppers + spice', txt: 'Stir in chopped peppers + cumin + paprika (both). Simmer 5 min more.', timer: 300 },
+      { title: 'Finish', txt: 'Off heat: stir in chopped parsley + cilantro + lemon juice.' },
+      { title: 'Serve', txt: 'Room temp or slightly warm with crusty bread or khobz. Moroccan starter classic.' }
+    ],
+    tip: 'Char the peppers well - the smoky flavor is essential. Cook the tomatoes down properly. Vienna: all standard ingredients; Moroccan sweet + hot paprika at Naschmarkt spice stalls or Etsan.'
+  },
+  {
+    id: 'tun-mechouia', name: 'Salade Mechouia', nameEn: 'Tunisian grilled vegetable salad', emoji: '🌶',
+    category: 'salad', time: 45, prep: 15, cook: 30, difficulty: 'Easy', servings: 2,
+    tags: ['Tunisian', 'Classic', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 180, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Tunisian summer classic - green peppers, tomatoes, onions, and garlic all charred until blackened, then peeled and chopped rough with olive oil, lemon, harissa, and cumin. Different from Moroccan taktouka by the heat (harissa) and by being uncooked after chopping. Served with tuna and boiled egg on top as a full meal, or as a dip with bread.',
+    ingredients: [
+
+      { id: 'pepper-green', name: 'Green peppers', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'tomato-vine', name: 'Tomatoes', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'onion-small', name: 'Onion (whole, unpeeled)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic (whole head, unpeeled)', amount: 1, unit: 'head', store: 'all' },
+      { id: 'harissa', name: 'Harissa paste', amount: 1, unit: 'tsp', store: 'big' },
+      { id: 'cumin-ground', name: 'Ground cumin', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'caraway-ground', name: 'Ground caraway (optional Tunisian touch)', amount: 0.5, unit: 'tsp', store: 'big' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'tuna-oil', name: 'Canned tuna in oil (traditional topping)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'egg', name: 'Hard-boiled eggs, sliced (topping)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'olives-black', name: 'Black olives (garnish)', amount: 8, unit: 'pcs', store: 'all' },
+      { id: 'capers-optional', name: 'Capers (garnish)', amount: 1, unit: 'tbsp', store: 'big' }
+    ],
+    steps: [
+
+      { title: 'Char everything', txt: 'Over open flame or under broiler: char peppers, tomatoes, whole onion, whole garlic head - until blackened outside, soft inside. 15-25 min total, turning as needed.', timer: 1500 },
+      { title: 'Cool + peel', txt: 'Cool in a covered bowl 10 min. Peel peppers and tomatoes (skins slip off). Peel onion. Squeeze garlic cloves out of their skins.', timer: 600 },
+      { title: 'Chop rough', txt: 'Chop peppers, tomatoes, onion, garlic all roughly on a big cutting board. Some Tunisian versions crush more than chop.' },
+      { title: 'Combine + dress', txt: 'Big bowl: chopped vegetables + harissa + cumin + caraway + olive oil + lemon + salt. Stir well.' },
+      { title: 'Rest', txt: 'Let sit 15 min at room temp for flavors to develop.', timer: 900 },
+      { title: 'Serve with toppings', txt: 'Spread on plate. Top with canned tuna + sliced hard-boiled eggs + olives + capers. With crusty bread. Tunisian meal-salad.' }
+    ],
+    tip: 'Char everything until blackened - the smoky depth is essential. Real Tunisian harissa (not the mild jarred stuff) makes a difference. Vienna: harissa at Etsan or Naschmarkt (look for Tunisian brands like El Ouns or Kef).'
+  },
+  {
+    id: 'per-salad-olivieh', name: 'Salad Olivieh', nameEn: 'Persian potato chicken salad', emoji: '🥗',
+    category: 'salad', time: 60, prep: 20, cook: 40, difficulty: 'Easy', servings: 2,
+    tags: ['Persian', 'Classic', 'Vegetarian-option', 'Salad'],
+    nutrition: { kcal: 380, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Persian version of the Russian potato salad (via Russian influence through Central Asia) - boiled chicken, potatoes, eggs, pickles, and peas mixed with a lemony mayonnaise. Popular at Persian family gatherings and picnics. Different from Russian by more chicken, more pickle, and often Persian saffron. Served spread on bread as a sandwich or as a side.',
+    ingredients: [
+
+      { id: 'potato', name: 'Potatoes (medium)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'chicken-breast', name: 'Chicken breast (boiled and shredded)', amount: 300, unit: 'g', store: 'all' },
+      { id: 'egg', name: 'Eggs (hard-boiled)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'pickle-cucumber', name: 'Pickled cucumbers (chopped)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'peas-frozen', name: 'Green peas (frozen, thawed)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'onion-small', name: 'Onion (very small dice)', amount: 0.25, unit: 'pcs', store: 'all' },
+      { id: 'mayonnaise', name: 'Mayonnaise', amount: 150, unit: 'g', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard (light)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (garnish)', amount: 10, unit: 'g', store: 'all' },
+      { id: 'olive-black', name: 'Black olives (garnish)', amount: 6, unit: 'pcs', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Boil chicken', txt: 'Simmer chicken breast in salted water 20 min until cooked. Cool, shred fine.', timer: 1200 },
+      { title: 'Boil potatoes + eggs', txt: 'In the same pot, boil potatoes 20-25 min until fork-tender. Boil eggs 10 min. Cool both in cold water. Peel potatoes and eggs.', timer: 1500 },
+      { title: 'Dice small', txt: 'Cut potatoes into small 8mm cubes. Chop 2 eggs finely (save 1 for garnish, sliced).' },
+      { title: 'Combine', txt: 'Big bowl: shredded chicken + potato cubes + chopped eggs + pickles + peas + tiny onion dice.' },
+      { title: 'Dress', txt: 'Small bowl: mayo + mustard + lemon juice + salt + pepper. Whisk. Fold into salad gently.' },
+      { title: 'Chill', txt: 'Refrigerate 1 hour minimum - flavors meld and salad firms up.', timer: 3600 },
+      { title: 'Serve', txt: 'Mound on a platter. Top with sliced reserved egg + parsley + olives. Serve with barbari bread or as sandwiches. Persian family classic.' }
+    ],
+    tip: 'Chop everything SMALL and EVEN - matters for the texture. Chill properly before serving. Real Persian pickles are darker and more sour than European ones. Vienna: standard ingredients; Persian pickles at Persian shops Lerchenfelder Strasse.'
+  },
+  {
+    id: 'esp-esqueixada', name: 'Esqueixada', nameEn: 'Catalan salt cod salad', emoji: '🐟',
+    category: 'salad', time: 90, prep: 15, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Spanish', 'Catalan', 'Classic', 'Summer', 'Salad'],
+    nutrition: { kcal: 220, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Catalan summer classic - shredded raw salt cod (desalted first) with tomatoes, onions, olives, and olive oil. The cod is not cooked - the salt cures it. Bright, salty, deeply savory. Found in every Catalan restaurant in summer. The name means torn - the cod is torn by hand into shreds, never sliced.',
+    ingredients: [
+
+      { id: 'salt-cod', name: 'Salt cod (bacalao)', amount: 200, unit: 'g', store: 'big' },
+      { id: 'tomato-vine', name: 'Ripe tomatoes (small dice)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (very thin sliced)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Green pepper (small dice)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'olives-black', name: 'Black olives (Aragon or Kalamata)', amount: 12, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Spanish)', amount: 5, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-sherry', name: 'Sherry vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt (small - cod is already salty)', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (chopped)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Desalt cod', txt: 'Rinse salt cod. Soak in cold water in fridge 24-36 hours, changing water 3-4 times. Fish should be plump and not too salty when tasted raw. Critical step.', timer: 86400 },
+      { title: 'Shred by hand', txt: 'Drain cod. Remove skin and any bones. TEAR into small shreds with your hands (esqueixada means torn). Never slice with a knife.' },
+      { title: 'Chop vegetables', txt: 'Small dice tomatoes and pepper. Slice red onion very thin.' },
+      { title: 'Combine', txt: 'Bowl: shredded cod + tomato + onion + pepper + olives.' },
+      { title: 'Dress', txt: 'Add olive oil + sherry vinegar + pepper + small pinch salt (test first - cod is already salty). Toss gently.' },
+      { title: 'Rest 15 min', txt: 'Let flavors meld at room temp.', timer: 900 },
+      { title: 'Serve', txt: 'Room temp with parsley scattered. Catalan summer taverna classic. Serves with pa amb tomàquet (Catalan tomato bread).' }
+    ],
+    tip: 'The 24-36 hour desalting is non-negotiable - undersoaked cod is inedibly salty. Test a small piece raw before assembling. Vienna: salt cod at Portuguese and Spanish import shops or at large Interspar sometimes.'
+  },
+  {
+    id: 'ita-tricolore', name: 'Insalata Tricolore', nameEn: 'Italian arugula tomato mozzarella salad', emoji: '🇮🇹',
+    category: 'salad', time: 8, prep: 8, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Classic', 'Summer', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 320, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Italian salad in the colors of the Italian flag - green (arugula or basil), white (mozzarella), red (tomato). Simple, beautiful, and everywhere in Italy in summer. Different from Caprese by using arugula base and diced ingredients rather than sliced. Fresh, peppery, milky.',
+    ingredients: [
+
+      { id: 'arugula', name: 'Arugula (rocket)', amount: 120, unit: 'g', store: 'all' },
+      { id: 'mozzarella-fresh', name: 'Fresh mozzarella (bocconcini or ball, cubed)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'tomato-cherry', name: 'Cherry tomatoes (halved)', amount: 250, unit: 'g', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Italian)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'balsamic-glaze', name: 'Balsamic glaze (or reduced balsamic vinegar)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Flaky salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'basil-fresh', name: 'Fresh basil leaves', amount: 10, unit: 'leaves', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Base', txt: 'Spread arugula on a big flat plate or shallow bowl.' },
+      { title: 'Scatter', txt: 'Scatter cubed mozzarella + halved cherry tomatoes over the arugula.' },
+      { title: 'Basil', txt: 'Tear basil leaves and scatter.' },
+      { title: 'Dress', txt: 'Drizzle olive oil generously + balsamic glaze in zigzag pattern.' },
+      { title: 'Salt + pepper', txt: 'Sprinkle flaky salt + black pepper.' },
+      { title: 'Serve', txt: 'Immediately - the three colors of the Italian flag on the plate.' }
+    ],
+    tip: 'Balsamic GLAZE (thick, syrupy) not balsamic vinegar - if you only have vinegar, reduce 100ml with 1 tbsp sugar over low heat to a syrup. Bocconcini or mozzarella pearls work best for even bite-size. Vienna: fresh mozzarella at any Spar; balsamic glaze at Spar Gourmet or make yourself.'
+  },
+  {
+    id: 'esp-mixta', name: 'Ensalada Mixta', nameEn: 'Spanish mixed everyday salad', emoji: '🥗',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Spanish', 'Classic', 'Summer', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 220, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Spain default salad served in every casa de comidas, at every menu del día. Lettuce, tomato, onion, tuna, olives, boiled egg, sometimes asparagus or corn, dressed with olive oil and vinegar. Simple, filling, everywhere. The Spanish everyday salad, not fancy but exactly right.',
+    ingredients: [
+
+      { id: 'lettuce-mixed', name: 'Mixed lettuce (iceberg + romaine)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'tomato-vine', name: 'Tomatoes (wedges)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin rings)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'tuna-oil', name: 'Canned tuna in olive oil (drained)', amount: 120, unit: 'g', store: 'all' },
+      { id: 'egg', name: 'Hard-boiled eggs (quartered)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'olives-black', name: 'Black olives', amount: 12, unit: 'pcs', store: 'all' },
+      { id: 'asparagus-canned', name: 'White asparagus (canned Spanish, optional)', amount: 6, unit: 'spears', store: 'big' },
+      { id: 'corn-canned', name: 'Canned sweet corn (Spanish touch)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Spanish)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-sherry', name: 'Sherry vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Boil eggs', txt: 'Simmer eggs 10 min. Cool in cold water. Peel and quarter.', timer: 600 },
+      { title: 'Chop lettuce', txt: 'Tear or chop lettuce into bite pieces. Big bowl.' },
+      { title: 'Add vegetables', txt: 'Add tomato wedges + red onion rings + drained corn + white asparagus if using.' },
+      { title: 'Top proteins', txt: 'Scatter drained tuna and quartered eggs on top.' },
+      { title: 'Add olives', txt: 'Scatter olives.' },
+      { title: 'Dress at table', txt: 'Spanish tradition: leave undressed. At the table drizzle olive oil + sherry vinegar + salt directly on plates as served, letting each person taste. Or dress the whole bowl right before serving.' },
+      { title: 'Serve', txt: 'With crusty bread. Spanish menu del día staple.' }
+    ],
+    tip: 'Tuna in OLIVE OIL (Spanish brands like Ortiz) is much better than tuna in water. Sherry vinegar (Spanish) is worth seeking out. Vienna: Ortiz tuna at Spar Gourmet or Spanish import shops.'
+  },
+  {
+    id: 'turkish-roka', name: 'Roka Salatası', nameEn: 'Turkish arugula parmesan salad', emoji: '🥗',
+    category: 'salad', time: 8, prep: 8, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Turkish', 'Aegean', 'Modern', 'Summer', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 200, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Modern Turkish arugula salad - fresh roka (arugula) with shaved parmesan or aged kaşar, lemon, olive oil, and pomegranate seeds. Found at every Istanbul meze restaurant now, especially popular in Aegean coastal towns. Peppery, salty, tart, sweet - simple but perfectly balanced.',
+    ingredients: [
+
+      { id: 'arugula', name: 'Arugula (roka)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'parmesan', name: 'Parmesan or aged kaşar (shaved)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'pomegranate-seeds', name: 'Pomegranate seeds', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'nar-eksisi', name: 'Pomegranate molasses (nar ekşisi)', amount: 1, unit: 'tsp', store: 'big' },
+      { id: 'salt', name: 'Flaky salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Wash arugula', txt: 'Wash arugula, spin dry. Pile on a big flat plate.' },
+      { title: 'Dress', txt: 'Whisk lemon juice + olive oil + pomegranate molasses + salt + pepper.' },
+      { title: 'Toss lightly', txt: 'Drizzle dressing over arugula, toss very gently with hands.' },
+      { title: 'Top', txt: 'Shave parmesan generously over top with a vegetable peeler.' },
+      { title: 'Pomegranate', txt: 'Scatter pomegranate seeds - they add jewel-like crunch.' },
+      { title: 'Serve', txt: 'Immediately. Perfect beside Turkish grills, kebabs, meze plates.' }
+    ],
+    tip: 'Pomegranate molasses is the Turkish signature - just a teaspoon, not much. Shave parmesan with a vegetable peeler for the pretty ribbons. Vienna: standard ingredients; pomegranate molasses (nar ekşisi) at Etsan.'
+  },
+  {
+    id: 'turkish-mevsim', name: 'Mevsim Salatası', nameEn: 'Turkish seasonal mixed salad', emoji: '🥗',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Turkish', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 150, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Turkey seasonal mixed salad - whatever fresh vegetables are best that day, chopped and dressed simply with lemon and olive oil. Found at every Turkish restaurant as a light starter or side. Different from çoban salatası by including lettuce and being less finely chopped.',
+    ingredients: [
+
+      { id: 'lettuce-mixed', name: 'Mixed lettuce', amount: 100, unit: 'g', store: 'all' },
+      { id: 'tomato-vine', name: 'Tomatoes (wedges)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (half-moons)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'carrot-fresh', name: 'Carrot (grated)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'cabbage-red', name: 'Red cabbage (thin sliced)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin sliced)', amount: 0.25, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green-sivri', name: 'Green pepper (thin sliced)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'corn-canned', name: 'Sweet corn (canned)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'sumac', name: 'Sumac', amount: 0.5, unit: 'tsp', store: 'big' }
+    ],
+    steps: [
+
+      { title: 'Prep vegetables', txt: 'Tear lettuce. Wedge tomatoes. Half-moon cucumber. Grate carrot. Thin slice cabbage, onion, pepper.' },
+      { title: 'Combine', txt: 'Big bowl: all vegetables + corn.' },
+      { title: 'Dress', txt: 'Lemon + olive oil + salt + sumac. Toss.' },
+      { title: 'Serve', txt: 'Immediately at room temp. Turkish restaurant everyday side.' }
+    ],
+    tip: 'Mix and match seasonal vegetables - the point is what is fresh that day. Vienna: everything at any supermarket.'
+  },
+  {
+    id: 'turkish-kirmizi-lahana', name: 'Kırmızı Lahana Salatası', nameEn: 'Turkish red cabbage salad', emoji: '🟣',
+    category: 'salad', time: 15, prep: 15, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Turkish', 'Classic', 'Winter', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 100, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Turkish red cabbage salad - thinly sliced red cabbage dressed with lemon, olive oil, and sumac. Simple, cheap, deeply pleasing. Especially popular in winter when tomatoes are bad. The lemon and salt soften the raw cabbage into something silky. Found at every Turkish everyday table.',
+    ingredients: [
+
+      { id: 'cabbage-red', name: 'Red cabbage (very thin sliced)', amount: 400, unit: 'g', store: 'all' },
+      { id: 'carrot-fresh', name: 'Carrot (grated, optional)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'lemon-juice', name: 'Lemon juice (generous)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'Vinegar (splash)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'sumac', name: 'Sumac', amount: 1, unit: 'tsp', store: 'big' },
+      { id: 'salt', name: 'Salt (heavy - softens cabbage)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Slice cabbage', txt: 'Thin slice red cabbage with a sharp knife or mandoline - should be ribbons, not chunks.' },
+      { title: 'Salt first', txt: 'Bowl: cabbage + salt + lemon juice. Massage with your hands 1-2 min - critical step, softens the cabbage.' },
+      { title: 'Rest 10 min', txt: 'Let sit 10 min - cabbage releases juice and softens.', timer: 600 },
+      { title: 'Add rest', txt: 'Add grated carrot + parsley + olive oil + vinegar + sumac + pepper. Toss well.' },
+      { title: 'Serve', txt: 'Immediately or refrigerate up to 2 days (gets better). Turkish winter and year-round side.' }
+    ],
+    tip: 'The salt + lemon massage is the trick - without it the cabbage is raw and hard. Sumac is the Turkish signature. Vienna: standard ingredients; red cabbage at any supermarket.'
+  },
+  {
+    id: 'ita-farro', name: 'Insalata di Farro', nameEn: 'Italian spelt grain salad', emoji: '🌾',
+    category: 'salad', time: 45, prep: 15, cook: 30, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Tuscan', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 340, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Tuscan grain salad - cooked farro (ancient wheat variety) mixed with tomatoes, cucumber, olives, feta or mozzarella, basil, and olive oil. A whole-meal salad from central Italy. Nutty, chewy grain absorbs flavors beautifully. Great for lunchboxes and picnics - improves overnight.',
+    ingredients: [
+
+      { id: 'farro', name: 'Farro (pearled or whole)', amount: 200, unit: 'g', store: 'big' },
+      { id: 'water-cook', name: 'Water for cooking', amount: 800, unit: 'ml', store: 'all' },
+      { id: 'salt-cook', name: 'Salt for cooking water', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'tomato-cherry', name: 'Cherry tomatoes (halved)', amount: 250, unit: 'g', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (small dice)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'olives-kalamata', name: 'Kalamata olives (pitted, chopped)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'feta-crumbled', name: 'Feta crumbled (or mozzarella)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (very fine dice)', amount: 0.25, unit: 'pcs', store: 'all' },
+      { id: 'basil-fresh', name: 'Fresh basil (torn)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (chopped)', amount: 10, unit: 'g', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Cook farro', txt: 'Pot: farro + salted water. Bring to boil, reduce, simmer 25-30 min until tender but still chewy. Drain, rinse under cold water to stop cooking. Cool.', timer: 1500 },
+      { title: 'Prep vegetables', txt: 'Halve cherry tomatoes. Small dice cucumber. Tiny dice onion. Chop olives.' },
+      { title: 'Combine', txt: 'Big bowl: cooled farro + tomatoes + cucumber + onion + olives + crumbled feta + torn basil + parsley.' },
+      { title: 'Dress', txt: 'Whisk olive oil + lemon + salt + pepper. Pour over, toss well.' },
+      { title: 'Rest 15 min', txt: 'Let sit 15 min for flavors to meld.', timer: 900 },
+      { title: 'Serve', txt: 'Room temp. Tuscan lunch classic. Keeps 3 days refrigerated.' }
+    ],
+    tip: 'Pearled farro cooks faster; whole grain takes 40 min. Do not overcook - should be pleasantly chewy. Vienna: farro at Spar Premium or Interspar Gourmet Italian shelves.'
+  },
+  {
+    id: 'ita-rinforzo', name: 'Insalata di Rinforzo', nameEn: 'Neapolitan Christmas cauliflower salad', emoji: '🎄',
+    category: 'salad', time: 25, prep: 15, cook: 10, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Neapolitan', 'Classic', 'Winter', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 220, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Traditional Naples Christmas Eve salad - boiled cauliflower with pickled vegetables, olives, anchovies, capers, and giardiniera all dressed with olive oil and vinegar. Reinforced daily through the holiday - eaten Christmas Eve, added to on Christmas Day, more added on 26th. The name means fortified or reinforced.',
+    ingredients: [
+
+      { id: 'cauliflower', name: 'Cauliflower (broken to florets)', amount: 500, unit: 'g', store: 'all' },
+      { id: 'water-cook', name: 'Water for boiling', amount: 1000, unit: 'ml', store: 'all' },
+      { id: 'salt-cook', name: 'Salt for water', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'giardiniera', name: 'Giardiniera pickled vegetables', amount: 150, unit: 'g', store: 'big' },
+      { id: 'olives-black', name: 'Black olives (Gaeta)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'olives-green', name: 'Green olives (Sicilian)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'anchovy', name: 'Anchovies in oil', amount: 6, unit: 'fillets', store: 'big' },
+      { id: 'capers-optional', name: 'Capers (salted, rinsed)', amount: 2, unit: 'tbsp', store: 'big' },
+      { id: 'peppers-pickled', name: 'Peperoncini or pickled peppers', amount: 60, unit: 'g', store: 'big' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 5, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (chopped)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Boil cauliflower', txt: 'Bring salted water to boil. Cook cauliflower florets 6-8 min until al dente (still with bite). Drain, cool in cold water. Drain again.', timer: 480 },
+      { title: 'Chop anchovies', txt: 'Chop anchovies roughly.' },
+      { title: 'Combine', txt: 'Big bowl: cauliflower + giardiniera + both olives + anchovies + capers + peperoncini.' },
+      { title: 'Dress', txt: 'Olive oil + vinegar + salt + pepper. Toss well.' },
+      { title: 'Rest', txt: 'Let sit at least 2 hours or overnight in fridge. Improves each day.', timer: 7200 },
+      { title: 'Serve', txt: 'Room temp with parsley. Naples Christmas classic - "reinforce" (add more olives, pickles, anchovies) each day.' }
+    ],
+    tip: 'The salad tradition is that you add to it each day of the holidays - hence rinforzo (reinforced). Better on day 2 and 3. Vienna: giardiniera at Italian shops (Wollzeile); good anchovies at Spar Gourmet.'
+  },
+  {
+    id: 'esp-naranja', name: 'Ensalada de Naranja', nameEn: 'Andalusian orange olive salad', emoji: '🍊',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Spanish', 'Andalusian', 'Classic', 'Winter', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 200, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Andalusian winter salad - sliced oranges with red onion, black olives, olive oil, and sherry vinegar. Bright, tart, savory-sweet contrast. Perfect in winter when oranges are at peak. Moorish heritage in Andalusia - showcases both the citrus and the olives that define southern Spain.',
+    ingredients: [
+
+      { id: 'orange', name: 'Oranges (peeled, sliced into rounds)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (very thin sliced)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'olives-black', name: 'Black olives (Aragon or Kalamata)', amount: 15, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Spanish)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-sherry', name: 'Sherry vinegar', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Flaky salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'cumin-ground', name: 'Ground cumin (Moorish touch, optional)', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint (optional)', amount: 6, unit: 'leaves', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Peel + slice oranges', txt: 'Cut top and bottom off each orange. Stand on cutting board, cut peel + pith away in strips. Slice into 5mm rounds.' },
+      { title: 'Arrange', txt: 'Arrange orange slices on a wide flat plate, overlapping slightly.' },
+      { title: 'Scatter', txt: 'Scatter thin red onion + black olives evenly.' },
+      { title: 'Dress', txt: 'Olive oil + sherry vinegar drizzled over. Salt + pepper + optional cumin.' },
+      { title: 'Mint', txt: 'Tear fresh mint leaves over top if using.' },
+      { title: 'Serve', txt: 'Room temp. Andalusian winter classic - lovely with grilled fish or cured meats.' }
+    ],
+    tip: 'Use good sweet oranges (blood oranges are stunning in season). Sherry vinegar is Andalusian tradition. Vienna: sherry vinegar at Spar Gourmet or Spanish import shops.'
+  },
+  {
+    id: 'esp-pipirrana', name: 'Pipirrana', nameEn: 'Andalusian tomato pepper salad', emoji: '🍅',
+    category: 'salad', time: 12, prep: 12, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Spanish', 'Andalusian', 'Jaén', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 160, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Andalusian and Jaén summer salad - very finely chopped tomato, pepper, cucumber, and onion, dressed simply with olive oil, vinegar, and salt. Similar to Spanish gazpacho vegetables but as a salad instead of soup. Sometimes served with canned tuna or hard-boiled egg. The Andalusian farmer summer lunch.',
+    ingredients: [
+
+      { id: 'tomato-vine', name: 'Ripe tomatoes (very finely diced)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Green pepper (very finely diced)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (very finely diced)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'onion-small', name: 'Onion (very finely diced)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'garlic', name: 'Garlic (crushed to paste)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Spanish)', amount: 5, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-sherry', name: 'Sherry vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'tuna-oil', name: 'Canned tuna (optional topping)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'egg', name: 'Hard-boiled egg (optional topping)', amount: 1, unit: 'pcs', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Fine dice', txt: 'Cut everything into very fine 4-5mm cubes. Uniformity matters.' },
+      { title: 'Combine', txt: 'Bowl: tomato + pepper + cucumber + onion + crushed garlic + salt.' },
+      { title: 'Dress', txt: 'Add olive oil + sherry vinegar. Toss.' },
+      { title: 'Rest', txt: 'Let sit 15 min at room temp - flavors meld and juices develop.', timer: 900 },
+      { title: 'Optional toppings', txt: 'Top with flaked tuna and/or quartered hard-boiled egg.' },
+      { title: 'Serve', txt: 'Room temp with crusty bread to soak up juices. Andalusian summer lunch classic.' }
+    ],
+    tip: 'Very small even dice is key - not chunks. The juices at the bottom are treasure - soak with bread. Vienna: all standard ingredients.'
+  },
+  {
+    id: 'leb-adas', name: 'Salatet Adas', nameEn: 'Lebanese green lentil salad', emoji: '🥗',
+    category: 'salad', time: 40, prep: 10, cook: 30, difficulty: 'Easy', servings: 2,
+    tags: ['Lebanese', 'Levantine', 'Classic', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 260, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Lebanese lentil salad - cooked green or brown lentils with tomatoes, onions, parsley, and a lemony olive oil dressing with sumac and cumin. Different from French lentil salad by the heavy herbs and sumac. Substantial, protein-rich, keeps well. Found at Levantine deli counters and family meals.',
+    ingredients: [
+
+      { id: 'lentils-green', name: 'Green lentils (or brown)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'water-cook', name: 'Water for cooking', amount: 800, unit: 'ml', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (fine dice)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'tomato-vine', name: 'Tomatoes (small dice)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (small dice)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (heavy, chopped)', amount: 30, unit: 'g', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint (chopped)', amount: 10, unit: 'g', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'sumac', name: 'Sumac', amount: 1, unit: 'tsp', store: 'big' },
+      { id: 'cumin-ground', name: 'Ground cumin', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'garlic', name: 'Garlic (crushed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Cook lentils', txt: 'Rinse lentils. Pot: lentils + water. Bring to boil, reduce, simmer 20-25 min until tender but holding shape. Do NOT overcook. Drain.', timer: 1500 },
+      { title: 'Cool', txt: 'Spread on a tray to cool quickly and prevent overcooking.' },
+      { title: 'Chop vegetables', txt: 'Fine dice onion, tomato, cucumber. Heavy chop parsley and mint.' },
+      { title: 'Make dressing', txt: 'Bowl: lemon juice + olive oil + crushed garlic + sumac + cumin + salt + pepper. Whisk.' },
+      { title: 'Combine', txt: 'Big bowl: cooled lentils + vegetables + herbs. Pour dressing, toss well.' },
+      { title: 'Rest 20 min', txt: 'Let flavors meld.', timer: 1200 },
+      { title: 'Serve', txt: 'Room temp. Lebanese deli classic. Keeps 3 days refrigerated - great for lunchboxes.' }
+    ],
+    tip: 'Do not overcook lentils - they should hold shape, not mush. Rinsing in cold water immediately stops cooking. Vienna: green/brown lentils at any supermarket; sumac at Etsan.'
+  },
+  {
+    id: 'leb-michoteta', name: 'Michoteta', nameEn: 'Egyptian-Levantine feta cucumber salad', emoji: '🧀',
+    category: 'salad', time: 8, prep: 8, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Egyptian', 'Lebanese', 'Levantine', 'Classic', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 260, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Egyptian Jewish salad, popular across the Levant - crumbled feta mashed with cucumber, olive oil, and lemon, sometimes with tomato. Coarse and rustic, spread on bread or dolloped alongside grilled fish. Simple but strongly flavored - the salty feta is the star.',
+    ingredients: [
+
+      { id: 'feta', name: 'Feta cheese (crumbled)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (very small dice)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'tomato-cherry', name: 'Cherry tomatoes (halved, optional)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (very fine dice)', amount: 0.25, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1, unit: 'tsp', store: 'big' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Crumble feta', txt: 'Crumble feta into a bowl with a fork - keep it coarse, not fine.' },
+      { title: 'Mash slightly', txt: 'Mash a bit with the fork so some of the feta breaks down and cream out.' },
+      { title: 'Add vegetables', txt: 'Stir in cucumber, tomato if using, and red onion.' },
+      { title: 'Dress', txt: 'Add olive oil + lemon juice + dried mint + black pepper. Stir.' },
+      { title: 'Serve', txt: 'Room temp on a small plate with pita or crusty bread. Or dollop alongside grilled fish. Egyptian Jewish classic.' }
+    ],
+    tip: 'Dried mint (not fresh) is the Levantine signature here. Feta should be crumbled coarse, not fine. Vienna: standard ingredients; dried mint at Etsan.'
+  },
+  {
+    id: 'leb-malfouf', name: 'Salatet Malfouf', nameEn: 'Lebanese cabbage garlic lemon salad', emoji: '🥬',
+    category: 'salad', time: 15, prep: 15, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Lebanese', 'Levantine', 'Classic', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 130, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Lebanese cabbage salad - thinly sliced white cabbage dressed with heavy garlic, lemon juice, olive oil, and dried mint. Simple, crisp, deeply garlicky. Found alongside kibbeh, kebabs, and grilled fish. The garlic and lemon soften the cabbage into something silky yet crunchy.',
+    ingredients: [
+
+      { id: 'cabbage-white', name: 'White cabbage (very thin sliced)', amount: 400, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves (crushed to paste - lots)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice (generous)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'mint-dried', name: 'Dried mint', amount: 1.5, unit: 'tsp', store: 'big' },
+      { id: 'salt', name: 'Salt (softens cabbage)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Thin slice cabbage', txt: 'Slice cabbage as thin as possible - mandoline or sharp knife. Should be ribbons.' },
+      { title: 'Salt massage', txt: 'Bowl: cabbage + salt + lemon juice. Massage 1-2 min - softens cabbage.' },
+      { title: 'Rest 10 min', txt: 'Let sit 10 min - cabbage wilts slightly and releases water.', timer: 600 },
+      { title: 'Add rest', txt: 'Add crushed garlic paste + olive oil + dried mint + black pepper. Toss well.' },
+      { title: 'Rest 5 min', txt: 'Let flavors meld.', timer: 300 },
+      { title: 'Serve', txt: 'Immediately or up to 1 hour later at room temp. Lebanese classic side to kebabs and kibbeh.' }
+    ],
+    tip: 'Lots of garlic is the signature - do not skimp. Crush garlic to paste with a pinch of salt for smoothest texture. Vienna: standard ingredients everywhere.'
+  },
+  {
+    id: 'mor-marocaine', name: 'Salade Marocaine', nameEn: 'Moroccan chopped tomato cucumber salad', emoji: '🥗',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Moroccan', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 130, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Moroccan everyday salad - very finely chopped tomato, cucumber, onion, and green pepper with heavy fresh cilantro and parsley, dressed with lemon and olive oil. Different from Turkish çoban or Persian shirazi by the heavy fresh herbs (cilantro + parsley) and cumin. Found on every Moroccan family table.',
+    ingredients: [
+
+      { id: 'tomato-vine', name: 'Tomatoes (fine dice)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (fine dice)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Green pepper (fine dice)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'onion-small', name: 'Onion (very fine dice)', amount: 0.25, unit: 'pcs', store: 'all' },
+      { id: 'cilantro-fresh', name: 'Fresh cilantro (heavy, chopped)', amount: 20, unit: 'g', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (heavy, chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cumin-ground', name: 'Ground cumin', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Fine dice', txt: 'Cut everything into very small 5mm cubes.' },
+      { title: 'Chop herbs heavy', txt: 'Chop cilantro and parsley heavily - a big handful of each.' },
+      { title: 'Combine', txt: 'Bowl: vegetables + herbs.' },
+      { title: 'Dress', txt: 'Lemon + olive oil + cumin + salt + pepper. Toss.' },
+      { title: 'Rest 10 min', txt: 'Let flavors meld.', timer: 600 },
+      { title: 'Serve', txt: 'Room temp with khobz or crusty bread. Moroccan family classic.' }
+    ],
+    tip: 'Heavy fresh cilantro + parsley + cumin = Moroccan signature. Vienna: fresh cilantro at any large supermarket.'
+  },
+  {
+    id: 'mor-carottes', name: 'Salade de Carottes', nameEn: 'Moroccan carrot orange cumin salad', emoji: '🥕',
+    category: 'salad', time: 20, prep: 15, cook: 5, difficulty: 'Easy', servings: 2,
+    tags: ['Moroccan', 'Classic', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 180, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Moroccan carrot salad - lightly cooked or raw carrots with orange juice, cumin, cinnamon, garlic, lemon, and olive oil. Sweet, spiced, savory all at once. Found at every Moroccan family meal and in every casablanca café. Cousin of French carottes râpées but with the North African spice profile.',
+    ingredients: [
+
+      { id: 'carrot-fresh', name: 'Carrots (peeled, thick grated)', amount: 500, unit: 'g', store: 'all' },
+      { id: 'orange-juice', name: 'Fresh orange juice', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'cumin-ground', name: 'Ground cumin (Moroccan signature)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'cinnamon-ground', name: 'Ground cinnamon', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'paprika-sweet', name: 'Sweet paprika', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'garlic', name: 'Garlic (crushed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'sugar', name: 'Sugar (small pinch)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (chopped)', amount: 10, unit: 'g', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'raisins-golden', name: 'Golden raisins (optional)', amount: 2, unit: 'tbsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Prep carrots', txt: 'Peel carrots. Grate thickly or slice into thin coins. Raw is fine, or blanch briefly.' },
+      { title: 'Blanch briefly (optional)', txt: 'If you want them softer: boil salted water, blanch carrots 3 min, drain, cool in cold water.', timer: 180 },
+      { title: 'Make dressing', txt: 'Bowl: orange juice + lemon + olive oil + cumin + cinnamon + paprika + crushed garlic + sugar + salt. Whisk.' },
+      { title: 'Combine', txt: 'Carrots in a serving bowl. Pour dressing over. Toss well. Add golden raisins if using.' },
+      { title: 'Rest 15 min', txt: 'Let flavors meld.', timer: 900 },
+      { title: 'Serve', txt: 'Room temp or slightly chilled. Parsley scattered. Moroccan family classic.' }
+    ],
+    tip: 'Cumin + cinnamon is the Moroccan spice signature - do not skip either. Raw works fine; brief blanch is optional. Vienna: standard ingredients.'
+  },
+  {
+    id: 'egy-baladi', name: 'Salata Baladi', nameEn: 'Egyptian country chopped salad', emoji: '🥗',
+    category: 'salad', time: 12, prep: 12, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Egyptian', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 130, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Egyptian countryside salad - finely chopped tomato, cucumber, onion, and green pepper with a heavy handful of parsley and cilantro, dressed simply with lemon and olive oil. The Egyptian everyday salad, similar to Moroccan salade marocaine but often without cumin. Baladi means countryside or rural in Arabic.',
+    ingredients: [
+
+      { id: 'tomato-vine', name: 'Tomatoes (fine dice)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (fine dice)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Green pepper (fine dice)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'onion-small', name: 'Onion (very fine dice)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (heavy)', amount: 25, unit: 'g', store: 'all' },
+      { id: 'cilantro-fresh', name: 'Cilantro (heavy)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'lemon-juice', name: 'Lemon juice', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint (optional)', amount: 6, unit: 'leaves', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Fine dice', txt: 'Small even 5mm dice on all vegetables.' },
+      { title: 'Combine', txt: 'Big bowl: vegetables + heavy herbs. Chop mint if using and add.' },
+      { title: 'Dress', txt: 'Lemon + olive oil + salt + pepper. Toss well.' },
+      { title: 'Rest 10 min', txt: 'Flavors meld.', timer: 600 },
+      { title: 'Serve', txt: 'Room temp with pita bread. Egyptian family classic beside foul medames, ful, ta`ameya.' }
+    ],
+    tip: 'Egyptian countryside salad - simple, everyday, uses whatever herbs are fresh. Vienna: standard ingredients.'
+  },
+  {
+    id: 'egy-amba', name: 'Salata Amba', nameEn: 'Egyptian mango-pickle salad', emoji: '🥭',
+    category: 'salad', time: 15, prep: 15, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Egyptian', 'Iraqi', 'Modern', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 150, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Modern Iraqi-Egyptian salad using amba (fermented mango pickle) as the dressing - lettuce, tomato, cucumber, onion, and fresh herbs tossed with the tangy-mustardy-sour amba. Found at modern Levantine restaurants and Iraqi cafés. The amba is what makes it distinctive - powerful yellow mango paste with fenugreek and turmeric.',
+    ingredients: [
+
+      { id: 'lettuce-romaine', name: 'Romaine lettuce (torn)', amount: 1, unit: 'head', store: 'all' },
+      { id: 'tomato-vine', name: 'Tomatoes (chunks)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (half-moons)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin sliced)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint (chopped)', amount: 10, unit: 'g', store: 'all' },
+      { id: 'amba', name: 'Amba (mango pickle sauce)', amount: 3, unit: 'tbsp', store: 'big' },
+      { id: 'lemon-juice', name: 'Lemon juice', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Prep', txt: 'Tear lettuce. Chunk tomatoes. Half-moon cucumber. Thin slice onion. Chop herbs.' },
+      { title: 'Combine', txt: 'Big bowl: all vegetables + herbs.' },
+      { title: 'Dress', txt: 'Whisk amba + lemon + olive oil + salt. Pour over salad, toss.' },
+      { title: 'Serve', txt: 'Immediately - the amba is strong, tangy and slightly sour with mustard notes.' }
+    ],
+    tip: 'Amba is a specific Iraqi-origin mango pickle sauce - not just any mango chutney. Vienna: amba at Middle Eastern shops (Etsan, Bambi Markt) - look for Iraqi or Iraqi-Jewish brands.'
+  },
+  {
+    id: 'cypr-kolokithokorfades', name: 'Kolokithokorfades Salata', nameEn: 'Cypriot zucchini flower salad', emoji: '🌼',
+    category: 'salad', time: 20, prep: 15, cook: 5, difficulty: 'Easy', servings: 2,
+    tags: ['Cypriot', 'Greek', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 120, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Cypriot summer specialty - zucchini flowers (and often the tender tips of zucchini plants) briefly blanched, dressed with olive oil and lemon. Deeply local Cypriot dish rarely found outside the island. Very seasonal - only when zucchini flowers are available. Delicate, herbal, uniquely Cypriot.',
+    ingredients: [
+
+      { id: 'zucchini-flower', name: 'Zucchini flowers (fresh, cleaned)', amount: 20, unit: 'pcs', store: 'big' },
+      { id: 'zucchini-tips', name: 'Young zucchini tips (if available)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'water-cook', name: 'Water for blanching', amount: 1000, unit: 'ml', store: 'all' },
+      { id: 'salt-cook', name: 'Salt for water', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Cypriot)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'garlic', name: 'Garlic (crushed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (chopped)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Clean flowers', txt: 'Gently open zucchini flowers, remove the yellow stamens inside (bitter). Rinse gently, drain.' },
+      { title: 'Blanch briefly', txt: 'Bring salted water to boil. Blanch flowers and zucchini tips 1-2 min - flowers wilt slightly, tips soften. Drain, plunge in cold water. Drain again.', timer: 120 },
+      { title: 'Dress', txt: 'Bowl: crushed garlic + olive oil + lemon + salt + pepper. Whisk.' },
+      { title: 'Combine', txt: 'Add drained flowers and tips to the dressing. Toss very gently - flowers are fragile.' },
+      { title: 'Serve', txt: 'Room temp with parsley. Cypriot summer specialty - eat with bread and olives.' }
+    ],
+    tip: 'Zucchini flowers are hard to find in Vienna commercially - grow your own or check farmers markets in June-July at Kutschkermarkt or Naschmarkt for a chance. The male flowers (no baby zucchini attached) are best for eating.'
+  },
+  {
+    id: 'salad-santos-mango-pomegranate', name: 'Santos-Style Mango Pomegranate Salad', nameEn: 'Leaf salad with mango pomegranate mustard dressing', emoji: '🥭',
+    category: 'salad', time: 15, prep: 15, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Modern', 'Vegetarian', 'Summer', 'Mixed', 'Salad'],
+    nutrition: { kcal: 320, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Inspired by Santos Vienna Ensalada Santos - mixed leafy greens with cubed avocado, mango, dried pineapple, crispy blue tortilla chips, and pomegranate seeds, dressed with a mango-mustard vinaigrette. Sweet-savory, colorful, and refreshingly modern. The mango-mustard dressing is the standout - fruity but with the sharp Dijon lift.',
+    ingredients: [
+
+      { id: 'lettuce-mixed', name: 'Mixed leaf salad (baby leaves, spinach, arugula)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'avocado', name: 'Ripe avocado (cubed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'mango-fresh', name: 'Ripe mango (cubed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pineapple-dried', name: 'Dried pineapple (chopped small)', amount: 40, unit: 'g', store: 'all' },
+      { id: 'pomegranate-seeds', name: 'Pomegranate seeds (heavy)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'tortilla-chips-blue', name: 'Blue corn tortilla chips (crumbled - Mexican shops)', amount: 30, unit: 'g', store: 'big' },
+      { id: 'mango-puree', name: 'Mango purée (for dressing - from 1/2 ripe mango or bottled)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 2, unit: 'tsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil (for dressing)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'honey', name: 'Honey (small)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'lime-juice', name: 'Lime juice (over avocado)', amount: 1, unit: 'tbsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Prep avocado', txt: 'Cube avocado, toss with lime juice immediately (prevents browning).' },
+      { title: 'Make dressing', txt: 'Blender or bowl: mango purée + Dijon + olive oil + vinegar + honey + salt + pepper. Whisk or blend until smooth. Should be bright yellow-orange.' },
+      { title: 'Assemble base', txt: 'Big shallow bowl: mixed leaves spread out.' },
+      { title: 'Top', txt: 'Scatter mango, avocado, dried pineapple, pomegranate seeds artfully.' },
+      { title: 'Dress', txt: 'Drizzle mango-mustard dressing over generously.' },
+      { title: 'Crumble chips', txt: 'Just before serving: crumble blue tortilla chips over the top for crunch.' },
+      { title: 'Serve', txt: 'Immediately - Santos Vienna style. Sweet, savory, crunchy all in one bite.' }
+    ],
+    tip: 'Blue corn tortilla chips are the Santos signature - if you can find them (Mexican or Latin shops in Vienna). Regular tortilla chips work as substitute. Mango-mustard dressing is what makes this shine. Vienna: dried pineapple + tortilla chips at Interspar Gourmet or Latin American shops on Neubaugasse.'
+  },
+  {
+    id: 'salad-tijuana-caesar', name: 'Tijuana Caesar Salad', nameEn: 'Modern Caesar with grilled chicken guajillo chili', emoji: '🥗',
+    category: 'salad', time: 30, prep: 15, cook: 15, difficulty: 'Easy', servings: 2,
+    tags: ['Modern', 'Mexican', 'Vegetarian-option', 'Salad'],
+    nutrition: { kcal: 480, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Inspired by Santos Vienna Tijuana Caesar - the classic Caesar with a Mexican twist: romaine, grilled chicken, parmesan, croutons, lemon zest, and guajillo chili in the dressing for smoky heat. Homage to the actual Caesar salad (invented in Tijuana, Mexico by Italian immigrant Cesare Cardini in 1924).',
+    ingredients: [
+
+      { id: 'chicken-breast', name: 'Chicken breasts (for grilling)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'lettuce-romaine', name: 'Romaine lettuce hearts (torn)', amount: 2, unit: 'heads', store: 'all' },
+      { id: 'parmesan', name: 'Parmesan (shaved + grated)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'bread-stale', name: 'Stale bread (for croutons)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'lemon-zest', name: 'Lemon zest', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil (for chicken + croutons + dressing)', amount: 6, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'mayonnaise', name: 'Mayonnaise (dressing base)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'anchovy', name: 'Anchovy fillets in oil (essential)', amount: 3, unit: 'fillets', store: 'big' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'garlic', name: 'Garlic (crushed)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'guajillo-chili', name: 'Guajillo chili (dried, ground or reconstituted)', amount: 1, unit: 'tsp', store: 'big' },
+      { id: 'worcestershire', name: 'Worcestershire sauce', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Grill chicken', txt: 'Season chicken with salt, pepper, olive oil. Grill or pan-sear high heat 5-6 min per side until cooked through. Rest 5 min, slice.', timer: 720 },
+      { title: 'Make croutons', txt: 'Cube stale bread. Toss with olive oil + salt. Bake 200°C or pan-toast 6-8 min until golden and crisp.', timer: 480 },
+      { title: 'Make dressing', txt: 'Bowl: mash anchovies + crushed garlic to paste. Whisk in mayo + lemon juice + Dijon + Worcestershire + guajillo chili (ground). Slowly whisk in remaining olive oil. Add half the grated parmesan.' },
+      { title: 'Prep lettuce', txt: 'Tear romaine into big pieces. Big shallow bowl.' },
+      { title: 'Assemble', txt: 'Toss lettuce with the dressing. Top with sliced grilled chicken + croutons + shaved parmesan + lemon zest.' },
+      { title: 'Serve', txt: 'Immediately. Homage to the original Tijuana Caesar with Mexican heat.' }
+    ],
+    tip: 'Guajillo chili is what makes it Tijuana - dried Mexican chili with sweet-smoky heat. Substitute smoked paprika + ancho if needed. Vienna: guajillo chili at Mexican/Latin shops on Neubaugasse; anchovies at Spar Gourmet.'
+  },
+  {
+    id: 'salad-sonora-steak', name: 'Sonora Steak Salad', nameEn: 'Grilled steak salad with sesame mustard mole', emoji: '🥩',
+    category: 'salad', time: 30, prep: 15, cook: 15, difficulty: 'Medium', servings: 2,
+    tags: ['Modern', 'Mexican', 'Salad'],
+    nutrition: { kcal: 520, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Inspired by Santos Vienna Sonora Steak Salad - mixed leaves topped with grilled rump steak, sautéed mushrooms, grilled zucchini, and a sesame-mustard mole dressing. Substantial main-course salad with the depth of Mexican mole flavors and Sonoran-style grilled beef.',
+    ingredients: [
+
+      { id: 'rump-steak', name: 'Rump steak', amount: 300, unit: 'g', store: 'all' },
+      { id: 'mushrooms-brown', name: 'Brown mushrooms (sliced)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'zucchini', name: 'Zucchini (sliced thick)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'lettuce-mixed', name: 'Mixed leaf salad', amount: 150, unit: 'g', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil (for grilling + dressing)', amount: 6, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'sesame-seeds', name: 'Sesame seeds (for dressing + garnish)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-red-wine', name: 'Red wine vinegar', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'honey', name: 'Honey', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'garlic', name: 'Garlic (crushed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'chocolate-dark', name: 'Dark chocolate (for mole depth, tiny)', amount: 10, unit: 'g', store: 'all' },
+      { id: 'paprika-smoked', name: 'Smoked paprika', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'cumin-ground', name: 'Ground cumin', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Season steak', txt: 'Room temp steak. Rub with olive oil + salt + pepper. Rest 15 min.', timer: 900 },
+      { title: 'Toast sesame', txt: 'Dry pan: toast sesame seeds 2 min golden. Set aside.', timer: 120 },
+      { title: 'Make sesame-mustard mole', txt: 'Small saucepan: 2 tbsp toasted sesame + Dijon + red wine vinegar + honey + garlic + dark chocolate (finely grated) + smoked paprika + cumin + 3 tbsp olive oil + splash of water. Warm gently, whisk until chocolate melts and dressing is smooth. Cool slightly.', timer: 180 },
+      { title: 'Grill vegetables', txt: 'Grill or pan-sear zucchini slices 2 min per side until charred. Set aside.', timer: 240 },
+      { title: 'Sauté mushrooms', txt: 'Hot pan with olive oil: mushrooms sear high heat 5-6 min until browned. Salt at end.', timer: 360 },
+      { title: 'Grill steak', txt: 'Very hot pan or grill: steak 3-4 min per side for medium-rare. Rest 5 min then slice against grain.', timer: 480 },
+      { title: 'Assemble', txt: 'Spread mixed leaves on a big platter. Top with mushrooms + zucchini + sliced steak.' },
+      { title: 'Dress + finish', txt: 'Drizzle sesame-mustard mole over everything. Scatter remaining toasted sesame seeds.' },
+      { title: 'Serve', txt: 'Immediately. Substantial main-course salad, Santos Vienna Sonora style.' }
+    ],
+    tip: 'The chocolate in the dressing gives mole depth - tiny amount, not sweet. Rest the steak before slicing. Vienna: rump steak at any butcher; smoked paprika (pimentón) at Spar Gourmet.'
+  },
+  {
+    id: 'salad-arugula-pomegranate', name: 'Arugula Pomegranate Walnut Salad', nameEn: 'Modern peppery green salad with jewels and crunch', emoji: '🥗',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Modern', 'Vegetarian', 'Summer', 'Winter', 'Quick', 'Mixed', 'Salad'],
+    nutrition: { kcal: 320, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Modern winter-into-spring salad - peppery arugula with pomegranate seeds, toasted walnuts, shaved parmesan, and a balsamic-honey dressing. Sweet, bitter, savory, crunchy. Ubiquitous at modern Mediterranean and Italian bistros. The pomegranate jewels look stunning.',
+    ingredients: [
+
+      { id: 'arugula', name: 'Arugula (rocket)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'pomegranate-seeds', name: 'Pomegranate seeds', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'walnut', name: 'Walnuts (halves, toasted)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'parmesan', name: 'Parmesan (shaved)', amount: 50, unit: 'g', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'balsamic-vinegar', name: 'Balsamic vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'honey', name: 'Honey', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Toast walnuts', txt: 'Dry pan: walnuts 3 min until fragrant. Chop roughly.', timer: 180 },
+      { title: 'Make dressing', txt: 'Whisk olive oil + balsamic + honey + Dijon + salt + pepper.' },
+      { title: 'Combine', txt: 'Big shallow bowl: arugula. Drizzle dressing, toss gently.' },
+      { title: 'Top', txt: 'Scatter pomegranate seeds + toasted walnuts + shaved parmesan.' },
+      { title: 'Serve', txt: 'Immediately. Modern bistro favorite.' }
+    ],
+    tip: 'Fresh pomegranate seeds are crucial for the jewel appearance. Toast walnuts for depth. Vienna: pomegranate at any market when in season (Sept-Jan); walnuts and parmesan at any Spar.'
+  },
+  {
+    id: 'salad-fig-goat-cheese', name: 'Fig Goat Cheese Salad', nameEn: 'Fresh figs with soft goat cheese and honey', emoji: '🌰',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Modern', 'Summer', 'Autumn', 'Vegetarian', 'Quick', 'Mixed', 'Salad'],
+    nutrition: { kcal: 340, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Late-summer to early-autumn salad - fresh ripe figs quartered over mixed leaves with creamy goat cheese, toasted almonds, and a honey-balsamic drizzle. Only makes sense when figs are perfectly ripe (August-October). Sweet, tangy, floral, nutty - deeply beautiful on the plate.',
+    ingredients: [
+
+      { id: 'lettuce-mixed', name: 'Mixed leaves (arugula + baby spinach + radicchio)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'fig-fresh', name: 'Fresh figs (ripe, quartered)', amount: 6, unit: 'pcs', store: 'all' },
+      { id: 'goat-cheese-soft', name: 'Soft goat cheese (chèvre, dolloped)', amount: 120, unit: 'g', store: 'all' },
+      { id: 'almonds-toasted', name: 'Almonds (toasted, sliced)', amount: 40, unit: 'g', store: 'all' },
+      { id: 'honey', name: 'Honey (drizzle)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'balsamic-vinegar', name: 'Balsamic vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Flaky salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint (torn)', amount: 6, unit: 'leaves', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Toast almonds', txt: 'Dry pan: sliced almonds 2 min golden. Set aside.', timer: 120 },
+      { title: 'Assemble base', txt: 'Big shallow plate: mixed leaves spread out.' },
+      { title: 'Arrange figs', txt: 'Quarter figs and arrange over leaves.' },
+      { title: 'Dollop cheese', txt: 'Small dollops of goat cheese scattered around.' },
+      { title: 'Dress', txt: 'Drizzle honey + balsamic + olive oil (mixed or separately for visual). Salt + pepper.' },
+      { title: 'Finish', txt: 'Scatter toasted almonds + torn mint.' },
+      { title: 'Serve', txt: 'Immediately at room temp. Figs are best not chilled.' }
+    ],
+    tip: 'The figs must be ripe - if they are hard or bland, this salad falls flat. Wait for peak season. Vienna: fresh figs at Naschmarkt or Turkish markets from August to October.'
+  },
+  {
+    id: 'salad-watermelon-feta', name: 'Watermelon Feta Salad', nameEn: 'Watermelon feta mint balsamic classic', emoji: '🍉',
+    category: 'salad', time: 8, prep: 8, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Modern', 'Summer', 'Greek', 'Vegetarian', 'Quick', 'Mixed', 'Salad'],
+    nutrition: { kcal: 260, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Modern Mediterranean summer salad - cubed cold watermelon with crumbled feta, fresh mint, and balsamic drizzle. Salt from the feta plays against the sweet watermelon. Popular in Greece, Turkey, and across the modern Mediterranean summer table. Only works with peak-season watermelon.',
+    ingredients: [
+
+      { id: 'watermelon', name: 'Watermelon (cubed 3cm, cold)', amount: 600, unit: 'g', store: 'all' },
+      { id: 'feta', name: 'Feta cheese (crumbled)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint leaves (torn)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (very thin sliced)', amount: 0.25, unit: 'pcs', store: 'all' },
+      { id: 'olives-kalamata', name: 'Kalamata olives (optional)', amount: 10, unit: 'pcs', store: 'all' },
+      { id: 'balsamic-glaze', name: 'Balsamic glaze', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'lime-juice', name: 'Lime juice (small)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Flaky salt', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Cube watermelon', txt: 'Cut cold watermelon into 3cm cubes. Reserve.' },
+      { title: 'Assemble', txt: 'Big shallow bowl: watermelon cubes spread out.' },
+      { title: 'Add toppings', txt: 'Crumble feta over. Scatter thin red onion + optional olives + torn mint.' },
+      { title: 'Dress', txt: 'Drizzle balsamic glaze + olive oil + lime juice. Tiny pinch of flaky salt + pepper.' },
+      { title: 'Serve', txt: 'Immediately while watermelon is cold. Summer terrace classic.' }
+    ],
+    tip: 'Watermelon must be COLD and RIPE - peak August fruit. Balsamic GLAZE (thick, syrupy) not vinegar. Vienna: ripe watermelons at Brunnenmarkt in July-August.'
+  },
+  {
+    id: 'salad-orange-fennel', name: 'Orange Fennel Olive Salad', nameEn: 'Sicilian orange fennel olive winter classic', emoji: '🍊',
+    category: 'salad', time: 12, prep: 12, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Sicilian', 'Italian', 'Modern', 'Winter', 'Vegan', 'Vegetarian', 'Quick', 'Mixed', 'Salad'],
+    nutrition: { kcal: 200, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Sicilian winter classic - thin-sliced oranges and shaved fennel with black olives, olive oil, and mint. Bright, licorice-anise crunch from raw fennel with the sweet-tart citrus. Peak in winter when Sicilian blood oranges arrive. Popular across coastal Italy and southern France as an elegant starter.',
+    ingredients: [
+
+      { id: 'orange', name: 'Oranges (sliced into rounds)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'fennel-bulb', name: 'Fennel bulb (shaved thin)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'olives-black', name: 'Black olives (Sicilian or Kalamata)', amount: 15, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin sliced, tiny bit)', amount: 0.2, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Sicilian)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Lemon juice', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Flaky salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'fennel-fronds', name: 'Fennel fronds (garnish)', amount: 10, unit: 'g', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint (optional)', amount: 6, unit: 'leaves', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Peel + slice oranges', txt: 'Peel oranges removing all white pith. Slice into 5mm rounds.' },
+      { title: 'Shave fennel', txt: 'Trim fennel bulb. Shave very thin with mandoline or sharp knife. Reserve fronds.' },
+      { title: 'Arrange', txt: 'Big flat plate: arrange orange rounds overlapping. Scatter shaved fennel over.' },
+      { title: 'Add olives + onion', txt: 'Scatter olives + tiny thin red onion.' },
+      { title: 'Dress', txt: 'Drizzle olive oil + tiny lemon juice + flaky salt + pepper.' },
+      { title: 'Finish', txt: 'Reserved fennel fronds torn on top + optional mint.' },
+      { title: 'Serve', txt: 'Room temp. Sicilian winter classic - lovely with grilled fish or as an elegant starter.' }
+    ],
+    tip: 'Shave fennel VERY thin - the anise crunch is the point. Blood oranges (December-March) are stunning here. Vienna: fennel at any supermarket; blood oranges at Naschmarkt in winter.'
+  },
+  {
+    id: 'salad-beet-pomegranate', name: 'Beet Pomegranate Feta Salad', nameEn: 'Roasted beets pomegranate feta walnuts', emoji: '🍠',
+    category: 'salad', time: 90, prep: 15, cook: 75, difficulty: 'Easy', servings: 2,
+    tags: ['Modern', 'Middle Eastern', 'Winter', 'Vegetarian', 'Mixed', 'Salad'],
+    nutrition: { kcal: 340, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Modern Middle Eastern winter salad - roasted beetroot with pomegranate seeds, crumbled feta, toasted walnuts, and a tahini-lemon dressing. Deep earthy sweetness of beets against tart pomegranate and creamy feta. Popular at modern Levantine restaurants and trendy Mediterranean bistros. The color is stunning.',
+    ingredients: [
+
+      { id: 'beetroot-fresh', name: 'Fresh beetroots (medium)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-roast', name: 'Olive oil (for roasting)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt-roast', name: 'Salt for roasting', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'feta-crumbled', name: 'Feta cheese (crumbled)', amount: 120, unit: 'g', store: 'all' },
+      { id: 'pomegranate-seeds', name: 'Pomegranate seeds', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'walnut', name: 'Walnuts (toasted, chopped)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'parsley-fresh', name: 'Parsley (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'mint-fresh', name: 'Fresh mint (torn)', amount: 8, unit: 'leaves', store: 'all' },
+      { id: 'tahini', name: 'Tahini', amount: 2, unit: 'tbsp', store: 'big' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'honey', name: 'Honey', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'garlic', name: 'Garlic (crushed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'water-dress', name: 'Water (thin dressing)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Roast beets', txt: 'Wrap beetroots individually in foil. Roast 200°C for 60-75 min until tender when pierced.', timer: 4500 },
+      { title: 'Cool + peel', txt: 'Cool 15 min. Peel skins off with paper towel (they slip off easily) or hands (wear gloves - stains).', timer: 900 },
+      { title: 'Cube', txt: 'Cut roasted beets into 2cm cubes or wedges.' },
+      { title: 'Toast walnuts', txt: 'Dry pan: walnuts 3 min golden. Chop rough.', timer: 180 },
+      { title: 'Make tahini dressing', txt: 'Bowl: tahini + lemon juice + olive oil + honey + crushed garlic + salt + pepper + water. Whisk until smooth and creamy. Adjust water for pourable consistency.' },
+      { title: 'Assemble', txt: 'Big shallow bowl: beets. Drizzle half the dressing. Toss gently.' },
+      { title: 'Top', txt: 'Scatter crumbled feta + pomegranate seeds + toasted walnuts + parsley + mint.' },
+      { title: 'Finish', txt: 'Drizzle remaining dressing.' },
+      { title: 'Serve', txt: 'Room temp - the flavors are better than cold. Modern Middle Eastern bistro classic.' }
+    ],
+    tip: 'Roasted beets (not boiled) develop the deep earthy sweetness this salad needs. Tahini dressing is the modern signature - creamy, nutty, ties everything together. Vienna: beetroots at any market; good tahini at Etsan or Naschmarkt.'
+  },
+  {
+    id: 'salad-avocado-mango-quinoa', name: 'Avocado Mango Quinoa Bowl', nameEn: 'Modern grain bowl with mango avocado black beans', emoji: '🥗',
+    category: 'salad', time: 30, prep: 15, cook: 15, difficulty: 'Easy', servings: 2,
+    tags: ['Modern', 'Mixed', 'Vegan', 'Vegetarian', 'Summer', 'Mexican', 'Salad'],
+    nutrition: { kcal: 480, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Modern quinoa bowl with Mexican-Caribbean vibes - fluffy quinoa with cubed mango, avocado, black beans, cherry tomatoes, corn, red onion, and cilantro, dressed with lime and olive oil. Bright, filling, packed with everything. Popular at modern healthy cafés and lunch bowls everywhere.',
+    ingredients: [
+
+      { id: 'quinoa', name: 'Quinoa (rinsed)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'water-cook', name: 'Water for cooking', amount: 400, unit: 'ml', store: 'all' },
+      { id: 'salt-cook', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'mango-fresh', name: 'Ripe mango (cubed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'avocado', name: 'Avocado (cubed)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'beans-black-canned', name: 'Black beans (canned, drained + rinsed)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'tomato-cherry', name: 'Cherry tomatoes (halved)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'corn-canned', name: 'Sweet corn (drained)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (small dice)', amount: 0.25, unit: 'pcs', store: 'all' },
+      { id: 'cilantro-fresh', name: 'Fresh cilantro (chopped)', amount: 20, unit: 'g', store: 'all' },
+      { id: 'lime-juice', name: 'Fresh lime juice', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'cumin-ground', name: 'Ground cumin', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'chili-flakes', name: 'Chili flakes (optional)', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Cook quinoa', txt: 'Pot: rinsed quinoa + water + salt. Boil, reduce, simmer covered 12-15 min until water absorbed and quinoa fluffy.', timer: 900 },
+      { title: 'Cool quinoa', txt: 'Fluff with fork. Spread on tray to cool quickly.' },
+      { title: 'Prep everything else', txt: 'Cube mango and avocado. Halve tomatoes. Small dice red onion. Chop cilantro.' },
+      { title: 'Combine', txt: 'Big bowl: cooled quinoa + mango + avocado + black beans + tomatoes + corn + red onion + cilantro.' },
+      { title: 'Dress', txt: 'Whisk lime + olive oil + cumin + salt + pepper + chili if using. Pour over. Toss gently (do not smash the avocado).' },
+      { title: 'Serve', txt: 'Room temp. Substantial bowl - complete meal. Great for meal-prep, keeps 2 days.' }
+    ],
+    tip: 'Rinse quinoa well before cooking - removes the bitter saponin coating. Add avocado LAST or it browns. Vienna: quinoa at any supermarket; frozen mango works if fresh unavailable.'
+  },
+  {
+    id: 'salad-strawberry-spinach', name: 'Strawberry Spinach Salad', nameEn: 'Baby spinach strawberry feta almonds', emoji: '🍓',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Modern', 'Summer', 'Vegetarian', 'Quick', 'Mixed', 'Salad'],
+    nutrition: { kcal: 280, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Modern spring-summer classic - baby spinach with sliced fresh strawberries, crumbled feta, toasted almonds, and a poppy-seed or balsamic vinaigrette. Sweet-tart-salty-nutty. Peak in June when strawberries are perfect. Popular at brunch cafés everywhere.',
+    ingredients: [
+
+      { id: 'spinach-baby', name: 'Baby spinach', amount: 150, unit: 'g', store: 'all' },
+      { id: 'strawberry', name: 'Fresh strawberries (sliced)', amount: 300, unit: 'g', store: 'all' },
+      { id: 'feta-crumbled', name: 'Feta cheese (crumbled)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'almonds-toasted', name: 'Almonds (sliced, toasted)', amount: 40, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (very thin sliced)', amount: 0.2, unit: 'pcs', store: 'all' },
+      { id: 'poppy-seeds', name: 'Poppy seeds (optional)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'balsamic-vinegar', name: 'Balsamic vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'honey', name: 'Honey', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Toast almonds', txt: 'Dry pan: sliced almonds 2 min golden. Set aside.', timer: 120 },
+      { title: 'Slice strawberries', txt: 'Hull and slice strawberries. Reserve.' },
+      { title: 'Make dressing', txt: 'Whisk olive oil + balsamic + honey + Dijon + salt + pepper + poppy seeds if using.' },
+      { title: 'Assemble', txt: 'Big shallow bowl: baby spinach. Drizzle dressing, toss gently.' },
+      { title: 'Top', txt: 'Scatter strawberries + crumbled feta + thin red onion + toasted almonds.' },
+      { title: 'Serve', txt: 'Immediately - strawberries wilt spinach if left too long.' }
+    ],
+    tip: 'Fresh peak strawberries are essential - watery out-of-season berries kill this. Toast almonds for depth. Vienna: strawberries in June at Naschmarkt are perfect.'
+  },
+  {
+    id: 'salad-peach-burrata', name: 'Peach Burrata Salad', nameEn: 'Summer stone fruit with creamy burrata', emoji: '🍑',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Italian', 'Modern', 'Summer', 'Vegetarian', 'Quick', 'Mixed', 'Salad'],
+    nutrition: { kcal: 380, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Modern Italian summer favorite - ripe peaches (or nectarines) with a whole ball of burrata torn open over arugula, prosciutto ribbons, torn basil, and balsamic glaze. Peak summer only. Sweet fruit + creamy cheese + salty prosciutto = heaven. Found at every trattoria and modern Italian bistro in July-August.',
+    ingredients: [
+
+      { id: 'peach-nectarine', name: 'Ripe peaches or nectarines (wedged)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'burrata', name: 'Burrata cheese (whole ball)', amount: 1, unit: 'pcs', store: 'big' },
+      { id: 'arugula', name: 'Arugula', amount: 80, unit: 'g', store: 'all' },
+      { id: 'prosciutto', name: 'Prosciutto (thin slices, torn)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'basil-fresh', name: 'Fresh basil (torn)', amount: 15, unit: 'leaves', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'balsamic-glaze', name: 'Balsamic glaze', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Flaky salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'almonds-toasted', name: 'Toasted almonds (optional crunch)', amount: 20, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Wedge peaches', txt: 'Cut peaches into 8 wedges each, removing pits.' },
+      { title: 'Assemble base', txt: 'Big shallow platter: arugula spread out.' },
+      { title: 'Arrange peaches + prosciutto', txt: 'Peach wedges scattered artfully. Torn prosciutto draped between.' },
+      { title: 'Center burrata', txt: 'Place whole burrata in the center. TEAR it open with your hands or a spoon - creamy inside spills out.' },
+      { title: 'Basil + dress', txt: 'Torn basil scattered. Drizzle olive oil generously + balsamic glaze in artful zigzag.' },
+      { title: 'Finish', txt: 'Flaky salt + pepper + optional toasted almonds.' },
+      { title: 'Serve', txt: 'Immediately at room temp - burrata should never be cold. Peak summer Italian trattoria staple.' }
+    ],
+    tip: 'Burrata must be at room temp - cold burrata is not the same experience. Peaches must be RIPE - hard peaches ruin this. Vienna: burrata at Spar Gourmet or Italian shops on Wollzeile; peaches from Naschmarkt in July-August.'
+  },
+  {
+    id: 'salad-pear-walnut-blue', name: 'Pear Walnut Blue Cheese Salad', nameEn: 'Autumn pear blue cheese walnut classic', emoji: '🍐',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Modern', 'Autumn', 'Winter', 'Vegetarian', 'Quick', 'Mixed', 'Salad'],
+    nutrition: { kcal: 400, protein: 6, carbs: 20, fat: 12 },
+    desc: 'Modern autumn-winter classic - sliced ripe pear over mixed leaves with crumbled blue cheese (Roquefort, Gorgonzola, or Stilton), toasted walnuts, and a honey-mustard vinaigrette. Sweet pear + funky blue + earthy walnut = perfect balance. Ubiquitous at winter brunches and holiday tables.',
+    ingredients: [
+
+      { id: 'pear-ripe', name: 'Ripe pears (Conference or Williams)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'lettuce-mixed', name: 'Mixed leaves (arugula, radicchio, endive)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'cheese-blue', name: 'Blue cheese (Roquefort, Gorgonzola, Stilton) crumbled', amount: 100, unit: 'g', store: 'all' },
+      { id: 'walnut', name: 'Walnuts (toasted, chopped)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'cranberries-dried', name: 'Dried cranberries (optional)', amount: 30, unit: 'g', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-red-wine', name: 'Red wine vinegar (or sherry)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'honey', name: 'Honey', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Lemon juice (over pears)', amount: 1, unit: 'tbsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Toast walnuts', txt: 'Dry pan: walnuts 3 min golden. Chop rough.', timer: 180 },
+      { title: 'Slice pears', txt: 'Slice pears thinly (leave skin on). Toss with lemon juice to prevent browning.' },
+      { title: 'Make dressing', txt: 'Whisk olive oil + vinegar + honey + Dijon + salt + pepper.' },
+      { title: 'Assemble', txt: 'Big shallow bowl: mixed leaves. Drizzle dressing, toss lightly.' },
+      { title: 'Top', txt: 'Arrange pear slices. Scatter crumbled blue cheese + walnuts + optional cranberries.' },
+      { title: 'Serve', txt: 'Immediately - pear browns if left. Autumn-winter brunch classic.' }
+    ],
+    tip: 'Ripe (soft) pears are essential - hard pears are wrong here. Toast walnuts for depth. Vienna: standard ingredients; good Gorgonzola at Spar Gourmet or Italian shops.'
+  }
+
+
+,
+  // === BATCH 15: 12 Austrian/Viennese salads (verified from Austrian sources) ===
+  {
+    id: 'at-erdaepfelsalat-wien', name: 'Wiener Erdäpfelsalat', nameEn: 'Classic Viennese potato salad with beef broth and vinegar', emoji: '🥔',
+    category: 'salad', time: 80, prep: 20, cook: 60, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Viennese', 'Classic', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 240, protein: 8, carbs: 22, fat: 14 },
+    desc: 'The Viennese potato salad, the classic side to Wiener Schnitzel. Warm boiled potatoes (traditionally Kipfler variety) sliced thin and dressed while still warm with beef broth, vinegar, sunflower oil, onions, mustard, and a touch of sugar. No mayonnaise. Sitting time is essential - the potatoes absorb the broth and turn silky. Found at every Viennese Beisl and Gasthaus.',
+    ingredients: [
+
+      { id: 'potato-firm', name: 'Firm-cooking potatoes (Kipfler ideal, or Sieglinde)', amount: 800, unit: 'g', store: 'all' },
+      { id: 'beef-broth', name: 'Warm beef broth (Rindsuppe)', amount: 300, unit: 'ml', store: 'all' },
+      { id: 'onion-white', name: 'White onion (very fine dice)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard (or Estragonsenf)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil (neutral)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar (small pinch, Viennese touch)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'chive-fresh', name: 'Fresh chives (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Freshly ground black pepper', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Boil potatoes in skin', txt: 'Wash potatoes. Boil unpeeled in salted water 20-25 min until fork-tender. Drain.', timer: 1500 },
+      { title: 'Peel while hot', txt: 'As soon as they are cool enough to handle, peel the skins off (they slip off easily when warm).' },
+      { title: 'Slice thin', txt: 'Slice potatoes into thin 3-4mm rounds. Place in a large bowl.' },
+      { title: 'Warm the broth', txt: 'Heat beef broth in a small saucepan until steaming. Do NOT let it boil.', timer: 180 },
+      { title: 'Make marinade', txt: 'Add finely diced onion + vinegar + mustard + sugar + salt + pepper to the hot broth. Stir.' },
+      { title: 'Pour over warm potatoes', txt: 'Pour the hot broth-marinade over the still-warm potato slices. Gently mix, being careful not to break slices.' },
+      { title: 'Rest at least 1 hour', txt: 'Cover and let sit at room temperature at least 1 hour - critical for the potatoes to absorb the broth and become silky.', timer: 3600 },
+      { title: 'Add oil at the end', txt: 'Just before serving, drizzle with sunflower oil and mix. Sprinkle chopped chives on top.' },
+      { title: 'Serve', txt: 'Room temperature or slightly warm. The perfect Wiener Schnitzel companion.' }
+    ],
+    tip: 'Kipfler potatoes are the traditional choice - long fingerling shape, holds together beautifully sliced. If unavailable, any waxy firm-cooking potato works. Adding oil LAST (not with the broth) is the Viennese trick - keeps the flavor clean. Vienna: Kipfler at any large supermarket in autumn or at Naschmarkt.'
+  },
+  {
+    id: 'at-erdaepfelsalat-vogerl', name: 'Erdäpfel-Vogerlsalat', nameEn: 'Viennese potato salad with lambs lettuce', emoji: '🥔',
+    category: 'salad', time: 80, prep: 20, cook: 60, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Viennese', 'Classic', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 260, protein: 8, carbs: 22, fat: 14 },
+    desc: 'The winter version of Wiener Erdäpfelsalat - the classic potato salad topped with fresh Vogerlsalat (lambs lettuce, called Feldsalat in Germany). The lettuce adds a peppery-nutty green freshness that lifts the whole dish. Found at every Viennese Beisl in autumn and winter alongside Wiener Schnitzel and Backhendl.',
+    ingredients: [
+
+      { id: 'potato-firm', name: 'Firm-cooking potatoes (Kipfler)', amount: 700, unit: 'g', store: 'all' },
+      { id: 'vogerlsalat', name: 'Vogerlsalat (lambs lettuce/Feldsalat)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'beef-broth', name: 'Warm beef broth', amount: 280, unit: 'ml', store: 'all' },
+      { id: 'onion-white', name: 'White onion (fine dice)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar (pinch)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Boil potatoes in skin', txt: 'Boil unpeeled potatoes 20-25 min. Drain.', timer: 1500 },
+      { title: 'Peel and slice', txt: 'Peel while warm. Slice thin 3-4mm.' },
+      { title: 'Warm broth + marinade', txt: 'Heat beef broth (do not boil). Add diced onion + vinegar + mustard + sugar + salt + pepper.', timer: 180 },
+      { title: 'Marinate potatoes', txt: 'Pour hot broth over warm potatoes. Mix gently. Rest 1 hour.', timer: 3600 },
+      { title: 'Wash Vogerlsalat', txt: 'While potatoes rest: wash lambs lettuce thoroughly (grit hides in the roots). Spin dry.' },
+      { title: 'Combine + oil', txt: 'Drizzle oil into the potato salad. Gently fold in the Vogerlsalat right before serving.' },
+      { title: 'Serve', txt: 'Immediately after adding lettuce (it wilts if left too long). Classic Viennese Beisl side.' }
+    ],
+    tip: 'The Vogerlsalat goes in LAST - it wilts within minutes of contact with the warm dressing. Vienna: fresh Vogerlsalat at any supermarket in autumn/winter, or Naschmarkt year-round.'
+  },
+  {
+    id: 'at-backhendlsalat', name: 'Backhendlsalat', nameEn: 'Styrian crispy fried chicken salad with pumpkin seed oil', emoji: '🍗',
+    category: 'salad', time: 45, prep: 25, cook: 20, difficulty: 'Medium', servings: 2,
+    tags: ['Austrian', 'Styrian', 'Classic', 'Salad'],
+    nutrition: { kcal: 620, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Steirischer Backhendlsalat - the beloved Styrian classic that spread across Vienna. Crispy breaded chicken strips (often mixed with pumpkin seeds in the breading) served on a bed of mixed lettuces dressed with the signature Steirisches Kürbiskernöl (Styrian pumpkin seed oil). Found at every Heuriger and Beisl. Rich, satisfying, uniquely Austrian through the pumpkin seed oil.',
+    ingredients: [
+
+      { id: 'chicken-breast', name: 'Chicken breast fillets (or thigh)', amount: 500, unit: 'g', store: 'all' },
+      { id: 'lettuce-mixed', name: 'Mixed lettuce (Vogerlsalat + Endivien + Frisée)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'tomato-cherry', name: 'Cherry tomatoes', amount: 150, unit: 'g', store: 'all' },
+      { id: 'flour', name: 'Flour (for breading)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'eggs', name: 'Eggs (beaten)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'breadcrumbs', name: 'Fine breadcrumbs (Semmelbrösel)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'pumpkin-seeds-ground', name: 'Ground pumpkin seeds (mix into breadcrumbs)', amount: 40, unit: 'g', store: 'all' },
+      { id: 'oil-frying', name: 'Sunflower oil or clarified butter (Butterschmalz) for frying', amount: 400, unit: 'ml', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'kuerbiskernoel', name: 'Steirisches Kürbiskernöl (Styrian pumpkin seed oil)', amount: 5, unit: 'tbsp', store: 'big' },
+      { id: 'vinegar-apple', name: 'Apfelessig (apple cider vinegar)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'honey', name: 'Honey (tiny)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'cranberries-preiselbeeren', name: 'Preiselbeeren (lingonberry jam, traditional side)', amount: 2, unit: 'tbsp', store: 'big' },
+      { id: 'lemon-wedge', name: 'Lemon wedges (garnish)', amount: 2, unit: 'wedges', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Slice chicken', txt: 'Cut chicken breasts into 2cm-wide strips. Season with salt and pepper.' },
+      { title: 'Set up breading', txt: 'Three plates: flour, beaten eggs, breadcrumbs mixed with ground pumpkin seeds.' },
+      { title: 'Bread the chicken', txt: 'Dredge each strip in flour, dip in egg, coat in the pumpkin-seed breadcrumbs. Press to adhere.' },
+      { title: 'Heat oil', txt: 'Heat oil to 170°C in a heavy pan - deep enough to half-submerge the chicken strips.' },
+      { title: 'Fry chicken', txt: 'Fry chicken strips 4-5 min turning once, until deep golden and crisp. Drain on paper towel.', timer: 300 },
+      { title: 'Make dressing', txt: 'Whisk pumpkin seed oil + apple cider vinegar + Dijon + honey + salt + pepper.' },
+      { title: 'Dress salad', txt: 'Wash and dry lettuce. Toss gently with dressing on 2 plates.' },
+      { title: 'Plate', txt: 'Arrange dressed lettuce on plates. Top with crispy chicken strips + halved cherry tomatoes.' },
+      { title: 'Drizzle extra Kernöl', txt: 'Drizzle more pumpkin seed oil directly over the chicken and salad.' },
+      { title: 'Serve', txt: 'Immediately with lemon wedges and a small dish of Preiselbeeren (lingonberry jam) on the side. Heuriger classic.' }
+    ],
+    tip: 'REAL Steirisches Kürbiskernöl (PGI-protected from Styria) is essential - the deep-green nutty oil is the entire flavor identity. Never use imitation or non-Styrian pumpkin seed oil. Vienna: real Kürbiskernöl at any Spar/Billa (Ölmühle Fandler is a top brand); Preiselbeeren jam at any supermarket.'
+  },
+  {
+    id: 'at-rindfleischsalat', name: 'Steirischer Rindfleischsalat', nameEn: 'Styrian boiled beef salad with pumpkin seed oil', emoji: '🥩',
+    category: 'salad', time: 30, prep: 20, cook: 10, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Styrian', 'Classic', 'Salad'],
+    nutrition: { kcal: 340, protein: 8, carbs: 22, fat: 14 },
+    desc: 'The perfect way to use leftover Tafelspitz (Viennese boiled beef) - cold sliced beef dressed with red onion, apple cider vinegar, and heavy Styrian pumpkin seed oil. Often served alongside Käferbohnensalat (scarlet runner bean salad) as a Styrian buffet classic. Found at every proper Heuriger and Wiener Beisl. Rich, savoury, uniquely nutty.',
+    ingredients: [
+
+      { id: 'beef-boiled', name: 'Cold boiled beef (Tafelspitz or Schulterscherzel)', amount: 400, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin rings)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'spring-onion', name: 'Spring onions (thin rings)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'kuerbiskernoel', name: 'Steirisches Kürbiskernöl', amount: 5, unit: 'tbsp', store: 'big' },
+      { id: 'vinegar-apple', name: 'Apfelessig', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'beef-broth', name: 'Beef broth (small splash)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'chive-fresh', name: 'Fresh chives (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'horseradish', name: 'Kren (fresh grated horseradish, garnish)', amount: 1, unit: 'tbsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Slice beef thin', txt: 'Slice the cold boiled beef against the grain into thin 3mm strips or small pieces.' },
+      { title: 'Prep onions', txt: 'Thin ring the red onion. Thin ring spring onions.' },
+      { title: 'Make marinade', txt: 'Bowl: beef broth + apple cider vinegar + Dijon + salt + pepper. Whisk. Add pumpkin seed oil at the end and whisk again.' },
+      { title: 'Combine', txt: 'Big bowl: sliced beef + red onion + spring onions. Pour marinade over. Mix gently.' },
+      { title: 'Rest 30 min', txt: 'Let sit at room temperature 30 min - flavors meld and beef absorbs the dressing.', timer: 1800 },
+      { title: 'Serve', txt: 'Room temperature. Top with chopped chives + grated fresh horseradish. Perfect with dark bread (Schwarzbrot). Classic Heuriger side.' }
+    ],
+    tip: 'Uses your leftover Tafelspitz - clever Austrian resource-management. Real Steirisches Kürbiskernöl is essential. Fresh grated horseradish (Kren) on top is the classic touch. Vienna: Tafelspitz beef at any butcher; pre-cooked can be bought at Radatz.'
+  },
+  {
+    id: 'at-kaeferbohnensalat', name: 'Steirischer Käferbohnensalat', nameEn: 'Styrian scarlet runner bean salad with pumpkin seed oil', emoji: '🫘',
+    category: 'salad', time: 20, prep: 15, cook: 5, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Styrian', 'Classic', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 280, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Styrias iconic bean salad - massive purple-mottled scarlet runner beans (Käferbohnen) dressed with red onion, apple cider vinegar, and Styrian pumpkin seed oil. The Käferbohne is protected by EU PGI status - unique to Styria. Nutty, earthy, striking. Served alongside Steirischer Rindfleischsalat and Backhendlsalat at every Heuriger buffet.',
+    ingredients: [
+
+      { id: 'kaeferbohnen', name: 'Käferbohnen (Styrian scarlet runner beans, jarred or cooked)', amount: 400, unit: 'g', store: 'big' },
+      { id: 'onion-red', name: 'Red onion (fine dice)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'kuerbiskernoel', name: 'Steirisches Kürbiskernöl', amount: 4, unit: 'tbsp', store: 'big' },
+      { id: 'vinegar-apple', name: 'Apfelessig', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'sugar', name: 'Small pinch of sugar (balances vinegar)', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'chive-fresh', name: 'Fresh chives (chopped)', amount: 10, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic clove (crushed, small amount)', amount: 1, unit: 'pcs', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Drain beans', txt: 'If using jarred Käferbohnen: drain and rinse gently in cool water. If using dried: cooked beans beforehand.' },
+      { title: 'Make marinade', txt: 'Bowl: apple cider vinegar + Dijon + crushed garlic + salt + pepper + sugar. Whisk. Add pumpkin seed oil last and whisk.' },
+      { title: 'Combine', txt: 'Big bowl: beans + finely diced red onion. Pour marinade over.' },
+      { title: 'Mix gently', txt: 'Toss gently - Käferbohnen are large and delicate, do not smash.' },
+      { title: 'Rest 30 min', txt: 'Room temperature 30 min - flavors meld.', timer: 1800 },
+      { title: 'Serve', txt: 'Room temperature with chopped chives sprinkled on top. Alongside Rindfleischsalat and Bauernbrot. Heuriger classic.' }
+    ],
+    tip: 'Käferbohnen are hard to find outside Austria - jarred is easiest. Look for Steirische Käferbohne g.U./g.g.A. label (PGI protected). Vienna: Interspar and Merkur carry jarred Steirische Käferbohnen; also at Steirisches Wein und Feinkost shops.'
+  },
+  {
+    id: 'at-krautsalat-warm', name: 'Warmer Krautsalat mit Speck', nameEn: 'Warm Austrian cabbage salad with bacon and caraway', emoji: '🥬',
+    category: 'salad', time: 45, prep: 15, cook: 30, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Classic', 'Winter', 'Salad'],
+    nutrition: { kcal: 220, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Warm Austrian cabbage salad - white cabbage briefly cooked with caraway seeds, then dressed with vinegar and topped with crispy bacon. Served warm alongside Schweinsbraten (roast pork), Grammelknödel, or Selchfleisch. Deeply comforting winter classic across Austria, especially at proper Beisls and Wirtshaus tables.',
+    ingredients: [
+
+      { id: 'cabbage-white', name: 'White cabbage (finely sliced)', amount: 500, unit: 'g', store: 'all' },
+      { id: 'bacon-smoked', name: 'Smoked bacon (Frühstücksspeck) in small cubes', amount: 120, unit: 'g', store: 'all' },
+      { id: 'onion-white', name: 'White onion (fine dice)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'broth-vegetable', name: 'Vegetable or beef broth', amount: 150, unit: 'ml', store: 'all' },
+      { id: 'caraway-whole', name: 'Whole caraway seeds (Kümmel - essential)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil (for cooking)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'chive-fresh', name: 'Fresh chives (chopped, garnish)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Slice cabbage', txt: 'Remove outer leaves. Quarter, remove core. Slice very thin (mandoline ideal) - fine ribbons.' },
+      { title: 'Salt the cabbage', txt: 'Bowl: cabbage + salt. Massage briefly to soften.' },
+      { title: 'Cook bacon', txt: 'Small pan: dry-cook bacon cubes over medium heat until crispy and rendered, 6-8 min. Remove bacon, save the fat.', timer: 480 },
+      { title: 'Cook onion', txt: 'In the same pan with bacon fat: add oil + diced onion. Saute 3 min translucent.', timer: 180 },
+      { title: 'Add cabbage', txt: 'Add cabbage + caraway seeds + sugar. Stir well.' },
+      { title: 'Add liquid', txt: 'Pour in vinegar and broth. Cover, simmer over medium-low heat 10-15 min until cabbage is tender but still with some bite.', timer: 900 },
+      { title: 'Season', txt: 'Uncover. Add salt + pepper to taste. Adjust vinegar if needed.' },
+      { title: 'Serve warm', txt: 'Transfer to a serving bowl. Sprinkle crispy bacon on top + chopped chives. Serve warm alongside roast pork, dumplings, or Selchfleisch.' }
+    ],
+    tip: 'Caraway seeds are non-negotiable - the signature Austrian cabbage flavor. Frühstücksspeck (breakfast bacon) or good German-style Bauernspeck is authentic - not thin American bacon. Vienna: everything at any Spar/Billa.'
+  },
+  {
+    id: 'at-krautsalat-kalt', name: 'Krautsalat österreichischer Art', nameEn: 'Cold Austrian white cabbage salad with caraway', emoji: '🥬',
+    category: 'salad', time: 60, prep: 15, cook: 45, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Classic', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 130, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Cold Austrian cabbage salad - thinly sliced white cabbage massaged with salt to soften, then dressed with vinegar, sugar, caraway, and oil. The cool sibling of Warmer Krautsalat, served alongside Schnitzel, sausages, or as part of a mixed salad plate. The caraway is what makes it distinctly Austrian and not German or Balkan.',
+    ingredients: [
+
+      { id: 'cabbage-white', name: 'White cabbage (very finely sliced)', amount: 500, unit: 'g', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower or neutral oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'caraway-whole', name: 'Whole caraway seeds', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar', amount: 1.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt (heavy - softens cabbage)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'water', name: 'Water (to thin dressing)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (chopped, optional)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Slice cabbage very fine', txt: 'Remove outer leaves. Quarter, remove core. Slice very fine - mandoline ideal. Should be paper-thin ribbons.' },
+      { title: 'Salt and rest', txt: 'Big bowl: cabbage + salt. Massage 1-2 min. Rest 30-45 minutes - cabbage releases water and softens dramatically.', timer: 2700 },
+      { title: 'Squeeze out water', txt: 'Squeeze the cabbage in handfuls to remove the excess water (or press through a colander).' },
+      { title: 'Make dressing', txt: 'Bowl: vinegar + oil + sugar + caraway + pepper + water. Whisk to combine.' },
+      { title: 'Combine', txt: 'Return squeezed cabbage to bowl. Pour dressing over. Mix well with hands or spoon.' },
+      { title: 'Rest again', txt: 'Rest at least 15 minutes for flavors to meld.', timer: 900 },
+      { title: 'Serve', txt: 'Room temperature or chilled. Classic side to Schnitzel, sausages, roast pork. Optional parsley garnish.' }
+    ],
+    tip: 'The salt-massage-and-rest step is what turns tough raw cabbage into a silky salad - do not skip. Caraway seeds are the Austrian signature. Keeps 3 days refrigerated. Vienna: all standard ingredients.'
+  },
+  {
+    id: 'at-wurstsalat', name: 'Wiener Wurstsalat', nameEn: 'Viennese Extrawurst sausage salad with vinegar and onion', emoji: '🌭',
+    category: 'salad', time: 15, prep: 15, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Viennese', 'Classic', 'Summer', 'Salad'],
+    nutrition: { kcal: 380, protein: 8, carbs: 22, fat: 14 },
+    desc: 'The classic Viennese sausage salad - Extrawurst (or Knacker/Wiener) sliced into strips with red onion, gherkins, hard cheese, and often bell pepper, dressed with apple cider vinegar and oil. Sometimes with Kürbiskernöl for a Styrian touch. Found in every Wiener Beisl as a Jause snack, especially with a cold beer on a summer evening.',
+    ingredients: [
+
+      { id: 'extrawurst', name: 'Extrawurst (or Knacker) - Viennese pale sausage', amount: 400, unit: 'g', store: 'big' },
+      { id: 'cheese-emmental', name: 'Emmentaler or Bergkäse (in strips)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'gherkin-pickled', name: 'Pickled gherkins (Essiggurken) sliced', amount: 80, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin rings)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-red', name: 'Red bell pepper (thin strips)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'vinegar-apple', name: 'Apple cider vinegar', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil (or half sunflower + half Kürbiskernöl)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'water', name: 'Water (small)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar (small pinch)', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'chive-fresh', name: 'Fresh chives (chopped, garnish)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Slice sausage', txt: 'Peel Extrawurst if desired (skin can stay). Cut into thin 3mm strips or small cubes.' },
+      { title: 'Cut cheese and pickles', txt: 'Cut cheese into thin matching strips. Slice pickled gherkins into thin rounds.' },
+      { title: 'Slice onion + pepper', txt: 'Thin ring red onion. Thin strip red pepper.' },
+      { title: 'Combine', txt: 'Big bowl: sausage + cheese + gherkins + onion + pepper.' },
+      { title: 'Make dressing', txt: 'Small bowl: vinegar + mustard + sugar + water + salt + pepper. Whisk. Add oil at end.' },
+      { title: 'Toss', txt: 'Pour dressing over. Mix well. Adjust seasoning.' },
+      { title: 'Rest 15 min', txt: 'Let sit at room temperature 15 min so flavors meld.', timer: 900 },
+      { title: 'Serve', txt: 'Serve with dark bread (Schwarzbrot) or crusty bread + a cold beer. Sprinkle chives on top. Wiener Beisl summer classic.' }
+    ],
+    tip: 'Real Viennese Extrawurst (fine-textured pale pink sausage) is the classic - not just any sausage. Radatz makes some of Viennas best. Vienna: Extrawurst at any Spar/Billa Feinkost counter or at Radatz butchers around the city.'
+  },
+  {
+    id: 'at-fiakersalat', name: 'Fiakersalat', nameEn: 'Viennese carriage-driver hearty egg pickle salad', emoji: '🍳',
+    category: 'salad', time: 25, prep: 20, cook: 10, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Viennese', 'Classic', 'Salad'],
+    nutrition: { kcal: 380, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Old Viennese carriage-driver (Fiaker) salad - a hearty mix of hard-boiled eggs, pickled cucumbers, ham or sausage, and onions dressed with mustard-vinegar dressing. Traditional at Viennese Beisl and Heuriger. Substantial enough to be a light meal with bread. The name comes from the Fiaker (horse-carriage) drivers who ate hearty snacks during long shifts around the Innere Stadt.',
+    ingredients: [
+
+      { id: 'eggs', name: 'Hard-boiled eggs', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'ham-cooked', name: 'Cooked ham (Beinschinken) in strips', amount: 150, unit: 'g', store: 'all' },
+      { id: 'gherkin-pickled', name: 'Pickled gherkins', amount: 80, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin sliced)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-red', name: 'Red pepper (thin strips, optional)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'mayonnaise', name: 'Mayonnaise (light)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'yogurt-natural', name: 'Natural yogurt', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard (or Estragonsenf)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'chive-fresh', name: 'Fresh chives (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'paprika-sweet', name: 'Sweet paprika (garnish)', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Boil eggs', txt: 'Bring water to boil, cook eggs 10 min. Cool immediately in cold water. Peel.', timer: 600 },
+      { title: 'Slice or quarter eggs', txt: 'Slice 3 eggs into rounds or quarters (save 1 for garnish).' },
+      { title: 'Cut ham + gherkins', txt: 'Cut ham into thin strips. Slice gherkins into thin rounds.' },
+      { title: 'Slice onion + pepper', txt: 'Thin slice red onion. Thin strip red pepper if using.' },
+      { title: 'Make dressing', txt: 'Small bowl: mayo + yogurt + mustard + vinegar + oil + salt + pepper. Whisk smooth.' },
+      { title: 'Combine', txt: 'Big bowl: sliced eggs + ham + gherkins + onion + pepper. Pour dressing over. Fold gently.' },
+      { title: 'Rest 15 min', txt: 'Refrigerate 15 min for flavors to meld.', timer: 900 },
+      { title: 'Serve', txt: 'Top with slices of the reserved egg + chopped chives + dust of paprika. Serve with dark rye bread. Wiener Beisl classic.' }
+    ],
+    tip: 'Estragonsenf (tarragon mustard) is the truly Viennese touch if you can find it. Vienna: Estragonsenf at any large Spar or Billa.'
+  },
+  {
+    id: 'at-vogerlsalat-speck', name: 'Vogerlsalat mit Speck', nameEn: 'Austrian lambs lettuce with bacon and pumpkin seed oil', emoji: '🥗',
+    category: 'salad', time: 20, prep: 15, cook: 5, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Styrian', 'Classic', 'Winter', 'Salad'],
+    nutrition: { kcal: 260, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Winter Austrian classic - fresh Vogerlsalat (lambs lettuce) dressed with warm crispy bacon, apple cider vinegar, and Styrian pumpkin seed oil. The bacon fat and hot dressing wilt the leaves slightly. Found at every Heuriger and Wirtshaus from late autumn through winter. Deeply satisfying with warm rustic bread.',
+    ingredients: [
+
+      { id: 'vogerlsalat', name: 'Vogerlsalat (lambs lettuce/Feldsalat)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'bacon-smoked', name: 'Smoked bacon (Bauchspeck) in strips', amount: 120, unit: 'g', store: 'all' },
+      { id: 'potato-firm', name: 'Small potatoes (optional, for hearty version)', amount: 300, unit: 'g', store: 'all' },
+      { id: 'kuerbiskernoel', name: 'Steirisches Kürbiskernöl', amount: 3, unit: 'tbsp', store: 'big' },
+      { id: 'vinegar-apple', name: 'Apfelessig', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'honey', name: 'Honey (small)', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil (small, for frying)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pumpkin-seeds', name: 'Pumpkin seeds (toasted, garnish)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'eggs', name: 'Hard-boiled egg (optional, quartered)', amount: 1, unit: 'pcs', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Optional: cook potatoes', txt: 'If using: boil small potatoes 15 min. Drain, halve.', timer: 900 },
+      { title: 'Toast pumpkin seeds', txt: 'Dry pan: pumpkin seeds 2-3 min until fragrant. Set aside.', timer: 180 },
+      { title: 'Wash Vogerlsalat', txt: 'Wash lambs lettuce thoroughly (grit hides in the roots). Spin dry very well.' },
+      { title: 'Crisp the bacon', txt: 'Pan with 1 tbsp oil: bacon strips over medium heat 5-6 min until crispy.', timer: 360 },
+      { title: 'Add potatoes if using', txt: 'Add halved potatoes to the bacon pan, brown 3-4 min in the fat.', timer: 240 },
+      { title: 'Make warm dressing', txt: 'Off heat but still hot: whisk in apple cider vinegar + mustard + honey + salt + pepper. This is the deglaze that becomes the dressing.' },
+      { title: 'Add pumpkin seed oil', txt: 'Off direct heat: whisk in the pumpkin seed oil (heat destroys its flavor if boiled).' },
+      { title: 'Dress salad', txt: 'Big bowl: Vogerlsalat. Pour the warm bacon-dressing over and toss gently - leaves wilt slightly.' },
+      { title: 'Serve', txt: 'On plates immediately. Top with toasted pumpkin seeds + optional egg quarters. Rustic Austrian bread on the side.' }
+    ],
+    tip: 'The lambs lettuce MUST be very dry before dressing or the dressing slides off. Add pumpkin seed oil OFF heat - heat destroys its distinctive flavor. Vienna: Vogerlsalat at any supermarket autumn-winter; good Bauchspeck at Radatz butchers.'
+  },
+  {
+    id: 'at-ziegenkaese-salat', name: 'Warmer Ziegenkäse Salat', nameEn: 'Warm goat cheese salad on toasted bread with honey', emoji: '🐐',
+    category: 'salad', time: 15, prep: 10, cook: 5, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'French', 'Modern', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 420, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Modern Austrian bistro classic - a slice of warm baked or grilled goat cheese served on toasted bread over mixed leaves, drizzled with honey and often accompanied by walnuts and dried fruit. French in origin but adopted enthusiastically across modern Viennese bistros. Found at any modern Wirtshaus with a lighter menu. Warm, tangy, sweet, deeply satisfying.',
+    ingredients: [
+
+      { id: 'goat-cheese-round', name: 'Goat cheese slices or small rounds (Ziegenkäse)', amount: 180, unit: 'g', store: 'all' },
+      { id: 'bread-baguette', name: 'Baguette slices (2cm thick)', amount: 4, unit: 'slices', store: 'all' },
+      { id: 'lettuce-mixed', name: 'Mixed lettuce (Vogerlsalat + Rucola + Endivien)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'walnut', name: 'Walnuts (halves)', amount: 40, unit: 'g', store: 'all' },
+      { id: 'honey', name: 'Honey (heavy drizzle)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-balsamic', name: 'Balsamic vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'cranberries-dried', name: 'Dried cranberries or figs (optional)', amount: 30, unit: 'g', store: 'all' },
+      { id: 'apple-fresh', name: 'Apple slices (optional)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'thyme-fresh', name: 'Fresh thyme (optional)', amount: 3, unit: 'sprigs', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Toast walnuts', txt: 'Dry pan: walnuts 3 min until fragrant. Set aside.', timer: 180 },
+      { title: 'Preheat grill', txt: 'Preheat oven grill (Grillfunktion) or broiler on high.' },
+      { title: 'Prep bread', txt: 'Toast baguette slices in a pan or under grill until golden.', timer: 180 },
+      { title: 'Assemble cheese toasts', txt: 'Place a goat cheese round on each baguette slice. Drizzle a little honey on top. Place on baking tray.' },
+      { title: 'Grill the cheese', txt: 'Under hot grill 3-5 min until cheese is soft, bubbling, slightly browned on top. Watch closely.', timer: 300 },
+      { title: 'Make dressing', txt: 'Whisk olive oil + balsamic + Dijon + salt + pepper.' },
+      { title: 'Dress salad', txt: 'Big shallow bowl or 2 plates: mixed leaves + apple slices if using. Drizzle dressing, toss gently.' },
+      { title: 'Plate', txt: 'Top salad with 2 warm goat cheese toasts per plate. Scatter toasted walnuts + optional dried fruit.' },
+      { title: 'Finish', txt: 'Drizzle extra honey over the cheese + tuck fresh thyme sprigs alongside. Serve immediately while cheese is warm.' }
+    ],
+    tip: 'A firm goat cheese log (Sainte-Maure, Bûche de Chèvre) sliced into rounds works best - too-soft chèvre melts through the bread. Grill it briefly - just until warm and slightly bubbling. Vienna: good chèvre at Spar Gourmet or Billa Corso.'
+  },
+  {
+    id: 'at-gruener-kernoel', name: 'Grüner Salat mit Kernöl', nameEn: 'Simple green salad with Styrian pumpkin seed oil', emoji: '🥬',
+    category: 'salad', time: 8, prep: 8, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Austrian', 'Styrian', 'Classic', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 140, protein: 8, carbs: 22, fat: 14 },
+    desc: 'The simplest, most everyday Austrian salad - just mixed green lettuce with a dressing of Kürbiskernöl, apple cider vinegar, salt, and pepper. Nothing more. Served alongside virtually any main course at any Beisl or Wirtshaus in Austria. The pumpkin seed oil is the entire flavor identity - use good Styrian Kürbiskernöl and even this simple salad becomes special.',
+    ingredients: [
+
+      { id: 'lettuce-mixed', name: 'Mixed green lettuce (Endivien, Butterhead, Vogerlsalat)', amount: 200, unit: 'g', store: 'all' },
+      { id: 'kuerbiskernoel', name: 'Steirisches Kürbiskernöl (heavy - the point of the dish)', amount: 3, unit: 'tbsp', store: 'big' },
+      { id: 'oil-sunflower', name: 'Sunflower oil (neutral, balances)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-apple', name: 'Apfelessig (apple cider vinegar)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'mustard-dijon', name: 'Dijon mustard (small)', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'water', name: 'Water (thin dressing slightly)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar (small pinch, balances)', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pumpkin-seeds', name: 'Pumpkin seeds (toasted, garnish)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'chive-fresh', name: 'Fresh chives (chopped)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Toast pumpkin seeds', txt: 'Dry pan: pumpkin seeds 2 min until fragrant. Set aside.', timer: 120 },
+      { title: 'Wash and dry lettuce', txt: 'Wash lettuce, spin dry very well. Tear into bite pieces.' },
+      { title: 'Make dressing', txt: 'Bowl: apple cider vinegar + Dijon + water + sugar + salt + pepper. Whisk. Add both oils (sunflower + Kürbiskernöl) and whisk to combine.' },
+      { title: 'Toss', txt: 'Big bowl: lettuce. Pour dressing over, toss gently with hands or salad servers.' },
+      { title: 'Serve', txt: 'Divide onto 2 plates. Top with toasted pumpkin seeds + chopped chives. Perfect side to Schnitzel, Backhendl, roast pork, or any Austrian main.' }
+    ],
+    tip: 'The pumpkin seed oil quality is EVERYTHING here - there is nowhere for a bad oil to hide. Use only real Steirisches Kürbiskernöl g.g.A. (PGI-protected). Mixing with a little sunflower oil balances the intensity. Vienna: real Kürbiskernöl at any large Spar or Billa (Fandler, Egger, Estyria are top brands).'
+  }
+
+
+,
+  // === BATCH 16: 12 Balkan salads (Serbian, Bulgarian, Macedonian, Croatian, Albanian, Bosnian) ===
+  {
+    id: 'srp-srpska-salata', name: 'Srpska Salata', nameEn: 'Serbian tomato pepper feta salad', emoji: '🥗',
+    category: 'salad', time: 12, prep: 12, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Serbian', 'Balkan', 'Classic', 'Summer', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 220, protein: 8, carbs: 22, fat: 14 },
+    desc: 'The Serbian national salad - very similar to Bulgarian Shopska but with the Serbian twist: hot green peppers (feferoni) and the feta is optional and mixed in rather than piled on top. Big chunks of ripe tomato, cucumber, red onion, hot pepper, dressed only with oil, vinegar, and salt. Found at every Serbian kafana in summer. Fresher, spicier, more everyday than its Bulgarian cousin.',
+    ingredients: [
+
+      { id: 'tomato-vine', name: 'Ripe tomatoes (big wedges)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (thick half-moons)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin half-moons)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green-hot', name: 'Hot green pepper - feferoni (thin sliced)', amount: 2, unit: 'pcs', store: 'big' },
+      { id: 'feta', name: 'Feta or sirene cheese (crumbled, optional)', amount: 120, unit: 'g', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Sunflower or olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar (or apple cider)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (chopped, optional)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Chunk vegetables', txt: 'Cut tomatoes into big wedges (6-8 per tomato). Cucumber thick half-moons. Onion thin half-moons. Thin slice the hot peppers (deseed if you want less heat).' },
+      { title: 'Combine', txt: 'Big bowl or wide plate: tomatoes + cucumber + onion + hot peppers. Salt gently and toss.' },
+      { title: 'Dress', txt: 'Drizzle oil + vinegar. Toss.' },
+      { title: 'Rest 5 min', txt: 'Let sit briefly so vegetables release juice.', timer: 300 },
+      { title: 'Add cheese', txt: 'If using: crumble feta over the top - do not mix in heavily.' },
+      { title: 'Serve', txt: 'Room temperature with crusty bread to soak the juices. Perfect with ćevapi, pljeskavica, or grilled meats.' }
+    ],
+    tip: 'Feferoni (hot pointed green peppers) are the Serbian signature - what distinguishes from Shopska. Use less if you want mild heat. Vienna: feferoni at Turkish/Balkan shops (Bambi Markt, Etsan); real sirene at Balkan shops on Ottakringer Strasse.'
+  },
+  {
+    id: 'srp-urnebes', name: 'Urnebes Salata', nameEn: 'Spicy Serbian cheese chili spread', emoji: '🌶',
+    category: 'salad', time: 15, prep: 15, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Serbian', 'Balkan', 'Classic', 'Vegetarian', 'Quick', 'Meze', 'Salad'],
+    nutrition: { kcal: 320, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Fiery southern Serbian specialty from around Niš - creamy feta or young sheep cheese mashed with hot red peppers, garlic, sunflower oil, and paprika into a spread-like salad. The name literally means chaos or pandemonium - fitting for the heat. Traditional accompaniment to Serbian grills (ćevapi, pljeskavica). Also eaten as meze with rakija.',
+    ingredients: [
+
+      { id: 'feta', name: 'Feta cheese (or young sheep cheese - kajmak also works)', amount: 250, unit: 'g', store: 'all' },
+      { id: 'cream-cheese', name: 'Cream cheese or thick Greek yogurt (for creaminess)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves (crushed)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'pepper-red-hot', name: 'Fresh hot red peppers - or feferoni (finely chopped)', amount: 2, unit: 'pcs', store: 'big' },
+      { id: 'paprika-hot', name: 'Hot paprika (ljuta aleva paprika)', amount: 1, unit: 'tsp', store: 'big' },
+      { id: 'paprika-sweet', name: 'Sweet paprika', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt (small - cheese is salty)', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (chopped, optional)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Mash cheese', txt: 'Big bowl: crumble feta + cream cheese. Mash with a fork until relatively smooth but with some texture.' },
+      { title: 'Add heat + garlic', txt: 'Add crushed garlic + finely chopped hot peppers + hot paprika + sweet paprika. Mix well.' },
+      { title: 'Add oil gradually', txt: 'Drizzle in sunflower oil while mixing - should turn into a spreadable paste.' },
+      { title: 'Season', txt: 'Small pinch of salt (feta is already salty) + black pepper. Taste and adjust heat.' },
+      { title: 'Rest 30 min', txt: 'Refrigerate at least 30 min - flavors meld and heat develops.', timer: 1800 },
+      { title: 'Serve', txt: 'Room temperature in a shallow bowl. Drizzle extra oil on top + optional parsley. With grilled meats (ćevapi, pljeskavica), fresh bread, or as meze with rakija. Southern Serbian classic.' }
+    ],
+    tip: 'The heat is the point - do not tame it. Real ljuta aleva paprika (Serbian hot paprika) is deeper and smokier than generic hot paprika. Vienna: Balkan shops on Ottakringer Strasse for real Serbian paprika; feferoni at any Turkish shop.'
+  },
+  {
+    id: 'srp-krastavac', name: 'Krastavac Salata', nameEn: 'Serbian cucumber garlic yogurt salad', emoji: '🥒',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Serbian', 'Balkan', 'Classic', 'Summer', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 100, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Simple everyday Serbian cucumber salad - thin-sliced cucumber tossed with garlic, dill, sour cream or yogurt, and a splash of vinegar. Similar to Bulgarian variants but with sour cream (pavlaka) not just yogurt. Cool, garlicky, refreshing. Found at every Serbian family table in summer beside grills, roasts, and rice dishes.',
+    ingredients: [
+
+      { id: 'cucumber', name: 'Cucumber (thin sliced)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'sour-cream', name: 'Sour cream (pavlaka) or thick yogurt', amount: 150, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves (crushed)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'dill-fresh', name: 'Fresh dill (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar (splash)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil (small)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt (draws water out)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Slice cucumber', txt: 'Slice cucumbers into very thin 2-3mm rounds. Best with a mandoline.' },
+      { title: 'Salt and drain', txt: 'Bowl: cucumber + salt. Toss. Rest 10-15 min - cucumber releases a lot of water.', timer: 900 },
+      { title: 'Squeeze out water', txt: 'Drain cucumber and squeeze gently in a colander or by handfuls. Do not smash - just remove excess water.' },
+      { title: 'Make dressing', txt: 'Small bowl: sour cream + crushed garlic + vinegar + oil + pepper. Whisk.' },
+      { title: 'Combine', txt: 'Fold cucumber into the dressing. Add chopped dill.' },
+      { title: 'Rest 15 min', txt: 'Refrigerate 15 min for flavors to meld.', timer: 900 },
+      { title: 'Serve', txt: 'Chilled. Alongside grilled meats, roast chicken, or as light lunch with bread.' }
+    ],
+    tip: 'The salt-and-drain step is essential - without it the dressing becomes watery in 10 min. Real Balkan pavlaka (sour cream) is thicker and tangier than Austrian; Greek yogurt is a good substitute. Vienna: pavlaka at Balkan shops on Ottakringer Strasse.'
+  },
+  {
+    id: 'srp-zelena', name: 'Zelena Salata', nameEn: 'Serbian green salad with sour cream vinegar dressing', emoji: '🥬',
+    category: 'salad', time: 8, prep: 8, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Serbian', 'Balkan', 'Classic', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 130, protein: 8, carbs: 22, fat: 14 },
+    desc: 'The most everyday Serbian salad - butterhead or oak-leaf lettuce with a creamy sour cream dressing tangy with vinegar, tiny bit of sugar, salt. Found beside virtually every home-cooked Serbian meal. Simple, comforting, uniquely Balkan through the sour cream base (Western dressings use oil, Balkans use pavlaka).',
+    ingredients: [
+
+      { id: 'lettuce-butterhead', name: 'Butterhead lettuce or oak-leaf (torn)', amount: 1, unit: 'head', store: 'all' },
+      { id: 'sour-cream', name: 'Sour cream (pavlaka) or thick yogurt', amount: 100, unit: 'g', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar (or apple cider)', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'sugar', name: 'Sugar (small pinch, balances)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'water', name: 'Water (thins dressing if needed)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'spring-onion', name: 'Spring onion (thin sliced, optional)', amount: 2, unit: 'pcs', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Wash lettuce', txt: 'Wash lettuce thoroughly, spin dry very well. Tear into bite pieces.' },
+      { title: 'Make dressing', txt: 'Small bowl: sour cream + vinegar + sugar + oil + salt + pepper. Whisk to smooth. Add water if too thick.' },
+      { title: 'Combine', txt: 'Big bowl: lettuce + optional spring onion. Pour dressing over. Toss gently.' },
+      { title: 'Serve', txt: 'Immediately. Beside stews, roasts, or grilled meats. Serbian home-cooked classic.' }
+    ],
+    tip: 'Sour cream + vinegar is the Balkan way - very different from Western oil-vinegar dressings. Small pinch of sugar balances the vinegar acidity. Vienna: pavlaka at Balkan shops on Ottakringer Strasse or Merkur.'
+  },
+  {
+    id: 'bg-snezhanka', name: 'Snezhanka', nameEn: 'Bulgarian yogurt cucumber walnut salad Snow White', emoji: '❄',
+    category: 'salad', time: 15, prep: 15, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Bulgarian', 'Balkan', 'Classic', 'Summer', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 240, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Bulgarian summer classic - thick strained yogurt with cucumber, garlic, dill, walnuts, and olive oil. Called Snezhanka (Snow White) because of its pale color. Different from Greek tzatziki: strained yogurt makes it thicker, and walnuts are essential. Served as meze or salad beside grills. Cool, garlicky, nutty.',
+    ingredients: [
+
+      { id: 'yogurt-greek', name: 'Greek yogurt or strained Bulgarian yogurt', amount: 400, unit: 'g', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (very small dice or grated)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'walnut', name: 'Walnuts (chopped rough)', amount: 60, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic cloves (crushed)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'dill-fresh', name: 'Fresh dill (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Bulgarian if possible)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Strain yogurt', txt: 'If yogurt is loose: strain through cheesecloth or coffee filter over a bowl 30 min - should be very thick.', timer: 1800 },
+      { title: 'Prep cucumber', txt: 'Small dice or grate cucumber. Sprinkle with a pinch of salt, rest 10 min, squeeze out water.', timer: 600 },
+      { title: 'Toast walnuts', txt: 'Dry pan: walnuts 3 min until fragrant. Chop rough.', timer: 180 },
+      { title: 'Combine', txt: 'Bowl: strained yogurt + drained cucumber + crushed garlic + chopped dill + most of the walnuts. Mix.' },
+      { title: 'Dress', txt: 'Add olive oil + salt + pepper. Stir well.' },
+      { title: 'Rest 20 min', txt: 'Refrigerate 20 min - flavors meld beautifully.', timer: 1200 },
+      { title: 'Serve', txt: 'Cold in a shallow bowl. Top with reserved walnuts + drizzle extra olive oil. With grilled meats, warm bread, or as summer meze.' }
+    ],
+    tip: 'Bulgarian yogurt has a distinctive tang - real Bulgarian brands available in Vienna. Straining is essential for thickness. Walnuts distinguish from tzatziki. Vienna: real Bulgarian yogurt at Balkan shops on Ottakringer Strasse or Brunnenmarkt.'
+  },
+  {
+    id: 'bg-ovcharska', name: 'Ovcharska Salata', nameEn: 'Bulgarian shepherd chef salad with egg ham mushrooms', emoji: '🥗',
+    category: 'salad', time: 30, prep: 20, cook: 10, difficulty: 'Easy', servings: 2,
+    tags: ['Bulgarian', 'Balkan', 'Classic', 'Summer', 'Vegetarian-option', 'Salad'],
+    nutrition: { kcal: 380, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Bulgarian shepherds salad - the Shopska upgraded with a chef-salad approach: same tomato-cucumber-pepper-onion base, but topped with hard-boiled egg, ham, mushrooms, olives, and a much more generous crumble of sirene. Found at every Bulgarian mehana. Heartier than Shopska, often eaten as a light meal.',
+    ingredients: [
+
+      { id: 'tomato-vine', name: 'Tomatoes (chunky diced)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (half-moons)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-red', name: 'Red or green pepper (chopped)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin sliced)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'feta', name: 'Sirene or feta cheese (crumbled, heavy)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'mushrooms-brown', name: 'Mushrooms (sliced, sauteed or pickled)', amount: 100, unit: 'g', store: 'all' },
+      { id: 'ham-cooked', name: 'Cooked ham (small dice)', amount: 80, unit: 'g', store: 'all' },
+      { id: 'eggs', name: 'Hard-boiled eggs (quartered)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'olives-black', name: 'Black olives', amount: 15, unit: 'pcs', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower or olive oil', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (chopped, garnish)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Boil eggs', txt: 'Bring water to boil, cook eggs 10 min. Cool in cold water. Peel and quarter.', timer: 600 },
+      { title: 'Saute mushrooms (optional)', txt: 'If using fresh: hot pan with a little oil, saute mushrooms 5 min until browned. Or use pickled/marinated.', timer: 300 },
+      { title: 'Chunk vegetables', txt: 'Chunky dice tomatoes. Half-moon cucumber. Chop pepper. Thin slice onion.' },
+      { title: 'Combine base', txt: 'Big bowl or wide plate: tomatoes + cucumber + pepper + onion.' },
+      { title: 'Season base', txt: 'Salt + splash of vinegar. Toss.' },
+      { title: 'Top', txt: 'Scatter mushrooms + diced ham + egg quarters + olives artfully.' },
+      { title: 'Cheese and dress', txt: 'Crumble sirene generously over. Drizzle oil.' },
+      { title: 'Serve', txt: 'Immediately with parsley on top and bread on the side. Bulgarian mehana classic.' }
+    ],
+    tip: 'Ham can be swapped for smoked chicken or omitted for vegetarian. Fresh sauteed mushrooms are more traditional than pickled. Vienna: sirene at Balkan shops on Ottakringer Strasse.'
+  },
+  {
+    id: 'mk-makedonska', name: 'Makedonska Salata', nameEn: 'Macedonian roasted pepper tomato feta salad', emoji: '🌶',
+    category: 'salad', time: 40, prep: 15, cook: 25, difficulty: 'Easy', servings: 2,
+    tags: ['Macedonian', 'Balkan', 'Classic', 'Summer', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 260, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Macedonian summer salad - roasted red peppers with fresh tomato, red onion, feta or sirene, and heavy olive oil. Different from Shopska/Srpska by the roasted (not raw) peppers - deeply sweet, smoky, and satisfying. The Macedonian love of roasted peppers (also in ajvar) shows here. Found at every Macedonian family table late summer through autumn when peppers are cheap and abundant.',
+    ingredients: [
+
+      { id: 'pepper-red', name: 'Red bell peppers (for roasting)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'tomato-vine', name: 'Tomatoes (chunked)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin sliced)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'feta', name: 'Sirene or feta cheese (crumbled)', amount: 150, unit: 'g', store: 'all' },
+      { id: 'garlic', name: 'Garlic (crushed, small)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (heavy - Macedonians love oil)', amount: 5, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar or apple cider', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'bread-slice', name: 'Crusty bread (to serve)', amount: 4, unit: 'slices', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Char peppers', txt: 'Char peppers over open flame or under broiler until skin blackens completely on all sides, 15-20 min turning.', timer: 1200 },
+      { title: 'Steam + peel', txt: 'Put charred peppers in a bowl, cover with plate, steam 10 min. Skin peels off easily. Remove stems and seeds.', timer: 600 },
+      { title: 'Slice peppers', txt: 'Cut peeled peppers into thick 2cm strips.' },
+      { title: 'Combine', txt: 'Big bowl or wide plate: pepper strips + tomato chunks + red onion + crushed garlic.' },
+      { title: 'Season', txt: 'Salt + pepper + vinegar. Toss gently.' },
+      { title: 'Cheese and oil', txt: 'Crumble sirene generously over. Drizzle olive oil heavily.' },
+      { title: 'Rest 15 min', txt: 'Let flavors meld at room temp.', timer: 900 },
+      { title: 'Serve', txt: 'Room temperature with parsley + crusty bread to soak the oil. Macedonian summer classic.' }
+    ],
+    tip: 'The peppers MUST be charred properly - the smoky depth is the whole point. Macedonian dressings are always heavier on oil than vinegar. Vienna: sirene at Balkan shops on Ottakringer Strasse; long pointed red peppers at Turkish/Balkan shops in autumn.'
+  },
+  {
+    id: 'hr-hobotnica', name: 'Salata od Hobotnice', nameEn: 'Dalmatian octopus potato salad', emoji: '🐙',
+    category: 'salad', time: 120, prep: 30, cook: 90, difficulty: 'Medium', servings: 2,
+    tags: ['Croatian', 'Dalmatian', 'Balkan', 'Classic', 'Summer', 'Adriatic', 'Salad'],
+    nutrition: { kcal: 380, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Dalmatian coast classic - tender boiled octopus with potato, red onion, parsley, capers, olive oil, and lemon or wine vinegar. Found at every konoba on the Adriatic coast from Istria to Dubrovnik. The octopus must be perfectly tender - the trick is to add a wine cork to the cooking water (Croatian tradition) or to use a pressure cooker. Elegant summer starter or light main.',
+    ingredients: [
+
+      { id: 'octopus', name: 'Fresh or frozen octopus (thawed)', amount: 800, unit: 'g', store: 'big' },
+      { id: 'potato-firm', name: 'Firm-cooking potatoes', amount: 400, unit: 'g', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin sliced)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (heavy, chopped)', amount: 30, unit: 'g', store: 'all' },
+      { id: 'capers-optional', name: 'Capers (in brine, drained)', amount: 2, unit: 'tbsp', store: 'big' },
+      { id: 'garlic', name: 'Garlic (crushed, small)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Dalmatian if possible)', amount: 5, unit: 'tbsp', store: 'all' },
+      { id: 'lemon-juice', name: 'Fresh lemon juice', amount: 2, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar (small splash)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Freshly ground black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'olives-black', name: 'Black olives (optional)', amount: 10, unit: 'pcs', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Tenderize octopus (freezer trick)', txt: 'If using fresh: freeze octopus for 24 hours first - breaks down the tough fibers. Skip if using frozen (already tenderized).' },
+      { title: 'Boil octopus', txt: 'Big pot: cover octopus with cold water. Add a wine cork (Croatian tradition, said to tenderize). Bring to boil, reduce to gentle simmer.' },
+      { title: 'Cook long and slow', txt: 'Simmer 45-60 min covered until tender when pierced with a knife tip. Do NOT boil hard - octopus turns rubbery.', timer: 3300 },
+      { title: 'Rest in liquid', txt: 'Turn off heat. Let octopus rest in the hot cooking liquid 15 min - keeps it tender as it cools.', timer: 900 },
+      { title: 'Boil potatoes', txt: 'Meanwhile: boil unpeeled potatoes in salted water 20-25 min until fork-tender. Drain, peel while warm, cube into 2cm pieces.', timer: 1500 },
+      { title: 'Cut octopus', txt: 'Remove octopus from liquid. Cool slightly. Cut tentacles into 1-2cm rounds and the body into small strips.' },
+      { title: 'Combine', txt: 'Big bowl: octopus + warm potato + thin red onion + crushed garlic + capers.' },
+      { title: 'Dress', txt: 'Add olive oil + lemon + tiny vinegar splash + salt + pepper. Toss well. Add heavy chopped parsley.' },
+      { title: 'Rest 30 min', txt: 'Let flavors meld at room temperature.', timer: 1800 },
+      { title: 'Serve', txt: 'Room temperature (not cold) - flavors are muted when too cold. Optional olives on top + extra parsley. Dalmatian konoba classic.' }
+    ],
+    tip: 'The wine cork trick is real - Croatian grandmothers swear by it. Alternative: pressure cook 20-25 min. Never cold from fridge - let it come to room temp before serving. Vienna: fresh or frozen octopus at Metro or Naschmarkt fishmongers (Umar).'
+  },
+  {
+    id: 'hr-rajcica', name: 'Salata od Rajčice s Kaparima', nameEn: 'Croatian tomato salad with capers oregano', emoji: '🍅',
+    category: 'salad', time: 8, prep: 8, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Croatian', 'Dalmatian', 'Balkan', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 180, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Simple Dalmatian coast tomato salad - thick-sliced ripe tomatoes with capers, red onion, oregano, olive oil, and a splash of wine vinegar. Found at every seaside konoba as a starter or side to grilled fish. Peak summer only - the tomato must be at absolute peak. Similar to Italian coastal salads but with the Croatian oregano-and-caper signature.',
+    ingredients: [
+
+      { id: 'tomato-vine', name: 'Very ripe tomatoes (thick sliced)', amount: 4, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (very thin sliced)', amount: 0.25, unit: 'pcs', store: 'all' },
+      { id: 'capers-optional', name: 'Capers (drained)', amount: 2, unit: 'tbsp', store: 'big' },
+      { id: 'garlic', name: 'Garlic (thinly sliced, tiny amount)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'oregano-dried', name: 'Dried oregano (Dalmatian if possible)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (Dalmatian)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar (small splash)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'salt', name: 'Flaky salt', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'basil-fresh', name: 'Fresh basil (optional)', amount: 6, unit: 'leaves', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Slice tomatoes', txt: 'Slice ripe tomatoes into thick 1cm rounds. Arrange overlapping on a wide flat plate.' },
+      { title: 'Salt lightly', txt: 'Sprinkle flaky salt on the tomatoes - draws out flavor.' },
+      { title: 'Scatter aromatics', txt: 'Scatter very thin red onion + capers + thin garlic slices over.' },
+      { title: 'Season', txt: 'Sprinkle dried oregano + black pepper.' },
+      { title: 'Dress', txt: 'Drizzle olive oil generously + tiny splash of wine vinegar.' },
+      { title: 'Rest 10 min', txt: 'Let sit 10 min at room temp - tomato juices release and mix with the oil.', timer: 600 },
+      { title: 'Serve', txt: 'Room temperature with crusty bread to soak the juices. Optional torn basil on top. Croatian konoba summer classic.' }
+    ],
+    tip: 'Peak summer tomato is essential - the whole dish is a tomato showcase. Dalmatian olive oil (from the islands) has a distinctive grassy character. Vienna: peak tomatoes at Naschmarkt in July-September.'
+  },
+  {
+    id: 'alb-shqiptare', name: 'Sallate Shqiptare', nameEn: 'Albanian everyday tomato cucumber salad', emoji: '🥗',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Albanian', 'Kosovan', 'Balkan', 'Classic', 'Summer', 'Vegan', 'Vegetarian', 'Quick', 'Salad'],
+    nutrition: { kcal: 130, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Albanian and Kosovan everyday salad - very simple chopped tomato, cucumber, onion, and green pepper with olive oil, vinegar, and salt. Similar to Turkish çoban salatası (Ottoman heritage) but often includes crumbled djathe (Albanian white cheese) on top. Found at every Albanian family table in summer.',
+    ingredients: [
+
+      { id: 'tomato-vine', name: 'Tomatoes (chunky diced)', amount: 3, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (half-moons)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'pepper-green', name: 'Green pepper (chopped)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'onion-white', name: 'White onion (fine dice)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Olive oil (Albanian if possible)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar (or lemon)', amount: 1, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 0.75, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'feta', name: 'Djathe (Albanian white cheese) or feta - optional', amount: 80, unit: 'g', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (chopped, optional)', amount: 10, unit: 'g', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Prep vegetables', txt: 'Chunky dice tomatoes. Half-moon cucumber. Chop pepper. Fine dice onion.' },
+      { title: 'Combine', txt: 'Big bowl: all vegetables + salt + pepper.' },
+      { title: 'Dress', txt: 'Drizzle olive oil + vinegar. Toss well.' },
+      { title: 'Rest 5 min', txt: 'Let sit briefly - vegetables release juice.', timer: 300 },
+      { title: 'Optional cheese', txt: 'If using: crumble djathe or feta on top.' },
+      { title: 'Serve', txt: 'Room temperature with warm Albanian bread. Family table classic.' }
+    ],
+    tip: 'Djathe (Albanian white sheep cheese) is distinct from Greek feta - saltier, firmer. Feta is a fine substitute. Vienna: Albanian/Kosovan shops in the 10th and 16th districts carry djathe; feta works fine.'
+  },
+  {
+    id: 'alb-djathe', name: 'Sallate me Djathe', nameEn: 'Albanian white cheese salad', emoji: '🧀',
+    category: 'salad', time: 10, prep: 10, cook: 0, difficulty: 'Easy', servings: 2,
+    tags: ['Albanian', 'Kosovan', 'Balkan', 'Classic', 'Vegetarian', 'Quick', 'Meze', 'Salad'],
+    nutrition: { kcal: 300, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Albanian white cheese salad - crumbled djathe (Albanian sheep cheese, similar to feta) as the star, with tomato, cucumber, red onion, olives, and heavy olive oil. Different from Sallate Shqiptare by making the cheese the main element, not a topping. Found at every Albanian mezze table and as a starter with grilled meats. Salty, creamy, refreshing.',
+    ingredients: [
+
+      { id: 'feta', name: 'Djathe (Albanian white cheese) or feta (thick cubes)', amount: 250, unit: 'g', store: 'all' },
+      { id: 'tomato-vine', name: 'Tomatoes (wedges)', amount: 2, unit: 'pcs', store: 'all' },
+      { id: 'cucumber', name: 'Cucumber (half-moons)', amount: 1, unit: 'pcs', store: 'all' },
+      { id: 'onion-red', name: 'Red onion (thin sliced)', amount: 0.5, unit: 'pcs', store: 'all' },
+      { id: 'olives-black', name: 'Black olives (kalamata or Albanian)', amount: 15, unit: 'pcs', store: 'all' },
+      { id: 'olive-oil-extra', name: 'Extra virgin olive oil (heavy)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar (small)', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'oregano-dried', name: 'Dried oregano', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-green-hot', name: 'Hot green pepper (optional, thin sliced)', amount: 1, unit: 'pcs', store: 'big' },
+      { id: 'salt', name: 'Salt (small - cheese salty)', amount: 0.25, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Cube cheese', txt: 'Cube djathe or feta into large 2cm pieces - should be substantial chunks not tiny crumbles.' },
+      { title: 'Prep vegetables', txt: 'Wedge tomatoes. Half-moon cucumber. Thin slice red onion and hot pepper if using.' },
+      { title: 'Combine', txt: 'Big shallow bowl or wide plate: cheese cubes + tomato + cucumber + onion + olives.' },
+      { title: 'Season', txt: 'Small pinch salt + black pepper + dried oregano.' },
+      { title: 'Dress', txt: 'Drizzle olive oil heavily + tiny splash of vinegar. Toss gently - do not smash cheese.' },
+      { title: 'Rest 10 min', txt: 'Let flavors meld.', timer: 600 },
+      { title: 'Serve', txt: 'Room temperature with warm bread. Albanian mezze table classic.' }
+    ],
+    tip: 'The cheese is the star - use good quality sheep cheese. Real Albanian djathe is drier and saltier than Greek feta. Vienna: Albanian shops in the 10th district (Favoriten) or 16th (Ottakring); feta works as substitute.'
+  },
+  {
+    id: 'bos-krompir', name: 'Krompir Salata', nameEn: 'Bosnian potato salad with spring onion vinegar', emoji: '🥔',
+    category: 'salad', time: 40, prep: 15, cook: 25, difficulty: 'Easy', servings: 2,
+    tags: ['Bosnian', 'Balkan', 'Classic', 'Vegan', 'Vegetarian', 'Salad'],
+    nutrition: { kcal: 220, protein: 8, carbs: 22, fat: 14 },
+    desc: 'Bosnian everyday potato salad - warm boiled potatoes with spring onion, sunflower oil, and vinegar. Very simple, no mayo, tangier and lighter than German-Austrian versions. Sometimes with hard-boiled egg or parsley. Found at every Bosnian home meal beside grills, stews, or roasts. Uses potatoes at their warm best.',
+    ingredients: [
+
+      { id: 'potato-firm', name: 'Firm-cooking potatoes', amount: 700, unit: 'g', store: 'all' },
+      { id: 'spring-onion', name: 'Spring onions (thin sliced)', amount: 5, unit: 'pcs', store: 'all' },
+      { id: 'oil-sunflower', name: 'Sunflower oil (Balkan preferred oil)', amount: 4, unit: 'tbsp', store: 'all' },
+      { id: 'vinegar-white-wine', name: 'White wine vinegar (or apple cider)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'water', name: 'Warm water (small - to thin dressing)', amount: 3, unit: 'tbsp', store: 'all' },
+      { id: 'salt', name: 'Salt', amount: 1, unit: 'tsp', store: 'all' },
+      { id: 'pepper-black', name: 'Black pepper', amount: 0.5, unit: 'tsp', store: 'all' },
+      { id: 'parsley-fresh', name: 'Fresh parsley (chopped)', amount: 15, unit: 'g', store: 'all' },
+      { id: 'eggs', name: 'Hard-boiled egg (optional, chopped)', amount: 2, unit: 'pcs', store: 'all' }
+    ],
+    steps: [
+
+      { title: 'Boil potatoes', txt: 'Boil unpeeled potatoes in salted water 20-25 min until fork-tender. Drain.', timer: 1500 },
+      { title: 'Peel while warm', txt: 'Peel potatoes as soon as cool enough to handle. Slice into 5mm rounds or cube.' },
+      { title: 'Boil eggs if using', txt: 'Boil eggs 10 min. Cool in cold water. Peel and chop.', timer: 600 },
+      { title: 'Prep spring onion', txt: 'Thin slice spring onions - use both white and green parts.' },
+      { title: 'Make dressing', txt: 'Small bowl: vinegar + oil + warm water + salt + pepper. Whisk.' },
+      { title: 'Combine warm', txt: 'Big bowl: warm potatoes + spring onion + parsley (+ chopped egg if using). Pour dressing over. Toss gently.' },
+      { title: 'Rest 15 min', txt: 'Let sit 15 min - potatoes absorb the dressing and soften.', timer: 900 },
+      { title: 'Serve', txt: 'Room temperature or slightly warm - Bosnian style, not cold. Alongside grilled ćevapi, roast lamb, or stews.' }
+    ],
+    tip: 'Warm potatoes absorb the dressing far better than cold - do not chill this. Sunflower oil is traditional across the Balkans (not olive). Vienna: standard ingredients; good spring onions at Naschmarkt or Turkish markets.'
+  }
+
 ];
 const UNITS = ['g', 'kg', 'ml', 'l', 'tsp', 'tbsp', 'cup', 'pcs', 'clove', 'bunch', 'pinch', 'leaves', 'jar'];
 const STORES = [
@@ -17221,6 +19231,72 @@ async function loadDetailImage(recipe) {
 // If no link exists for a recipe, no button shows (clean, no fake links).
 //
 const MANUAL_YOUTUBE_LINKS = {
+  // === Batch 16: 12 Balkan salads (Serbian, Bulgarian, Macedonian, Croatian, Albanian, Bosnian) ===
+  'alb-djathe': { id: 'QkLPyAjr_R8', channel: "Food recipes Albania" },
+  'alb-shqiptare': { id: 'jE5UA6Ps5gQ', channel: "Receta Shqipetare" },
+  'bg-ovcharska': { id: 'X2OxBi2fxdY', channel: "Mitch Mai" },
+  'bg-snezhanka': { id: '6jB5vKmxqn0', channel: "Mamma Zoya" },
+  'bos-krompir': { id: 'MWG9XTz61YI', channel: "Hanuma kocht - Hanumina kuhinja" },
+  'hr-hobotnica': { id: 'XN0xsHki3cE', channel: "Obiteljska kužina by Ivo Kronja" },
+  'hr-rajcica': { id: 'lRv6VWs3XBM', channel: "Strati's Italian Deli" },
+  'mk-makedonska': { id: 'ZYNMykoF5dk', channel: "Najvkusnite Domasni Recepti" },
+  'srp-krastavac': { id: 'u-uXHYXOJBY', channel: "Dobri Recepti" },
+  'srp-srpska-salata': { id: '8fI7l3bXSF8', channel: "Kuhinja Na Raskrscu" },
+  'srp-urnebes': { id: 'NY4qUce9Yuw', channel: "Bokina kuhinja" },
+  'srp-zelena': { id: 'EHUUyVGCZfc', channel: "Kuhinjica" },
+  // === Batch 15: 12 Austrian/Viennese salads ===
+  'at-backhendlsalat': { id: 'VvLM-PAzKhk', channel: "HausmannKocht – ehrlich gekocht, richtig gut." },
+  'at-erdaepfelsalat-vogerl': { id: 'EUAv41WVITo', channel: "EINFACH LECKA!" },
+  'at-erdaepfelsalat-wien': { id: '0aoTu7f0D3M', channel: "Die Kochgenossen" },
+  'at-fiakersalat': { id: 'PSlWF4SIzyU', channel: "Delicious Boutique" },
+  'at-gruener-kernoel': { id: 'j0fZ4ppDzLE', channel: "eat" },
+  'at-kaeferbohnensalat': { id: '2cD8Zng1w9Y', channel: "Sascha brutzelt" },
+  'at-krautsalat-kalt': { id: 'vuNO2aLhZsw', channel: "CALLEkocht - Omas Rezepte" },
+  'at-krautsalat-warm': { id: 'LT7GKV8vl7Y', channel: "Erikas Selbst gmacht" },
+  'at-rindfleischsalat': { id: '9oIdMrzaG-g', channel: "HausmannKocht – ehrlich gekocht, richtig gut." },
+  'at-vogerlsalat-speck': { id: 'kulGD0iYgaA', channel: "Evy's glutenfreie Küche" },
+  'at-wurstsalat': { id: 'Ccta9L2eG9Q', channel: "Bubba Cookle" },
+  'at-ziegenkaese-salat': { id: '94go7Agv5fw', channel: "Chefkoch" },
+  // === Batch 14: 39 salads (Med classics + modern mixed + Santos-inspired) ===
+  'cypr-kolokithokorfades': { id: '2_BG46cxtJg', channel: "Cara Di Falco" },
+  'egy-amba': { id: 'UhTW-MMe3Go', channel: "vegan around the world" },
+  'egy-baladi': { id: 'Lulq4ZKZ-HQ', channel: "Muhammed the Egyptian Cook" },
+  'esp-esqueixada': { id: '3fuB6Vf_MVI', channel: "Recetas de rechupete" },
+  'esp-mixta': { id: 'pwN9IDk_pog', channel: "Spain on a Fork" },
+  'esp-naranja': { id: 'UwPpZkbBab8', channel: "Omar Allibhoy - The Spanish Chef" },
+  'esp-pipirrana': { id: 'Cq2KN11xS-M', channel: "Spain on a Fork" },
+  'greek-dakos': { id: 'X2ZIOO9CQoo', channel: "Dimitra's Dishes" },
+  'greek-horiatiki': { id: 'eju9Yok0Vng', channel: "Greekosophy" },
+  'greek-melitzanosalata': { id: 'qRvjHs7EkIA', channel: "Dimitra's Dishes" },
+  'ita-farro': { id: 'licwcZea3Mg', channel: "Casa Pappagallo" },
+  'ita-rinforzo': { id: 'zVak2zc4_QU', channel: "GialloZafferano" },
+  'ita-tricolore': { id: 'iBFj_XYAYCs', channel: "Mahmut Cayli" },
+  'leb-adas': { id: 'BIAuEdH4lEE', channel: "Drum Fills" },
+  'leb-fattoush': { id: '2VwJwYxK5IM', channel: "Feelgoodfoodie" },
+  'leb-malfouf': { id: 'Dcx1OtJL7aM', channel: "HAMARI RASOI" },
+  'leb-michoteta': { id: 'rSbbyKi-v9k', channel: "cookingguide" },
+  'mor-carottes': { id: 'kA4e8fvzxK0', channel: "Miriam's Cuisine" },
+  'mor-marocaine': { id: '9_6JgswCF4A', channel: "Recettes Marocaines & Internationales" },
+  'mor-taktouka': { id: 'Wao7qdXezUY', channel: "Cook it" },
+  'per-salad-olivieh': { id: 'BNTe4cHdQ4E', channel: "familyspice" },
+  'per-salad-shirazi': { id: 'qyqrcoRvzEg', channel: "Feelgoodfoodie" },
+  'salad-arugula-pomegranate': { id: 'SMqaB526NYM', channel: "Dad’s Kitchen" },
+  'salad-avocado-mango-quinoa': { id: '-2wI6f9uHGA', channel: "The Vegan Test Kitchen" },
+  'salad-beet-pomegranate': { id: 'IlXlPzv8qi8', channel: "Dimitra's Dishes" },
+  'salad-fig-goat-cheese': { id: 'AFVDrSX50XU', channel: "Bruno Albouze" },
+  'salad-orange-fennel': { id: 'p1Ehrcfb1Qk', channel: "ThatDudeCanCook" },
+  'salad-peach-burrata': { id: 'PdLTdg4HMHQ', channel: "Entertaining With Beth" },
+  'salad-pear-walnut-blue': { id: 'RgTaDTcjDVw', channel: "Rookie Cook" },
+  'salad-santos-mango-pomegranate': { id: 'ZFR-rvJNQTU', channel: "Food, People, Places" },
+  'salad-sonora-steak': { id: 'lzDI9fawicw', channel: "SAM THE COOKING GUY" },
+  'salad-strawberry-spinach': { id: '7Ednw_bscKk', channel: "Everyday Food" },
+  'salad-tijuana-caesar': { id: '1rJeF1i6oqE', channel: "Maria Vilcu -  REALTOR®" },
+  'salad-watermelon-feta': { id: 'nMi1X3kiSR0', channel: "Preppy Kitchen" },
+  'tun-mechouia': { id: '6i4oiqeXXOs', channel: "AfricanChow" },
+  'turkish-coban-salatasi': { id: '9cXtDBvgGUo', channel: "Lounging with Lenny" },
+  'turkish-kirmizi-lahana': { id: '8A2j2Yb4xrs', channel: "Nefis Yemek Tarifleri" },
+  'turkish-mevsim': { id: 'fbgY0E1GdyQ', channel: "Refika's Kitchen" },
+  'turkish-roka': { id: 'jNC9mZ_DsbI', channel: "Dimitra's Dishes" },
   // === Batch 13: 30 classic cocktails (full canon) ===
   'cocktail-bees-knees': { id: 'FxEkyua1LH4', channel: "MIXOLOGY FLAIRED" },
   'cocktail-boulevardier': { id: 'iPpNVvE9SBU', channel: "Behind the Bar" },
